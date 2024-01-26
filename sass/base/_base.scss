@@ -63,6 +63,18 @@ section {
     }
 }
 
+.grad-border {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 13px; // x y
+    background-size: 100% 12px;
+    background-image: linear-gradient(
+        to right,
+        #fbdc4d,
+        #fbdc4d
+        );
+}
+
 /* Utility */
 
 .none {
