@@ -68,13 +68,37 @@ section {
     background-repeat: no-repeat;
     background-position: center bottom 13px; // x y
     background-size: 100% 12px;
-    background-image: linear-gradient(
-        to right,
-        #fbdc4d,
-        #fbdc4d
-        );
+    background-image: linear-gradient(to right,#fbdc4d,#fbdc4d);
 }
 
+.linkedin-svg {
+    width: 32px;
+    height: 32px;
+
+    g {
+        fill: black;
+    }
+}
+
+.git-svg {
+    width: 42px;
+    height: 42px;
+
+    g {
+        fill: #212121;
+    }
+}
+
+.linkedin-svg, .git-svg {
+    fill: none;
+    g {
+        transition: fill 0.2s ease-in;
+    }
+
+    &:hover g {
+        fill: $accent-color;
+    }
+}
 /* Utility */
 
 .none {

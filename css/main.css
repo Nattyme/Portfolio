@@ -150,6 +150,32 @@ body > * {
   background-image: linear-gradient(to right, #fbdc4d, #fbdc4d);
 }
 
+.linkedin-svg {
+  width: 32px;
+  height: 32px;
+}
+.linkedin-svg g {
+  fill: black;
+}
+
+.git-svg {
+  width: 42px;
+  height: 42px;
+}
+.git-svg g {
+  fill: #212121;
+}
+
+.linkedin-svg, .git-svg {
+  fill: none;
+}
+.linkedin-svg g, .git-svg g {
+  transition: fill 0.2s ease-in;
+}
+.linkedin-svg:hover g, .git-svg:hover g {
+  fill: #fbdc4d;
+}
+
 /* Utility */
 .none {
   display: none !important;
