@@ -1,0 +1,19 @@
+.link {
+    position: relative;
+    font-size: 22px;
+    line-height: 1.3; /* 28.6px */
+    color: $link-color;
+
+    &::after {
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        height: 1px;
+        background-color: $link-color;
+        transition: all 0.2s ease-in;
+    }
+
+    &:hover {
+        width: 100%;
+    }
+}

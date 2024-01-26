@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+
 // Base
 @import "./base/vars";
 @import "./base/reset";
 @import "./base/base";
 
 // Blocks
-@import "./blocks/header";
-@import "./blocks/logo";
-@import "./blocks/footer";
+@import "./blocks/nav";
+@import "./blocks/title";
+@import "./blocks/button";
+@import "./blocks/link";
+@import "./blocks/socials";
+
+// Sections
+@import "./sections/header";
+@import "./sections/footer";
