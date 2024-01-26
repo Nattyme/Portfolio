@@ -4,6 +4,8 @@
 }
 
 .header__row {
+    z-index: 1;
+    position: relative;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -41,8 +43,6 @@
 }
 
 .header__img {
-    z-index: 1;
-    position: relative;
     box-shadow: 40px 40px rgba(255, 255, 255, 0.5);
 
     img {
@@ -53,6 +53,8 @@
 }
 
 .header__banner {
+    z-index: 0;
+    position: relative;
     margin-top: -156px;
 
     img {
