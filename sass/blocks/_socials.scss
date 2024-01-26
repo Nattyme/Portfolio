@@ -3,4 +3,10 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 30px;
+
+    transition: filter 0.2s ease-in;
+
+    a:hover {
+        filter: contrast(200%);
+    }
 }
