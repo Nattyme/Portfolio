@@ -68,7 +68,7 @@ body > * {
     background-image: linear-gradient(to right,#fbdc4d,#fbdc4d);
 }
 
-.linkedin-svg {
+#svg-ln {
     width: 32px;
     height: 32px;
 
@@ -77,7 +77,7 @@ body > * {
     }
 }
 
-.git-svg {
+#svg-git {
     width: 42px;
     height: 42px;
 
@@ -86,7 +86,7 @@ body > * {
     }
 }
 
-.linkedin-svg, .git-svg {
+#svg-ln, #svg-git {
     fill: none;
     g {
         transition: fill 0.2s ease-in;
@@ -95,6 +95,26 @@ body > * {
     &:hover g {
         fill: $accent-color;
     }
+}
+
+#svg-tg {
+
+}
+
+#svg-vk {
+
+}
+
+#svg-fb {
+
+}
+
+#svg-inst {
+
+}
+
+#svg-wp {
+    
 }
 /* Utility */
 
