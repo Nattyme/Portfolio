@@ -150,30 +150,19 @@ body > * {
   background-image: linear-gradient(to right, #fbdc4d, #fbdc4d);
 }
 
-#svg-ln {
+.svg-ln {
   width: 32px;
   height: 32px;
 }
-#svg-ln g {
-  fill: black;
-}
 
-#svg-git {
+.svg-git {
   width: 42px;
   height: 42px;
 }
-#svg-git g {
-  fill: #212121;
-}
 
-#svg-ln, #svg-git {
-  fill: none;
-}
-#svg-ln g, #svg-git g {
-  transition: fill 0.2s ease-in;
-}
-#svg-ln:hover g, #svg-git:hover g {
-  fill: #fbdc4d;
+.svg-tg, .svg-vk, .svg-fb, .svg-inst, .svg-wa {
+  width: 48px;
+  height: 48px;
 }
 
 /* Utility */

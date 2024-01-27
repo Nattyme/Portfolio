@@ -68,54 +68,21 @@ body > * {
     background-image: linear-gradient(to right,#fbdc4d,#fbdc4d);
 }
 
-#svg-ln {
+.svg-ln {
     width: 32px;
     height: 32px;
-
-    g {
-        fill: black;
-    }
 }
 
-#svg-git {
+.svg-git {
     width: 42px;
     height: 42px;
-
-    g {
-        fill: #212121;
-    }
 }
 
-#svg-ln, #svg-git {
-    fill: none;
-    g {
-        transition: fill 0.2s ease-in;
-    }
-
-    &:hover g {
-        fill: $accent-color;
-    }
+.svg-tg, .svg-vk, .svg-fb, .svg-inst, .svg-wa {
+    width: 48px;
+    height: 48px; 
 }
 
-#svg-tg {
-
-}
-
-#svg-vk {
-
-}
-
-#svg-fb {
-
-}
-
-#svg-inst {
-
-}
-
-#svg-wp {
-    
-}
 /* Utility */
 
 .none {
