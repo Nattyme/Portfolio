@@ -63,7 +63,7 @@ body > * {
 .grad-border {
     display: inline;
     background-repeat: no-repeat;
-    background-position: center bottom 13px; // x y
+    background-position: center bottom 15px; // x y
     background-size: 100% 12px;
     background-image: linear-gradient(to right,#fbdc4d,#fbdc4d);
 }
@@ -84,29 +84,28 @@ body > * {
 }
 
 /* Utility */
+// .none {
+// 	display: none !important;
+// }
 
-.none {
-	display: none !important;
-}
-
-.visually-hidden {
-    opacity: 0;
-    visibility: hidden;
-    width: 0px;
-    height: 0px;
-    display: block;
-    margin-left: -10000px;
-    background: transparent;
-    font-size: 0;
-}
+// .visually-hidden {
+//     opacity: 0;
+//     visibility: hidden;
+//     width: 0px;
+//     height: 0px;
+//     display: block;
+//     margin-left: -10000px;
+//     background: transparent;
+//     font-size: 0;
+// }
 
 /* Sticky Footer */
 
-.footer {
-	margin-top: auto; /* sticky footer */
+// .footer {
+// 	margin-top: auto; /* sticky footer */
 
-	/* Just for fun */
-	text-align: center;
-	background-color: #e2e2e2;
-	padding: 50px 0;
-}
+// 	/* Just for fun */
+// 	text-align: center;
+// 	background-color: #e2e2e2;
+// 	padding: 50px 0;
+// }

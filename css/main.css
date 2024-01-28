@@ -145,7 +145,7 @@ body > * {
 .grad-border {
   display: inline;
   background-repeat: no-repeat;
-  background-position: center bottom 13px;
+  background-position: center bottom 15px;
   background-size: 100% 12px;
   background-image: linear-gradient(to right, #fbdc4d, #fbdc4d);
 }
@@ -166,30 +166,7 @@ body > * {
 }
 
 /* Utility */
-.none {
-  display: none !important;
-}
-
-.visually-hidden {
-  opacity: 0;
-  visibility: hidden;
-  width: 0px;
-  height: 0px;
-  display: block;
-  margin-left: -10000px;
-  background: transparent;
-  font-size: 0;
-}
-
 /* Sticky Footer */
-.footer {
-  margin-top: auto; /* sticky footer */
-  /* Just for fun */
-  text-align: center;
-  background-color: #e2e2e2;
-  padding: 50px 0;
-}
-
 .nav ul {
   display: flex;
   justify-content: space-between;
@@ -225,13 +202,15 @@ body > * {
 .title {
   font-size: 78px;
   font-weight: 700;
-  line-height: 1; /* 78px */
+  line-height: 1;
 }
 
 .button {
-  padding: 19px 40px;
+  padding: 0 40px;
+  height: 64px;
   border-radius: 50px;
   background-color: #eff7fc;
+  line-height: 64px;
   font-size: 20px;
   font-weight: 700;
   transition: background-color 0.2s ease-in;
@@ -265,7 +244,7 @@ body > * {
   justify-content: space-between;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  transition: filter 0.2s ease-in;
+  transition: filter 0.5s ease-in;
 }
 .socials a:hover {
   filter: contrast(200%);
@@ -329,6 +308,9 @@ body > * {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+.header__buttons > * {
+  flex-grow: 0;
+}
 
 .header__img {
   box-shadow: 40px 40px rgba(255, 255, 255, 0.5);
@@ -338,6 +320,8 @@ body > * {
   height: 410px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 10% 50%;
+     object-position: 10% 50%;
 }
 
 .header__banner {
@@ -346,7 +330,9 @@ body > * {
   margin-top: -156px;
 }
 .header__banner img {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 759px;
 }
 
 .header__columns {
@@ -380,5 +366,5 @@ body > * {
 }
 
 .header__socials {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }/*# sourceMappingURL=main.css.map */

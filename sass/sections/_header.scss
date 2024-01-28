@@ -40,6 +40,10 @@
 .header__buttons {
     display: flex;
     column-gap: 20px;
+
+    & > * {
+        flex-grow: 0;
+    }
 }
 
 .header__img {
@@ -49,6 +53,7 @@
         width: 475px;
         height: 410px;
         object-fit: cover;
+        object-position: 10% 50%;
     }
 }
 
@@ -58,7 +63,9 @@
     margin-top: -156px;
 
     img {
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        height: 759px;
     }
 }
 
@@ -93,5 +100,5 @@
 }
 
 .header__socials {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
