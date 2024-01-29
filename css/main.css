@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 /* Reset and base styles  */
 * {
@@ -330,8 +331,12 @@ body > * {
   filter: contrast(200%);
 }
 
+.header-about {
+  margin-top: -51px;
+  padding-top: 20px;
+}
+
 .header-about__content {
-  margin-top: -31px;
   display: flex;
 }
 
@@ -351,6 +356,10 @@ body > * {
 }
 .header-about__skills li:not(:last-child) {
   margin-bottom: 10px;
+}
+.header-about__skills li::before {
+  content: "—";
+  padding-right: 5px;
 }
 
 .header-about__socials {

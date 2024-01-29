@@ -1,5 +1,9 @@
+.header-about {
+    margin-top: -51px;
+    padding-top: 20px;
+}
+
 .header-about__content {
-    margin-top: -31px;
     display: flex;
 }
 
@@ -23,6 +27,11 @@
 
     &:not(:last-child) {
         margin-bottom: 10px;
+    }
+
+    &::before {
+        content: "\2014";
+        padding-right: 5px;
     }
 }
 
