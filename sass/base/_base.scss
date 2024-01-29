@@ -60,6 +60,11 @@ body > * {
     background-image: linear-gradient(to right,#fbdc4d,#fbdc4d);
 }
 
+h2.grad-border  {
+    background-size: 100% 8px;
+    background-position: center bottom 10px;
+}
+
 .svg-ln {
     width: 32px;
     height: 32px;
