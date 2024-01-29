@@ -171,6 +171,10 @@ body > * {
 }
 
 /* Utility */
+.none {
+  display: none !important;
+}
+
 /* Sticky Footer */
 .nav ul {
   display: flex;
@@ -366,6 +370,42 @@ body > * {
   margin-bottom: 15px;
 }
 
+.portfolio-card {
+  max-width: 350px;
+  height: 296px;
+}
+
+.portfolio-card__img {
+  margin-bottom: 16px;
+}
+.portfolio-card__img img {
+  width: 350px;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.portfolio-card__text {
+  height: 60px;
+  overflow: hidden;
+}
+.portfolio-card__text h3, .portfolio-card__text p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.portfolio-card__title {
+  margin-bottom: 6px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.portfolio-card__desc {
+  font-size: 18px;
+}
+
 .header-top__nav {
   margin-top: 63px;
   margin-bottom: 62px;
@@ -384,4 +424,21 @@ body > * {
 .header {
   padding-top: 20px;
   padding-bottom: 90px;
+}
+
+.portfolio {
+  background: linear-gradient(0deg, #F5FBFF 0%, #F5FBFF 100%), #F4F8F9;
+}
+
+.portfolio__content {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+.portfolio__title {
+  margin-bottom: 65px;
+}
+
+.portfolio__cards {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

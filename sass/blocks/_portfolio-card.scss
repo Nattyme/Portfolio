@@ -1,0 +1,36 @@
+.portfolio-card {
+    max-width: 350px;
+    height: 296px;
+}
+
+.portfolio-card__img {
+    margin-bottom: 16px;
+
+    img {
+        width: 350px;
+        height: 220px;
+        object-fit: cover;
+    }
+}
+
+.portfolio-card__text {
+    height: 60px;
+    overflow: hidden;
+
+    h3, p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+}
+
+.portfolio-card__title {
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.portfolio-card__desc {
+    font-size: 18px;
+}
