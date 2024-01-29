@@ -63,11 +63,21 @@ body > * {
 .svg-ln {
     width: 32px;
     height: 32px;
+    fill: #000;  
 }
 
 .svg-git {
     width: 42px;
     height: 42px;
+    fill: #212121;
+}
+
+.svg-ln, .svg-git {
+    transition: fill 0.2s ease-in;
+
+    &:hover {
+        fill: $accent-color;
+    }
 }
 
 .svg-tg, .svg-vk, .svg-fb, .svg-inst, .svg-wa {
