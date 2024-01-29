@@ -1,0 +1,31 @@
+.header-about__content {
+    margin-top: -31px;
+    display: flex;
+}
+
+.header-about__column {
+    
+    &:first-child {
+        width: 635px;
+    }
+
+    &:last-child {
+        margin-left: 30px;
+    }
+}
+
+.header-about__subtitle {
+    margin-bottom: 30px;
+}
+
+.header-about__skills li {
+    font-size: 22px;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.header-about__socials {
+    margin-bottom: 15px;
+}
