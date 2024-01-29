@@ -486,4 +486,37 @@ h2.grad-border {
        column-gap: 30px;
   row-gap: 50px;
   flex-wrap: wrap;
+}
+
+.timeline__content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.timeline__header {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.timeline-wrapper {
+  width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-item {
+  padding-bottom: 60px;
+  width: 50%;
+}
+
+/* Нечетные */
+.timeline-item:nth-child(odd) {
+  padding-right: 56px;
+  text-align: right;
+}
+
+/* Четные */
+.timeline-item:nth-child(even) {
+  margin-left: auto;
+  padding-left: 56px;
 }/*# sourceMappingURL=main.css.map */
