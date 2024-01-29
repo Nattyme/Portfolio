@@ -17,6 +17,19 @@
 .timeline-item {
     padding-bottom: 60px;
     width: 50%;
+    position: relative;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+    }
+
+    &::before {
+        width: 4px;
+        top: 0;
+        bottom: 0;
+        background-color: blue;
+    }
 }
 
 /* Нечетные */
@@ -25,8 +38,16 @@
     text-align: right;
 }
 
+.timeline-item:nth-child(odd)::before  {
+    right: -2px;
+}
+
 /* Четные */
 .timeline-item:nth-child(even) {
     margin-left: auto;
     padding-left: 56px;
+}
+
+.timeline-item:nth-child(even)::before {
+    left: -2px;
 }
