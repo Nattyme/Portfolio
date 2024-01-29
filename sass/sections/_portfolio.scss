@@ -14,4 +14,7 @@
 
 .portfolio__cards {
     display: flex;
+    column-gap: 30px;
+    row-gap: 50px;
+    flex-wrap: wrap;
 }

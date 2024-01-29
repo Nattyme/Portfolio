@@ -1,14 +1,30 @@
 .portfolio-card {
+    position: relative;
+    top: 0;
     max-width: 350px;
     height: 296px;
+    transition: opacity 0.2s ease-in;
+
+    &:hover {
+        opacity: 0.9;
+
+        img {
+            overflow: hidden;
+            border: 1px solid $accent-color;
+            border-top: -2px;
+            transform: scale(1.2);
+        }
+    }
 }
 
 .portfolio-card__img {
     margin-bottom: 16px;
-
+    overflow: hidden;
     img {
         width: 350px;
         height: 220px;
+        transition: transform 0.4s ease-in;
+
         object-fit: cover;
     }
 }
