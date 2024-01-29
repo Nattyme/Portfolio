@@ -386,6 +386,27 @@ body > * {
   border-top: -2px;
   transform: scale(1.2);
 }
+.portfolio-card:first-child, .portfolio-card:nth-child(2) {
+  max-width: 540px;
+  height: 463px;
+}
+.portfolio-card:first-child .portfolio-card__img, .portfolio-card:nth-child(2) .portfolio-card__img {
+  margin-bottom: 20px;
+}
+.portfolio-card:first-child img, .portfolio-card:nth-child(2) img {
+  width: 540px;
+  height: 370px;
+}
+.portfolio-card:first-child .portfolio-card__text, .portfolio-card:nth-child(2) .portfolio-card__text {
+  height: 73px;
+}
+.portfolio-card:first-child .portfolio-card__title, .portfolio-card:nth-child(2) .portfolio-card__title {
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+.portfolio-card:first-child .portfolio-card__desc, .portfolio-card:nth-child(2) .portfolio-card__desc {
+  font-size: 20px;
+}
 
 .portfolio-card__img {
   margin-bottom: 16px;
@@ -395,6 +416,7 @@ body > * {
   width: 350px;
   height: 220px;
   transition: transform 0.4s ease-in;
+  pointer-events: none;
   -o-object-fit: cover;
      object-fit: cover;
 }

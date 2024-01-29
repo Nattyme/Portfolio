@@ -15,15 +15,46 @@
             transform: scale(1.2);
         }
     }
+
+    &:first-child, &:nth-child(2) {
+        max-width: 540px;
+        height: 463px;
+
+        .portfolio-card__img {
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 540px;
+            height: 370px;
+        }
+
+        .portfolio-card__text {
+            height: 73px;
+        }
+
+        .portfolio-card__title {
+            margin-bottom: 8px;
+            font-size: 30px;
+        }
+
+        .portfolio-card__desc {
+            font-size: 20px;
+        }
+
+    }
+
 }
 
 .portfolio-card__img {
     margin-bottom: 16px;
     overflow: hidden;
+
     img {
         width: 350px;
         height: 220px;
         transition: transform 0.4s ease-in;
+        pointer-events: none;
 
         object-fit: cover;
     }
