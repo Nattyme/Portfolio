@@ -28,8 +28,22 @@
         width: 4px;
         top: 0;
         bottom: 0;
-        background-color: blue;
+        background-color: #e1eef4;
     }
+
+    &::after {
+        top: 0;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+
+        border: 4px solid #e1eef4;
+        background-color: #fff;
+    }
+}
+
+.timeline-item:last-child::before {
+    display: none;
 }
 
 /* Нечетные */
@@ -42,6 +56,10 @@
     right: -2px;
 }
 
+.timeline-item:nth-child(odd)::after  {
+    right: -17px;
+}
+
 /* Четные */
 .timeline-item:nth-child(even) {
     margin-left: auto;
@@ -50,4 +68,8 @@
 
 .timeline-item:nth-child(even)::before {
     left: -2px;
+}
+
+.timeline-item:nth-child(even)::after  {
+    left: -17px;
 }
