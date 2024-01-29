@@ -3,10 +3,10 @@
     top: 0;
     max-width: 350px;
     height: 296px;
-    transition: opacity 0.2s ease-in;
+    transition: filter 0.2s ease-in;
 
     &:hover {
-        opacity: 0.9;
+        filter: contrast(1.1) saturate(1.2);
 
         img {
             overflow: hidden;
@@ -73,7 +73,7 @@
 }
 
 .portfolio-card__title {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
     font-size: 24px;
     font-weight: 600;
 }
