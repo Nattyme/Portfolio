@@ -639,7 +639,28 @@ h2.grad-border {
 }
 
 .footer {
-  margin-top: auto; /* sticky footer */
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: #333;
+}
+
+.footer__copyright {
+  width: 825px;
+  font-size: 16px;
+  line-height: 1.5; /* 24px */
+  color: #b0b0b0;
+}
+.footer__copyright a {
+  text-decoration: underline;
+  color: #fff;
+}
+.footer__copyright p + * {
+  margin-top: 10px;
+}
+
+.footer__date {
+  line-height: 1.4; /* 22.4px */
+  color: #FFF;
 }
 
 /* Mobile */
