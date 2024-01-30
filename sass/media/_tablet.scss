@@ -1,0 +1,34 @@
+/* Mobile */
+@media (max-width: 899px) {
+    /* Нечетные */
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        padding-left: 44px;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd)::before  {
+        right: 0;
+        left: calc($circleWidth / 2);
+        transform: translateX(-50%);
+    }
+
+    .timeline-item:nth-child(odd)::after  {
+        left: 0;
+        transform: none;
+    }
+
+    /* Четные */
+    .timeline-item:nth-child(even) {
+        margin-left: 0;
+    }
+
+    .timeline-item:nth-child(even)::before {
+        left: calc($circleWidth / 2);
+        transform: translateX(-50%);
+    }
+    
+    .timeline-item:nth-child(even)::after  {
+        transform: none;
+    }
+}

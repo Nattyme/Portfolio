@@ -472,6 +472,9 @@ h2.grad-border {
   content: "";
   position: absolute;
 }
+.timeline-item:first-child::before, .timeline-item:first-child::after {
+  top: 7px;
+}
 .timeline-item::before {
   width: 4px;
   top: 0;
@@ -583,4 +586,34 @@ h2.grad-border {
 .timeline__header {
   margin-bottom: 70px;
   text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 899px) {
+  /* Нечетные */
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    padding-left: 44px;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd)::before {
+    right: 0;
+    left: 17px;
+    transform: translateX(-50%);
+  }
+  .timeline-item:nth-child(odd)::after {
+    left: 0;
+    transform: none;
+  }
+  /* Четные */
+  .timeline-item:nth-child(even) {
+    margin-left: 0;
+  }
+  .timeline-item:nth-child(even)::before {
+    left: 17px;
+    transform: translateX(-50%);
+  }
+  .timeline-item:nth-child(even)::after {
+    transform: none;
+  }
 }/*# sourceMappingURL=main.css.map */

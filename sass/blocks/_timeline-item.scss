@@ -1,3 +1,8 @@
+$circleWidth: 34px;
+$circleHeight: $circleWidth;
+$circleBorder: 4px;
+$lineWidth: 4px;
+
 .timeline-wrapper {
     width: 890px;
     margin-left: auto;
@@ -19,8 +24,12 @@
         position: absolute;
     }
 
+    &:first-child::before, &:first-child::after {
+        top: 7px;
+    } 
+
     &::before {
-        width: 4px;
+        width: $lineWidth;
         top: 0;
         bottom: 0;
         background-color: #e1eef4;
@@ -28,11 +37,11 @@
 
     &::after {
         top: 0;
-        width: 34px;
-        height: 34px;
+        width: $circleWidth;
+        height: $circleHeight;
         border-radius: 50%;
 
-        border: 4px solid #e1eef4;
+        border: $circleBorder solid #e1eef4;
         background-color: #fff;
     }
 
