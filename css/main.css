@@ -185,7 +185,6 @@ h2.grad-border {
   display: none !important;
 }
 
-/* Sticky Footer */
 .nav ul {
   display: flex;
   justify-content: space-between;
@@ -392,7 +391,6 @@ h2.grad-border {
 .portfolio-card:hover img {
   overflow: hidden;
   border: 1px solid #fbdc4d;
-  border-top: -2px;
   transform: scale(1.2);
 }
 .portfolio-card:first-child, .portfolio-card:nth-child(2) {
@@ -638,6 +636,10 @@ h2.grad-border {
   transform: translateX(40%);
   width: 280px;
   height: 243px;
+}
+
+.footer {
+  margin-top: auto; /* sticky footer */
 }
 
 /* Mobile */
