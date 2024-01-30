@@ -336,7 +336,6 @@ h2.grad-border {
 .socials {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   -moz-column-gap: 30px;
        column-gap: 30px;
   transition: filter 0.5s ease-in;
@@ -586,6 +585,59 @@ h2.grad-border {
 .timeline__header {
   margin-bottom: 70px;
   text-align: center;
+}
+
+.contacts {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background: linear-gradient(0deg, #F5FBFF 0%, #F5FBFF 100%), #F4F8F9;
+}
+
+.contacts__header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.contacts__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__list {
+  margin-bottom: 34px;
+  line-height: 1.6;
+}
+.contacts__list li + li {
+  margin-top: 22px;
+}
+.contacts__list span {
+  display: inline-block;
+  width: 103px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.contacts__list a {
+  margin-left: 85px;
+}
+
+.contacts__text {
+  width: 538px;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.6; /* 28.8px */
+}
+.contacts__text p + p {
+  margin-top: 8px;
+}
+
+.contacts__text::before {
+  content: url("./../img/contacts/figure.svg");
+  position: absolute;
+  top: -113px;
+  right: 0;
+  transform: translateX(40%);
+  width: 280px;
+  height: 243px;
 }
 
 /* Mobile */

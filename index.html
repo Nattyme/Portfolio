@@ -34,7 +34,7 @@
 
 	</head>
 	<body>
-        <header class="header-top">
+        <header class="header-top none">
             <div class="container">
                 <div class="header-top__nav">
                     <nav class="nav">
@@ -61,7 +61,7 @@
             </div>
         </header>
 
-        <section class="header">
+        <section class="header none">
 
             <!-- intro -->
             <div class="header-intro">
@@ -162,7 +162,7 @@
             <!--// about -->
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio none">
             <div class="container">
                 <div class="portfolio__content">
                     <div class="portfolio__title">
@@ -234,7 +234,7 @@
             </div>
         </section>
 
-        <section class="timeline">
+        <section class="timeline none">
             <div class="container">
                 <div class="timeline__content">
 
@@ -291,45 +291,54 @@
 
         <section class="contacts">
             <div class="container">
-                <div class="contacts__header">
-                    <h2 class="section-title">Контакты</h2>
-                </div>
-                <div class="contacts__row">
-                    <div class="contacts__column">
-                        <ul class="contacts__list">
-                            <li><span>Email</span><a href="mailto:yurij.kluchevsky@gmail.com">yurij.kluchevsky@gmail.com</a></li>
-                            <li><span>Телефон</span><a href="tel:7980234567">+7 (980) 123-45-67</a></li>
-                        </ul>
-                        <ul class="socials">
-                            <li><a href="tel:89258260741">
-                                <svg class="svg-tg">
-                                    <use href="./img/socials/svgSprite.svg#svg-tg"></use>
-                                </svg>
-                            </a></li>
-                            <li><a href="https://vk.com/natashabalashova">
-                                <svg class="svg-vk">
-                                    <use href="./img/socials/svgSprite.svg#svg-vk"></use>
-                                </svg>
-                            </a></li>
-                            <li><a href="#!">
-                                <svg class="svg-fb">
-                                    <use href="./img/socials/svgSprite.svg#svg-fb"></use>
-                                </svg>
-                            </a></li>
-                            <li><a href="#!">
-                                <object type="image/svg+xml" data="./img/socials/instagram.svg"></object>
-                            </a></li>
-                            <li><a href="tel:89258260741">
-                                <svg class="svg-wa">
-                                    <use href="./img/socials/svgSprite.svg#svg-wa"></use>
-                                </svg>
-                            </a></li>
-                        </ul>
+                <div class="contacts__content">
+                    <div class="contacts__header">
+                        <h2 class="section-title grad-border">Контакты</h2>
                     </div>
-                    <div class="contacts__column">
-                        <div class="contacts__text">
-                            <p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом —  напишите мне.</p>
+                    <div class="contacts__row">
+
+                        <!-- column -->
+                        <div class="contacts__column">
+                            <ul class="contacts__list">
+                                <li><span>Email</span><a class="link" href="mailto:yurij.kluchevsky@gmail.com">yurij.kluchevsky@gmail.com</a></li>
+                                <li><span>Телефон</span><a class="link" href="tel:7980234567">+7 (980) 123-45-67</a></li>
+                            </ul>
+                            <ul class="socials">
+                                <li><a href="tel:89258260741">
+                                    <svg class="svg-tg">
+                                        <use href="./img/socials/svgSprite.svg#svg-tg"></use>
+                                    </svg>
+                                </a></li>
+                                <li><a href="https://vk.com/natashabalashova">
+                                    <svg class="svg-vk">
+                                        <use href="./img/socials/svgSprite.svg#svg-vk"></use>
+                                    </svg>
+                                </a></li>
+                                <li><a href="#!">
+                                    <svg class="svg-fb">
+                                        <use href="./img/socials/svgSprite.svg#svg-fb"></use>
+                                    </svg>
+                                </a></li>
+                                <li><a href="#!">
+                                    <object type="image/svg+xml" data="./img/socials/instagram.svg"></object>
+                                </a></li>
+                                <li><a href="tel:89258260741">
+                                    <svg class="svg-wa">
+                                        <use href="./img/socials/svgSprite.svg#svg-wa"></use>
+                                    </svg>
+                                </a></li>
+                            </ul>
                         </div>
+                        <!--// column -->
+
+                        <!-- column -->
+                        <div class="contacts__column">
+                            <div class="contacts__text">
+                                <p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом &mdash; напишите мне.</p>
+                            </div>
+                        </div>
+                        <!--// column -->
+
                     </div>
                 </div>
             </div>
