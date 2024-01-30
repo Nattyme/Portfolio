@@ -1,0 +1,89 @@
+.timeline-wrapper {
+    width: 890px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-item__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.timeline-item {
+    padding-bottom: 60px;
+    width: 50%;
+    position: relative;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+    }
+
+    &::before {
+        width: 4px;
+        top: 0;
+        bottom: 0;
+        background-color: #e1eef4;
+    }
+
+    &::after {
+        top: 0;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+
+        border: 4px solid #e1eef4;
+        background-color: #fff;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.4; /* 22.4px */
+        margin-top: 8px;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        & + * {
+            margin-top: 0;
+        }
+    }
+
+}
+
+.timeline-item:last-child::before {
+    display: none;
+}
+
+/* Нечетные */
+.timeline-item:nth-child(odd) {
+    padding-right: 51px;
+    text-align: right;
+}
+
+.timeline-item:nth-child(odd)::before  {
+    right: 0;
+    transform: translateX(50%);
+}
+
+.timeline-item:nth-child(odd)::after  {
+    right: 0;
+    transform: translateX(50%);
+}
+
+/* Четные */
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+    padding-left: 51px;
+}
+
+.timeline-item:nth-child(even)::before {
+    left: 0;
+    transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(even)::after  {
+    left: 0;
+    transform: translateX(-50%);
+}
