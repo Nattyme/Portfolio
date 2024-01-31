@@ -39,6 +39,10 @@
     display: flex;
     column-gap: 20px;
 
+    .button:first-child {
+        background-color: $accent-color;
+    }
+
     & > * {
         flex-grow: 0;
     }

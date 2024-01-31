@@ -15,9 +15,12 @@ $lineWidth: 4px;
 }
 
 .timeline-item {
-    padding-bottom: 60px;
     width: 50%;
     position: relative;
+
+    &:not(:last-child) {
+        padding-bottom: 60px;
+    }
 
     &::before, &::after {
         content: "";
