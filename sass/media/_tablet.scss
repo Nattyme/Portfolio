@@ -1,5 +1,10 @@
 /* Mobile */
 @media (max-width: 899px) {
+    .header-top {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
     .nav-mobile, .header-top__social {
         display: none;
     }
