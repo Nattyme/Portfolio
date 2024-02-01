@@ -1,6 +1,5 @@
 .portfolio-card {
     position: relative;
-    top: 0;
     max-width: 350px;
     height: 296px;
     color: $black-color;
@@ -11,7 +10,6 @@
 
         img {
             overflow: hidden;
-            border: 1px solid $accent-color;
             transform: scale(1.2);
         }
     }
