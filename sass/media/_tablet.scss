@@ -34,7 +34,6 @@
     .nav-mobile.nav-mobile--active {
         z-index: 2;
         position: fixed;
-        display: none;
         display: flex;
         justify-content: flex-end;
         top: 0;
@@ -103,6 +102,31 @@
         img {
             height: 430px;
         }
+    }
+    
+    .header-about__column:first-child {
+        width: 354px;
+    }
+    
+    .section-title-42px {
+        font-size: 24px;
+    }
+    
+    .header-about__skills li {
+        font-size: 16px;
+
+        &::before {
+            content: "";
+            padding-right: 0;
+        }
+    }
+    
+    .header-about__socials {
+        margin-bottom: 20px;
+    }
+
+    .socials {
+        column-gap: 20px;
     }
 
     /* Нечетные */

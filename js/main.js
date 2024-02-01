@@ -7,13 +7,14 @@ navIcon.addEventListener('click', function () {
 });
 
 // Находим ссылки внутри мобильной навигации
-const navLinks = document.querySelectorAll('.nav-mobile a');
+const navLinks = document.querySelectorAll('#mobile-nav a');
 
 // Обходим ссылки методом forEach
 navLinks.forEach(function (item) {
 	// Для каждой ссылки добавляем прослушку по событию "Клик"
 	item.addEventListener('click', function () {
+        console.log('click')
 		navIcon.classList.remove('nav-icon--active'); // Убираем активный класс у иконки моб. навигации
-		nav.classList.remove('.nav-mobile--active'); // Убираем активный класс у блока моб. навигации
+		nav.classList.remove('nav-mobile--active'); // Убираем активный класс у блока моб. навигации
 	})
 })

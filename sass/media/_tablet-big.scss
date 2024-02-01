@@ -80,6 +80,43 @@
         }
     }
 
+    .header-about {
+        margin-top: -111px;
+        padding-top: 80px;
+        z-index: 1;
+        position: relative;
+    }
+    
+    .header-about__content {
+        column-gap: 30px;
+    }
+    
+    .header-about__column {
+        
+        &:first-child {
+            width: 495px;
+        }
+    
+        &:last-child {
+            margin-left: 0;
+        }
+    }
+    
+    .header-about__subtitle {
+        margin-bottom: 20px;
+    }
 
+    .section-title-42px {
+        font-size: 32px;
+
+    }
+    
+    .header-about__skills li {
+        font-size: 18px;
+    }
+    
+    .header-about__socials {
+        margin-bottom: 20px;
+    }
 
 }
