@@ -21,16 +21,21 @@
        padding-bottom: 0;
     }
 
-    .title {
-        font-size: 58px;
-    }
-
     .header-intro__title {
         margin-bottom: 20px;
     }
 
+    .title {
+        font-size: 58px;
+    }
+
+    .title.grad-border {
+        background-position: center bottom 10px;
+        background-size: 100% 10px;
+    }
+
     .header-intro__text {
-        padding-top: 8px;
+        padding-top: 5px;
         max-width: 420px;
     }
     
@@ -46,16 +51,6 @@
         }
     }
 
-    .header-intro__img {
-
-        box-shadow: unset;
-
-        img {
-            width: 376px;
-            height: 325px;
-        }
-    }
-
     .button {
         padding-left: 26px;
         padding-right: 26px;
@@ -67,12 +62,24 @@
         font-weight: 700;
     }
 
+    .header-intro__img {
+
+        box-shadow: unset;
+
+        img {
+            width: 376px;
+            height: 325px;
+        }
+    }
+
     .header-banner {
-        margin-top: -156px;
+        margin-top: -85px;
 
         img {
             height: 475px;
         }
     }
+
+
 
 }
