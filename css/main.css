@@ -348,6 +348,10 @@ h2.grad-border {
   margin-top: 15px;
 }
 
+.header-intro__desc-mobile {
+  display: none;
+}
+
 .header-intro__buttons {
   display: flex;
   -moz-column-gap: 20px;
@@ -899,6 +903,9 @@ h2.grad-border {
     height: 250px;
   }
   .header-banner {
+    margin-top: -110px;
+  }
+  .header-banner img {
     height: 430px;
   }
   /* Нечетные */
@@ -926,5 +933,38 @@ h2.grad-border {
   }
   .timeline-item:nth-child(even)::after {
     transform: none;
+  }
+}
+@media (max-width: 767px) {
+  .header-intro__title {
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .title.grad-border {
+    background-position: center bottom 3px;
+    background-size: 100% 8px;
+  }
+  .header-intro__content {
+    flex-direction: column;
+  }
+  .header-intro__img {
+    margin-bottom: 10px;
+  }
+  .header-intro__desc {
+    display: none;
+  }
+  .header-intro__desc-mobile {
+    display: block;
+  }
+  .header-intro__desc-mobile p {
+    line-height: 1.6;
+  }
+  .header-banner {
+    margin-top: 0;
+  }
+  .header-banner img {
+    height: 168px;
   }
 }/*# sourceMappingURL=main.css.map */

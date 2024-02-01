@@ -98,7 +98,11 @@
     }
 
     .header-banner {
-        height: 430px;
+        margin-top: -110px;
+
+        img {
+            height: 430px;
+        }
     }
 
     /* Нечетные */
