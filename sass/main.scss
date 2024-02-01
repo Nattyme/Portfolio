@@ -8,6 +8,9 @@
 
 // Blocks
 @import "./blocks/nav";
+@import "./blocks/logo";
+@import "./blocks/nav-icon";
+@import "./blocks/nav-mobile";
 @import "./blocks/title";
 @import "./blocks/section-title";
 @import "./blocks/header-intro";
@@ -28,4 +31,6 @@
 @import "./sections/footer";
 
 // Media
+@import "./media/tablet-big";
 @import "./media/tablet";
+@import "./media/mobile";
