@@ -7,7 +7,6 @@
 }
 
 .nav-mobile__list {
-    display: flex;
     row-gap: 28px;
     flex-direction: column;
 
@@ -21,4 +20,5 @@
 }
 
 .nav-mobile__contacts {
+    display: none;
 }

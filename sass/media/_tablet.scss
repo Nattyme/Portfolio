@@ -1,6 +1,6 @@
 /* Mobile */
 @media (max-width: 899px) {
-    .nav, .header-top__social {
+    .header-top__social {
         display: none;
     }
 
@@ -8,9 +8,28 @@
         display: flex;
     }
 
-    .nav-mobile {
+    .nav-mobile__contacts {
+        display: block;
+
+        .socials {
+            margin-bottom: 20px;
+            column-gap: 20px;
+
+            svg, object {
+                width: 38px;
+                height: 38px;
+            }
+        }
+
+        .link {
+            font-size: 18px;
+        }
+    }
+
+    .nav-mobile.nav-mobile--active {
         z-index: 2;
         position: fixed;
+        display: none;
         display: flex;
         justify-content: flex-end;
         top: 0;
@@ -22,11 +41,21 @@
     }
 
     .nav-mobile__content {
+        padding: 30px 16px 40px 15px;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         width: 320px;
         background-color: #fff;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 28px;
+        align-items: flex-start;
     }
 
     /* Нечетные */

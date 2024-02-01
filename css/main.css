@@ -264,7 +264,7 @@ h2.grad-border {
 .nav-icon.nav-icon--active {
   z-index: 3;
   position: fixed;
-  top: 40px;
+  top: 30px;
   right: 15px;
 }
 
@@ -274,7 +274,7 @@ h2.grad-border {
 .nav-icon.nav-icon--active .nav-icon__middle::before, .nav-icon.nav-icon--active .nav-icon__middle::after {
   top: 0;
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
 }
 .nav-icon.nav-icon--active .nav-icon__middle::before {
   transform: rotate(45deg);
@@ -288,7 +288,6 @@ h2.grad-border {
 }
 
 .nav-mobile__list {
-  display: flex;
   row-gap: 28px;
   flex-direction: column;
   font-size: 18px;
@@ -296,6 +295,10 @@ h2.grad-border {
 }
 .nav-mobile__list a {
   color: #000;
+}
+
+.nav-mobile__contacts {
+  display: none;
 }
 
 .title {
@@ -753,8 +756,8 @@ h2.grad-border {
 
 @media (max-width: 1139px) {
   .header-top__nav {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .nav ul {
     -moz-column-gap: 50px;
@@ -766,15 +769,31 @@ h2.grad-border {
 }
 /* Mobile */
 @media (max-width: 899px) {
-  .nav, .header-top__social {
+  .header-top__social {
     display: none;
   }
   .logo, .nav-icon {
     display: flex;
   }
-  .nav-mobile {
+  .nav-mobile__contacts {
+    display: block;
+  }
+  .nav-mobile__contacts .socials {
+    margin-bottom: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .nav-mobile__contacts .socials svg, .nav-mobile__contacts .socials object {
+    width: 38px;
+    height: 38px;
+  }
+  .nav-mobile__contacts .link {
+    font-size: 18px;
+  }
+  .nav-mobile.nav-mobile--active {
     z-index: 2;
     position: fixed;
+    display: none;
     display: flex;
     justify-content: flex-end;
     top: 0;
@@ -784,11 +803,19 @@ h2.grad-border {
     background-color: rgba(37, 73, 116, 0.8);
   }
   .nav-mobile__content {
+    padding: 30px 16px 40px 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 320px;
     background-color: #fff;
+  }
+  .nav ul {
+    flex-direction: column;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 28px;
+    align-items: flex-start;
   }
   /* Нечетные */
   .timeline-item:nth-child(odd) {

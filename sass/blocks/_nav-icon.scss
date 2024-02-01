@@ -49,13 +49,12 @@ $height: $lineHeight * 5;
 .nav-icon.nav-icon--active {
     z-index: 3;
     position: fixed;
-    top: 40px;
+    top: 30px;
     right: 15px;
 }
 
 .nav-icon.nav-icon--active .nav-icon__middle {
     background-color: transparent;
-    $color: #fff;
 
     &::before, &::after {
         top: 0;
