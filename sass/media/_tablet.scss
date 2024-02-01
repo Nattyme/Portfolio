@@ -1,6 +1,6 @@
 /* Mobile */
 @media (max-width: 899px) {
-    .header-top__social {
+    .nav-mobile, .header-top__social {
         display: none;
     }
 
@@ -41,7 +41,7 @@
     }
 
     .nav-mobile__content {
-        padding: 30px 16px 40px 15px;
+        padding: 30px 15px 40px;
 
         display: flex;
         flex-direction: column;
