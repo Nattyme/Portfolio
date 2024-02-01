@@ -40,4 +40,17 @@
             height: 168px;
         }
     }
+
+    .header-about {
+        padding-bottom: 40px;
+    }
+
+    .header-about__content {
+        column-gap: 0;
+        flex-direction: column;
+    }
+
+    .header-about__column {
+        margin-bottom: 30px;
+    }
 }

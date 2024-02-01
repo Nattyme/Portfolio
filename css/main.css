@@ -1014,4 +1014,15 @@ h2.grad-border {
   .header-banner img {
     height: 168px;
   }
+  .header-about {
+    padding-bottom: 40px;
+  }
+  .header-about__content {
+    -moz-column-gap: 0;
+         column-gap: 0;
+    flex-direction: column;
+  }
+  .header-about__column {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
