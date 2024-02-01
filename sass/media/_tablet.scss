@@ -129,6 +129,65 @@
         column-gap: 20px;
     }
 
+    .portfolio {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .portfolio__title {
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .portfolio__cards {
+        row-gap: 20px;
+    }
+
+    .portfolio-card {
+        max-width: 226px;
+        height: 213px;
+    }
+
+    .portfolio-card__img img {
+        width: 226px;
+        height: 140px;
+    }
+    
+    .portfolio-card__text {
+        height: 63px;
+    }
+
+    .portfolio-card:first-child,
+    .portfolio-card:nth-child(2) {
+        max-width: 354px;
+        height: 235px;
+    
+        .portfolio-card__img {
+            margin-bottom: 10px;
+        }
+    
+        img {
+            width: 354px;
+            height: 180px;
+        }
+
+        .portfolio-card__text {
+            height: 58px;
+        }
+
+        .portfolio-card__title {
+            margin-bottom: 4px;
+            font-size: 18px;
+        }
+
+        .portfolio-card__desc {
+            font-size: 14px;
+        }
+    }
+
     /* Нечетные */
     .timeline-item:nth-child(odd) {
         padding-right: 0;
