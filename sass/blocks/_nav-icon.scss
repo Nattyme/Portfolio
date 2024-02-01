@@ -1,5 +1,5 @@
 // Ширина и высота линии в иконке
-$lineWidth: 30px;
+$lineWidth: 40px;
 $lineHeight: 5px;
 $color: rgb(0, 0, 0);
 
@@ -18,9 +18,6 @@ $height: $lineHeight * 5;
 
     cursor: pointer;
 
-    @media (max-width: 899px) {
-        display: flex;
-    }
 }
 
 .nav-icon__middle {
@@ -50,6 +47,7 @@ $height: $lineHeight * 5;
 
 /* Active state */
 .nav-icon.nav-icon--active {
+    z-index: 3;
     position: fixed;
     top: 40px;
     right: 15px;

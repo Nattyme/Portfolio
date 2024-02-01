@@ -1,6 +1,34 @@
 /* Mobile */
 @media (max-width: 899px) {
+    .nav, .header-top__social {
+        display: none;
+    }
+
+    .logo, .nav-icon {
+        display: flex;
+    }
+
+    .nav-mobile {
+        z-index: 2;
+        position: fixed;
+        display: flex;
+        justify-content: flex-end;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
     
+        background-color: rgba(37, 73, 116, 0.8);
+    }
+
+    .nav-mobile__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 320px;
+        background-color: #fff;
+    }
+
     /* Нечетные */
     .timeline-item:nth-child(odd) {
         padding-right: 0;

@@ -1,8 +1,8 @@
 .nav-mobile {
+    display: none;
 }
 
 .nav-mobile__content {
-
     
 }
 
@@ -13,7 +13,11 @@
 
     font-size: 18px;
     font-weight: 600;
-    color: #000;
+
+    a {
+        color: #000;
+    }
+  
 }
 
 .nav-mobile__contacts {
