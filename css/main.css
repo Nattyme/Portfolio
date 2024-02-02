@@ -1226,4 +1226,24 @@ h2.grad-border {
   .portfolio-card:nth-child(2) .portfolio-card__desc {
     font-size: 14px;
   }
+  /****** Timeline ******/
+  .timeline-wrapper {
+    width: 246px;
+  }
+  .timeline-item__title {
+    font-size: 20px;
+  }
+  .timeline-item:first-child::before, .timeline-item:first-child::after {
+    top: 0;
+  }
+  .timeline-item p {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  .timeline-item p + * {
+    margin-top: 10px;
+  }
+  .timeline-item p + p {
+    margin-top: 7px;
+  }
 }/*# sourceMappingURL=main.css.map */
