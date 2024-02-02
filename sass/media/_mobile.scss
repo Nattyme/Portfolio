@@ -136,4 +136,63 @@
         }
     
     }
+
+     /***** Contacts *****/
+    h2.grad-border {
+        // background-position: center bottom 3px;
+    }
+
+    .contacts__row {
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+    
+    .contacts__list {
+    
+        li + li {
+            margin-top: 10px;
+        }
+    
+        span {
+            display: block;
+            width: unset;
+            font-size: 16px;
+        }
+    
+        a {
+            margin-left: 0;
+            font-size: 16px;
+        }
+    }
+
+    .socials object,
+    .socials svg {
+        height: 38px;
+        width: 38px;
+    }
+    
+    .contacts__text {
+        width: 290px;
+    
+        font-size: 14px;
+
+        p + p {
+            margin-top: 5px;
+        }
+    }
+    
+    .contacts__text::before {
+        content: "";
+    }
+
+    /***** Footer *****/
+    .footer__copyright {
+        width: unset;
+    }
+
+    .footer__text {
+        p + p {
+            margin-top: 15px;
+        }
+    }
 }

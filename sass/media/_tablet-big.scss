@@ -277,4 +277,19 @@
         top: -95px;
         transform: unset;
     }
+
+    /***** Footer *****/
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .footer__copyright {
+        font-size: 14px;
+    }
+    
+    .footer__date {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
 }

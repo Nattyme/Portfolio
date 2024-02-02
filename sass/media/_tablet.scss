@@ -288,4 +288,14 @@
     .contacts__text::before {
         content: "";
     }
+
+
+    /***** Footer *****/
+    .footer__copyright {
+        width: 738px;
+    }
+
+    .footer__text {
+        line-height: 2;
+    }
 }
