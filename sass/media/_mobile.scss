@@ -53,4 +53,52 @@
     .header-about__column {
         margin-bottom: 30px;
     }
+    
+    .portfolio__cards {
+        row-gap: 30px;
+        column-gap: 0;
+    }
+
+    .portfolio-card {
+        width: 290px;
+        height: 235px;
+    }
+
+    .portfolio-card__img  {
+        width: 290px;
+        height: 180px;
+
+        img {
+            width: 290px;
+            height: 180px;
+        }
+    }
+    
+    .portfolio-card__text {
+        height: 45px;
+    }
+
+    .portfolio-card:first-child,
+    .portfolio-card:nth-child(2) {
+        max-width: 290px;
+        height: 235px;
+    
+        img {
+            width: 100%;
+            height: 180px;
+        }
+
+        .portfolio-card__text {
+            height: 58px;
+        }
+
+        .portfolio-card__title {
+            margin-bottom: 4px;
+            font-size: 18px;
+        }
+
+        .portfolio-card__desc {
+            font-size: 14px;
+        }
+    }
 }

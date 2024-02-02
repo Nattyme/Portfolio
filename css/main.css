@@ -1135,4 +1135,47 @@ h2.grad-border {
   .header-about__column {
     margin-bottom: 30px;
   }
+  .portfolio__cards {
+    row-gap: 30px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .portfolio-card {
+    width: 290px;
+    height: 235px;
+  }
+  .portfolio-card__img {
+    width: 290px;
+    height: 180px;
+  }
+  .portfolio-card__img img {
+    width: 290px;
+    height: 180px;
+  }
+  .portfolio-card__text {
+    height: 45px;
+  }
+  .portfolio-card:first-child,
+  .portfolio-card:nth-child(2) {
+    max-width: 290px;
+    height: 235px;
+  }
+  .portfolio-card:first-child img,
+  .portfolio-card:nth-child(2) img {
+    width: 100%;
+    height: 180px;
+  }
+  .portfolio-card:first-child .portfolio-card__text,
+  .portfolio-card:nth-child(2) .portfolio-card__text {
+    height: 58px;
+  }
+  .portfolio-card:first-child .portfolio-card__title,
+  .portfolio-card:nth-child(2) .portfolio-card__title {
+    margin-bottom: 4px;
+    font-size: 18px;
+  }
+  .portfolio-card:first-child .portfolio-card__desc,
+  .portfolio-card:nth-child(2) .portfolio-card__desc {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */
