@@ -230,4 +230,51 @@
         }
     
     }
+
+    /***** Contacts *****/
+    .contacts {
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+    
+    .contacts__header {
+        margin-bottom: 40px;
+    }
+
+    h2.grad-border {
+        background-position: center bottom 3px;
+    }
+    
+    .contacts__list {
+        margin-bottom: 25px;
+    
+        li + li {
+            margin-top: 16px;
+        }
+    
+        span {
+            width: 85px;
+            font-size: 18px;
+        }
+    
+        a {
+            margin-left: 36px;
+            font-size: 18px;
+        }
+    }
+    
+    .contacts__text {
+        width: 420px;
+    
+        font-size: 16px;
+
+        p + p {
+            margin-top: 5px;
+        }
+    }
+    
+    .contacts__text::before {
+        top: -95px;
+        transform: unset;
+    }
 }

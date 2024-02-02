@@ -936,6 +936,42 @@ h2.grad-border {
   .timeline-item p + p {
     margin-top: 7px;
   }
+  /***** Contacts *****/
+  .contacts {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  .contacts__header {
+    margin-bottom: 40px;
+  }
+  h2.grad-border {
+    background-position: center bottom 3px;
+  }
+  .contacts__list {
+    margin-bottom: 25px;
+  }
+  .contacts__list li + li {
+    margin-top: 16px;
+  }
+  .contacts__list span {
+    width: 85px;
+    font-size: 18px;
+  }
+  .contacts__list a {
+    margin-left: 36px;
+    font-size: 18px;
+  }
+  .contacts__text {
+    width: 420px;
+    font-size: 16px;
+  }
+  .contacts__text p + p {
+    margin-top: 5px;
+  }
+  .contacts__text::before {
+    top: -95px;
+    transform: unset;
+  }
 }
 /* Mobile */
 @media (max-width: 899px) {
