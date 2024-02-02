@@ -4,8 +4,34 @@
         height: 36px;
     }
 
+    .svg-ln {
+        width: 28px;
+        height: 28px;
+    }
+
+    .header-about .socials {
+        column-gap: 20px;
+        svg, object {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    .link {
+        font-size: 18px;
+    }
+
+    h2.grad-border {
+        background-position: center bottom 6px;
+    }
+
     .header-top {
         padding-bottom: 60px;
+    }
+
+    .header-top__social {
+        align-items: flex-start;
+        column-gap: 29px;
     }
 
     .nav ul {
@@ -22,7 +48,7 @@
     }
 
     .header-intro__title {
-        margin-bottom: 20px;
+        margin-bottom: 21px;
     }
 
     .title {
@@ -56,10 +82,8 @@
         padding-right: 26px;
         height: 58px;
 
-        border-radius: 50px;
         line-height: 58px;
         font-size: 20px;
-        font-weight: 700;
     }
 
     .header-intro__img {
@@ -81,8 +105,9 @@
     }
 
     .header-about {
-        margin-top: -111px;
+        margin-top: -92px;
         padding-top: 80px;
+        padding-bottom: 60px;
         z-index: 1;
         position: relative;
     }
@@ -116,9 +141,8 @@
     }
     
     .header-about__socials {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
-
     /**** Portfolio ****/
     .portfolio {
         padding-top: 40px;
@@ -210,39 +234,35 @@
         font-size: 20px;
     }
 
-    .timeline-item { 
+    // .timeline-item { 
 
-        &:first-child::before, &:first-child::after {
-            top:1;
-        }
+    //     &:first-child::before, &:first-child::after {
+    //         top: 1px;
+    //     }
 
-        p {
-            font-size: 14px;
-            margin-top: 7px;
-        } 
+    //     p {
+    //         font-size: 14px;
+    //         margin-top: 7px;
+    //     } 
     
-        p + * {
-            margin-top: 10px;
-        }
+    //     p + * {
+    //         margin-top: 10px;
+    //     }
 
-        p + p {
-            margin-top: 7px;
-        }
+    //     p + p {
+    //         margin-top: 7px;
+    //     }
     
-    }
+    // }
 
     /***** Contacts *****/
     .contacts {
         padding-top: 40px;
-        padding-bottom: 70px;
+        padding-bottom: 66px;
     }
     
     .contacts__header {
         margin-bottom: 40px;
-    }
-
-    h2.grad-border {
-        background-position: center bottom 3px;
     }
     
     .contacts__list {

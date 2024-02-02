@@ -1,5 +1,27 @@
 /* Mobile */
 @media (max-width: 899px) {
+    h2.grad-border {
+        background-position: center bottom 3px;
+    }
+
+    .socials {
+        column-gap: 20px;
+
+        svg, object {
+            width: 38px;
+            height: 38px;
+        }
+    }
+    
+    .header-about .socials {
+        column-gap: 20px;
+
+        svg, object {
+            width: 38px;
+            height: 38px;
+        }
+    }
+
     .header-top {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -66,12 +88,19 @@
         margin-bottom: 10px;
     }
 
+    .header-intro__text {
+        padding-top: 3px;
+    }
+
     .title {
         font-size: 42px;
     }
 
+    .header-intro__content {
+        align-items: center;
+    }
+
     .header-intro__text {
-        padding-top: 0;
         max-width: 354px;
     }
 
@@ -97,11 +126,23 @@
     }
 
     .header-banner {
-        margin-top: -110px;
+        margin-top: -90px;
 
         img {
-            height: 430px;
+            height: 403px;
         }
+    }
+
+    .header-about {
+        padding-bottom: 40px;
+    }
+
+    .header-about__subtitle {
+        margin-bottom: 23px;
+    }
+
+    .header-about__socials {
+        margin-bottom: 15px;
     }
     
     .header-about__column:first-child {
@@ -119,14 +160,6 @@
             content: "";
             padding-right: 0;
         }
-    }
-    
-    .header-about__socials {
-        margin-bottom: 20px;
-    }
-
-    .socials {
-        column-gap: 20px;
     }
 
     .portfolio {
@@ -147,7 +180,7 @@
     }
 
     .portfolio-card {
-        max-width: 226px;
+        width: 226px;
         height: 213px;
     }
 
@@ -158,6 +191,10 @@
     
     .portfolio-card__text {
         height: 63px;
+    }
+
+    .portfolio-card__text h3, .portfolio-card__text p {
+        -webkit-line-clamp: 2;
     }
 
     .portfolio-card:first-child,
@@ -209,6 +246,14 @@
             padding-bottom: 45px;
         }
 
+        strong {
+            font-size: 14px;
+        }
+
+    }
+
+    .timeline-item__title.grad-border {
+        background-position: center bottom 2px;
     }
 
     /* Нечетные */
@@ -246,18 +291,24 @@
 
      /***** Contacts *****/
      .contacts {
-        padding-bottom: 40px;
+        padding-bottom: 35px;
     }
-    
+
     .contacts__header {
         margin-bottom: 20px;
     }
 
     h2.grad-border {
-        // background-position: center bottom 3px;
+        background-position: center bottom 4px;
     }
-    
+
+    .contacts__row {
+        justify-content: flex-start;
+    }
+
+
     .contacts__list {
+        margin-bottom: 28px;
     
         li + li {
             margin-top: 10px;
@@ -274,8 +325,9 @@
             font-size: 16px;
         }
     }
-    
+   
     .contacts__text {
+        margin-left: 114px;
         width: 290px;
     
         font-size: 14px;
@@ -286,7 +338,7 @@
     }
     
     .contacts__text::before {
-        content: "";
+        display: none;
     }
 
 
@@ -296,6 +348,10 @@
     }
 
     .footer__text {
-        line-height: 2;
+        line-height: 1.5;
+
+        p + p {
+            margin-top: 15px;
+        }
     }
 }
