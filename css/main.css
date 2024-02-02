@@ -1173,6 +1173,35 @@ h2.grad-border {
   .timeline-item:nth-child(even)::after {
     transform: none;
   }
+  /***** Contacts *****/
+  .contacts {
+    padding-bottom: 40px;
+  }
+  .contacts__header {
+    margin-bottom: 20px;
+  }
+  .contacts__list li + li {
+    margin-top: 10px;
+  }
+  .contacts__list span {
+    display: block;
+    width: unset;
+    font-size: 16px;
+  }
+  .contacts__list a {
+    margin-left: 0;
+    font-size: 16px;
+  }
+  .contacts__text {
+    width: 290px;
+    font-size: 14px;
+  }
+  .contacts__text p + p {
+    margin-top: 5px;
+  }
+  .contacts__text::before {
+    content: "";
+  }
 }
 @media (max-width: 767px) {
   .header-intro__title {
