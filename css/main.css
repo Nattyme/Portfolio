@@ -1037,7 +1037,7 @@ h2.grad-border {
   .nav-mobile__contacts .link {
     font-size: 18px;
   }
-  .nav-mobile.nav-mobile--active {
+  .nav-mobile {
     z-index: 2;
     position: fixed;
     display: flex;
@@ -1047,6 +1047,11 @@ h2.grad-border {
     right: 0;
     width: 100%;
     background-color: rgba(37, 73, 116, 0.8);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-mobile.nav-mobile--active {
+    transform: translateX(0);
   }
   .nav-mobile__content {
     padding: 30px 15px 40px;
