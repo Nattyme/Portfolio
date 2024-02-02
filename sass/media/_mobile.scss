@@ -104,7 +104,9 @@
 
     /****** Timeline ******/
     .timeline-wrapper {
-        width: 246px;
+        width: 100%;
+        margin-left: unset;
+        margin-right: unset;
     }
     
     .timeline-item__title {
@@ -127,6 +129,10 @@
 
         p + p {
             margin-top: 7px;
+        }
+
+        span {
+            font-size: 14px;
         }
     
     }

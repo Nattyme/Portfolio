@@ -208,10 +208,7 @@
         &:not(:last-child) {
             padding-bottom: 45px;
         }
-    }
 
-    .timeline-item__title {
-        font-size: 20px;
     }
 
     /* Нечетные */
@@ -235,6 +232,7 @@
     /* Четные */
     .timeline-item:nth-child(even) {
         margin-left: 0;
+        padding-left: 44px;
     }
 
     .timeline-item:nth-child(even)::before {
