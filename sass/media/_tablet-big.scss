@@ -119,6 +119,7 @@
         margin-bottom: 20px;
     }
 
+    /**** Portfolio ****/
     .portfolio {
         padding-top: 40px;
         padding-bottom: 61px;
@@ -190,5 +191,44 @@
             font-size: 16px;
         }
     }
+
+    /****** Timeline ******/
+    .timeline__content {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
     
+    .timeline__header {
+        margin-bottom: 50px;
+    }
+
+    .timeline-wrapper {
+        width: 774px;
+    }
+    
+    .timeline-item__title {
+        font-size: 20px;
+    }
+    
+    .timeline-item { 
+
+        &:first-child::before, &:first-child::after {
+            top:1;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 7px;
+        } 
+    
+        p + * {
+            margin-top: 10px;
+        }
+
+        p + p {
+            margin-top: 7px;
+        }
+    
+    }
+
 }

@@ -847,6 +847,7 @@ h2.grad-border {
   .header-about__socials {
     margin-bottom: 20px;
   }
+  /**** Portfolio ****/
   .portfolio {
     padding-top: 40px;
     padding-bottom: 61px;
@@ -907,6 +908,33 @@ h2.grad-border {
   .portfolio-card:first-child .portfolio-card__desc,
   .portfolio-card:nth-child(2) .portfolio-card__desc {
     font-size: 16px;
+  }
+  /****** Timeline ******/
+  .timeline__content {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .timeline__header {
+    margin-bottom: 50px;
+  }
+  .timeline-wrapper {
+    width: 774px;
+  }
+  .timeline-item__title {
+    font-size: 20px;
+  }
+  .timeline-item:first-child::before, .timeline-item:first-child::after {
+    top: 1;
+  }
+  .timeline-item p {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+  .timeline-item p + * {
+    margin-top: 10px;
+  }
+  .timeline-item p + p {
+    margin-top: 7px;
   }
 }
 /* Mobile */
@@ -1064,6 +1092,26 @@ h2.grad-border {
   .portfolio-card:first-child .portfolio-card__desc,
   .portfolio-card:nth-child(2) .portfolio-card__desc {
     font-size: 14px;
+  }
+  /****** Timeline ******/
+  .timeline__content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .timeline__header {
+    margin-bottom: 40px;
+  }
+  .timeline-wrapper {
+    width: 384px;
+  }
+  .timeline-item {
+    width: unset;
+  }
+  .timeline-item:not(:last-child) {
+    padding-bottom: 45px;
+  }
+  .timeline-item__title {
+    font-size: 20px;
   }
   /* Нечетные */
   .timeline-item:nth-child(odd) {

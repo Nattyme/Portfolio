@@ -188,6 +188,32 @@
         }
     }
 
+     /****** Timeline ******/
+     .timeline__content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .timeline__header {
+        margin-bottom: 40px;
+    }
+
+    .timeline-wrapper {
+        width: 384px;
+    }
+
+    .timeline-item {
+        width: unset;
+
+        &:not(:last-child) {
+            padding-bottom: 45px;
+        }
+    }
+
+    .timeline-item__title {
+        font-size: 20px;
+    }
+
     /* Нечетные */
     .timeline-item:nth-child(odd) {
         padding-right: 0;
