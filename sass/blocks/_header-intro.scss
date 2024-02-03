@@ -21,6 +21,10 @@
 .header-intro__desc {
     margin-bottom: 30px;
     max-width: 542px;
+    
+    &:last-of-type {
+        display: none;
+    }
 
     p {
         font-size: 22px;

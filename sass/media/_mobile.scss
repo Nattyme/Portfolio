@@ -8,6 +8,10 @@
         background-size: 100% 8px;
     }
 
+    .header-top .container {
+        width: 100%;
+    }
+
     .header-intro__title {
         margin-bottom: 18px;
     }
@@ -17,22 +21,21 @@
         flex-direction: column;
     }
 
+    .header-intro__desc {
+        &--main {
+            display: none;
+        }
+
+        &:last-child {
+            display: block;
+        }
+    }
+
     .header-intro__img {
         margin-bottom: 10px;
     }
 
-    .header-intro__desc {
-        display: none;
-    }
-
-    .header-intro__desc-mobile {
-        display: block;
-
-        p {
-            line-height: 1.6;
-        }
-    }
-
+    
     .header-banner {
         margin-top: 0;
 

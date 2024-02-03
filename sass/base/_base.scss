@@ -18,6 +18,10 @@ body > * {
 	flex-shrink: 0; /* sticky footer */
 }
 
+.lock {
+    overflow: hidden;
+}
+
 /* Grid styles */
 
 .container {
