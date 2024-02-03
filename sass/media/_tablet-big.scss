@@ -1,4 +1,39 @@
 @media (max-width: 1139px) {
+    .title {
+        font-size: 58px;
+    }
+
+    .title.grad-border {
+        background-position: center bottom 10px;
+        background-size: 100% 10px;
+    }
+
+    .section-title {
+        font-size: 42px;
+    }
+
+    h2.grad-border {
+        background-position: center bottom 6px;
+    }
+
+    .section-title-42px {
+        font-size: 32px;
+
+    }
+
+    .link {
+        font-size: 18px;
+    }
+
+    .button {
+        padding-left: 26px;
+        padding-right: 26px;
+        height: 58px;
+
+        line-height: 58px;
+        font-size: 20px;
+    }
+
     .svg-git {
         width: 36px;
         height: 36px;
@@ -11,18 +46,11 @@
 
     .header-about .socials {
         column-gap: 20px;
+
         svg, object {
             width: 48px;
             height: 48px;
         }
-    }
-
-    .link {
-        font-size: 18px;
-    }
-
-    h2.grad-border {
-        background-position: center bottom 6px;
     }
 
     .header-top {
@@ -51,15 +79,6 @@
         margin-bottom: 21px;
     }
 
-    .title {
-        font-size: 58px;
-    }
-
-    .title.grad-border {
-        background-position: center bottom 10px;
-        background-size: 100% 10px;
-    }
-
     .header-intro__text {
         padding-top: 5px;
         max-width: 420px;
@@ -75,15 +94,6 @@
         p + p {
             margin-top: 10px;
         }
-    }
-
-    .button {
-        padding-left: 26px;
-        padding-right: 26px;
-        height: 58px;
-
-        line-height: 58px;
-        font-size: 20px;
     }
 
     .header-intro__img {
@@ -130,11 +140,6 @@
     .header-about__subtitle {
         margin-bottom: 20px;
     }
-
-    .section-title-42px {
-        font-size: 32px;
-
-    }
     
     .header-about__skills li {
         font-size: 18px;
@@ -143,6 +148,7 @@
     .header-about__socials {
         margin-bottom: 16px;
     }
+
     /**** Portfolio ****/
     .portfolio {
         padding-top: 40px;
@@ -152,15 +158,13 @@
     .portfolio__title {
         margin-bottom: 40px;
     }
-
-    .section-title {
-        font-size: 42px;
-    }
     
     .portfolio__cards {
         row-gap: 40px;
     }
 
+    /**** Portfolio-card ****/
+    
     .portfolio-card {
         max-width: 270px;
         height: 224px;
@@ -234,26 +238,25 @@
         font-size: 20px;
     }
 
-    // .timeline-item { 
+    .timeline-item { 
 
-    //     &:first-child::before, &:first-child::after {
-    //         top: 1px;
-    //     }
+        &:first-child::before, &:first-child::after {
+            top: 1px;
+        }
 
-    //     p {
-    //         font-size: 14px;
-    //         margin-top: 7px;
-    //     } 
+        p {
+            margin-top: 7px;
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        } 
+
+        p, strong {
+            font-size: 14px;
+        }
     
-    //     p + * {
-    //         margin-top: 10px;
-    //     }
-
-    //     p + p {
-    //         margin-top: 7px;
-    //     }
-    
-    // }
+    }
 
     /***** Contacts *****/
     .contacts {

@@ -1,7 +1,27 @@
 /* Mobile */
 @media (max-width: 899px) {
+    .title {
+        font-size: 42px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-title-42px {
+        font-size: 24px;
+    }
+
+    .logo, .nav-icon {
+        display: flex;
+    }
+
     h2.grad-border {
-        background-position: center bottom 3px;
+        background-position: center bottom 4px;
+    }
+
+    .button {
+        display: none;
     }
 
     .socials {
@@ -26,13 +46,10 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    
+
+    /**** Mobile nav ****/
     .nav-mobile, .header-top__social {
         display: none;
-    }
-
-    .logo, .nav-icon {
-        display: flex;
     }
 
     .nav-mobile__contacts {
@@ -100,10 +117,6 @@
         padding-top: 3px;
     }
 
-    .title {
-        font-size: 42px;
-    }
-
     .header-intro__content {
         align-items: center;
     }
@@ -122,10 +135,6 @@
         p + p {
             margin-top: 5px;
         }
-    }
-
-    .button {
-        display: none;
     }
 
     .header-intro__img img {
@@ -157,10 +166,6 @@
         width: 354px;
     }
     
-    .section-title-42px {
-        font-size: 24px;
-    }
-    
     .header-about__skills li {
         font-size: 16px;
 
@@ -170,6 +175,7 @@
         }
     }
 
+    /**** Portfolio ****/
     .portfolio {
         padding-top: 30px;
         padding-bottom: 40px;
@@ -179,14 +185,12 @@
         margin-bottom: 30px;
     }
 
-    .section-title {
-        font-size: 32px;
-    }
     
     .portfolio__cards {
         row-gap: 20px;
     }
 
+     /**** Portfolio-card ****/
     .portfolio-card {
         width: 226px;
         height: 213px;
@@ -254,10 +258,6 @@
             padding-bottom: 45px;
         }
 
-        strong {
-            font-size: 14px;
-        }
-
     }
 
     .timeline-item__title.grad-border {
@@ -304,10 +304,6 @@
 
     .contacts__header {
         margin-bottom: 20px;
-    }
-
-    h2.grad-border {
-        background-position: center bottom 4px;
     }
 
     .contacts__row {

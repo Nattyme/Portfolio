@@ -763,6 +763,32 @@ h2.grad-border {
 }
 
 @media (max-width: 1139px) {
+  .title {
+    font-size: 58px;
+  }
+  .title.grad-border {
+    background-position: center bottom 10px;
+    background-size: 100% 10px;
+  }
+  .section-title {
+    font-size: 42px;
+  }
+  h2.grad-border {
+    background-position: center bottom 6px;
+  }
+  .section-title-42px {
+    font-size: 32px;
+  }
+  .link {
+    font-size: 18px;
+  }
+  .button {
+    padding-left: 26px;
+    padding-right: 26px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 20px;
+  }
   .svg-git {
     width: 36px;
     height: 36px;
@@ -778,12 +804,6 @@ h2.grad-border {
   .header-about .socials svg, .header-about .socials object {
     width: 48px;
     height: 48px;
-  }
-  .link {
-    font-size: 18px;
-  }
-  h2.grad-border {
-    background-position: center bottom 6px;
   }
   .header-top {
     padding-bottom: 60px;
@@ -807,13 +827,6 @@ h2.grad-border {
   .header-intro__title {
     margin-bottom: 21px;
   }
-  .title {
-    font-size: 58px;
-  }
-  .title.grad-border {
-    background-position: center bottom 10px;
-    background-size: 100% 10px;
-  }
   .header-intro__text {
     padding-top: 5px;
     max-width: 420px;
@@ -826,13 +839,6 @@ h2.grad-border {
   }
   .header-intro__desc p + p {
     margin-top: 10px;
-  }
-  .button {
-    padding-left: 26px;
-    padding-right: 26px;
-    height: 58px;
-    line-height: 58px;
-    font-size: 20px;
   }
   .header-intro__img {
     box-shadow: unset;
@@ -867,9 +873,6 @@ h2.grad-border {
   .header-about__subtitle {
     margin-bottom: 20px;
   }
-  .section-title-42px {
-    font-size: 32px;
-  }
   .header-about__skills li {
     font-size: 18px;
   }
@@ -884,12 +887,10 @@ h2.grad-border {
   .portfolio__title {
     margin-bottom: 40px;
   }
-  .section-title {
-    font-size: 42px;
-  }
   .portfolio__cards {
     row-gap: 40px;
   }
+  /**** Portfolio-card ****/
   .portfolio-card {
     max-width: 270px;
     height: 224px;
@@ -952,6 +953,18 @@ h2.grad-border {
   .timeline-item__title {
     font-size: 20px;
   }
+  .timeline-item:first-child::before, .timeline-item:first-child::after {
+    top: 1px;
+  }
+  .timeline-item p {
+    margin-top: 7px;
+  }
+  .timeline-item p:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .timeline-item p, .timeline-item strong {
+    font-size: 14px;
+  }
   /***** Contacts *****/
   .contacts {
     padding-top: 40px;
@@ -1000,8 +1013,23 @@ h2.grad-border {
 }
 /* Mobile */
 @media (max-width: 899px) {
+  .title {
+    font-size: 42px;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .section-title-42px {
+    font-size: 24px;
+  }
+  .logo, .nav-icon {
+    display: flex;
+  }
   h2.grad-border {
-    background-position: center bottom 3px;
+    background-position: center bottom 4px;
+  }
+  .button {
+    display: none;
   }
   .socials {
     -moz-column-gap: 20px;
@@ -1023,11 +1051,9 @@ h2.grad-border {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  /**** Mobile nav ****/
   .nav-mobile, .header-top__social {
     display: none;
-  }
-  .logo, .nav-icon {
-    display: flex;
   }
   .nav-mobile__contacts {
     display: block;
@@ -1081,9 +1107,6 @@ h2.grad-border {
   .header-intro__text {
     padding-top: 3px;
   }
-  .title {
-    font-size: 42px;
-  }
   .header-intro__content {
     align-items: center;
   }
@@ -1098,9 +1121,6 @@ h2.grad-border {
   }
   .header-intro__desc p + p {
     margin-top: 5px;
-  }
-  .button {
-    display: none;
   }
   .header-intro__img img {
     width: 290px;
@@ -1124,9 +1144,6 @@ h2.grad-border {
   .header-about__column:first-child {
     width: 354px;
   }
-  .section-title-42px {
-    font-size: 24px;
-  }
   .header-about__skills li {
     font-size: 16px;
   }
@@ -1134,6 +1151,7 @@ h2.grad-border {
     content: "";
     padding-right: 0;
   }
+  /**** Portfolio ****/
   .portfolio {
     padding-top: 30px;
     padding-bottom: 40px;
@@ -1141,12 +1159,10 @@ h2.grad-border {
   .portfolio__title {
     margin-bottom: 30px;
   }
-  .section-title {
-    font-size: 32px;
-  }
   .portfolio__cards {
     row-gap: 20px;
   }
+  /**** Portfolio-card ****/
   .portfolio-card {
     width: 226px;
     height: 213px;
@@ -1205,9 +1221,6 @@ h2.grad-border {
   .timeline-item:not(:last-child) {
     padding-bottom: 45px;
   }
-  .timeline-item strong {
-    font-size: 14px;
-  }
   .timeline-item__title.grad-border {
     background-position: center bottom 2px;
   }
@@ -1244,9 +1257,6 @@ h2.grad-border {
   }
   .contacts__header {
     margin-bottom: 20px;
-  }
-  h2.grad-border {
-    background-position: center bottom 4px;
   }
   .contacts__row {
     justify-content: flex-start;
@@ -1305,7 +1315,7 @@ h2.grad-border {
   .header-intro__content {
     flex-direction: column;
   }
-  .header-intro__desc--main {
+  .header-intro__desc:nth-child(2) {
     display: none;
   }
   .header-intro__desc:last-child {
@@ -1341,6 +1351,7 @@ h2.grad-border {
   .header-about__column:last-child {
     margin-bottom: 0;
   }
+  /**** Portfolio ****/
   .portfolio__cards {
     row-gap: 30px;
     -moz-column-gap: 0;

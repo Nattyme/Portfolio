@@ -16,25 +16,30 @@
         margin-bottom: 18px;
     }
 
-
     .header-intro__content {
         flex-direction: column;
     }
 
     .header-intro__desc {
-        &--main {
+        &:nth-child(2) {
             display: none;
         }
 
         &:last-child {
             display: block;
         }
+        // &--main {
+        //     display: none;
+        // }
+
+        // &:last-child {
+        //     display: block;
+        // }
     }
 
     .header-intro__img {
         margin-bottom: 10px;
     }
-
     
     .header-banner {
         margin-top: 0;
@@ -70,6 +75,7 @@
         margin-bottom: 0;
     }
 
+    /**** Portfolio ****/
     .portfolio__cards {
         row-gap: 30px;
         column-gap: 0;
