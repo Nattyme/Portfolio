@@ -10,7 +10,12 @@
 
     transition: background-color 0.2s ease-in;
 
+    &--accent {
+        background-color: $accent-color;
+    }
+
     &:hover {
         background: #fbdc4d;
     }
 }
+

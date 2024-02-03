@@ -39,17 +39,9 @@
     }
 }
 
-.header-intro__desc-mobile {
-    display: none;
-}
-
 .header-intro__buttons {
     display: flex;
     column-gap: 20px;
-
-    .button:first-child {
-        background-color: $accent-color;
-    }
 
     & > * {
         flex-grow: 0;

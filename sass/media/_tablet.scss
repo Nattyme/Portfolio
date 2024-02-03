@@ -1,4 +1,4 @@
-/* Mobile */
+/* Tablet */
 @media (max-width: 899px) {
     .title {
         font-size: 42px;
@@ -58,10 +58,6 @@
 
         .socials {
             margin-bottom: 20px;
-        }
-
-        .link {
-            font-size: 18px;
         }
     }
 
@@ -339,7 +335,6 @@
     .contacts__text::before {
         display: none;
     }
-
 
     /***** Footer *****/
     .footer__copyright {
