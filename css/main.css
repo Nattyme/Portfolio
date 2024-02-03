@@ -1081,7 +1081,7 @@ h2.grad-border {
     width: 100%;
     background-color: rgba(37, 73, 116, 0.8);
     transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+    transition: transform 0.3s;
   }
   .nav-mobile.nav-mobile--active {
     transform: translateX(0);
@@ -1443,8 +1443,6 @@ h2.grad-border {
   }
   .contacts__text {
     margin-left: 0;
-    width: 290px;
-    font-size: 14px;
   }
   .contacts__text p + p {
     margin-top: 5px;
