@@ -266,10 +266,10 @@ h2.grad-border {
 
 /* Active state */
 .nav-icon.nav-icon--active {
-  z-index: 3;
+  z-index: 6;
   position: fixed;
-  top: 30px;
-  right: 15px;
+  top: 33px;
+  right: 12px;
 }
 
 .nav-icon.nav-icon--active .nav-icon__middle {
@@ -1052,7 +1052,7 @@ h2.grad-border {
     padding-bottom: 30px;
   }
   /**** Mobile nav ****/
-  .nav-mobile, .header-top__social {
+  .header-top__social {
     display: none;
   }
   .nav-mobile__contacts {
@@ -1060,18 +1060,12 @@ h2.grad-border {
   }
   .nav-mobile__contacts .socials {
     margin-bottom: 20px;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-  }
-  .nav-mobile__contacts .socials svg, .nav-mobile__contacts .socials object {
-    width: 38px;
-    height: 38px;
   }
   .nav-mobile__contacts .link {
     font-size: 18px;
   }
   .nav-mobile {
-    z-index: 2;
+    z-index: 5;
     position: fixed;
     display: flex;
     justify-content: flex-end;
@@ -1081,7 +1075,7 @@ h2.grad-border {
     width: 100%;
     background-color: rgba(37, 73, 116, 0.8);
     transform: translateX(100%);
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in;
   }
   .nav-mobile.nav-mobile--active {
     transform: translateX(0);
@@ -1416,9 +1410,6 @@ h2.grad-border {
   .timeline-item p + p {
     margin-top: 7px;
   }
-  .timeline-item strong {
-    font-size: 14px;
-  }
   /***** Contacts *****/
   .contacts__row {
     flex-direction: column-reverse;
@@ -1430,10 +1421,6 @@ h2.grad-border {
   .contacts__list span {
     display: block;
     width: unset;
-    font-size: 16px;
-  }
-  .contacts__list a {
-    margin-left: 0;
     font-size: 16px;
   }
   .socials object,

@@ -12,12 +12,10 @@ $height: $lineHeight * 5;
     height: $height;
 
     display: none;
-    // display: flex;
 	justify-content: center;
 	align-items: center;
 
     cursor: pointer;
-
 }
 
 .nav-icon__middle {
@@ -47,10 +45,10 @@ $height: $lineHeight * 5;
 
 /* Active state */
 .nav-icon.nav-icon--active {
-    z-index: 3;
+    z-index: 6;
     position: fixed;
-    top: 30px;
-    right: 15px;
+    top: 33px;
+    right: 12px;
 }
 
 .nav-icon.nav-icon--active .nav-icon__middle {
