@@ -5,12 +5,20 @@
     }
 
     .title.grad-border {
-        background-position: center bottom 3px;
+        background-position: center bottom 4px;
         background-size: 100% 8px;
+    }
+
+    .timeline-item__title.grad-border {
+        background-position: center bottom 1px;
     }
 
     .header-top .container {
         width: 100%;
+    }
+
+    .header-intro__text {
+        padding-top: 2px;
     }
 
     .header-intro__title {

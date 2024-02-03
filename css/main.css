@@ -903,7 +903,7 @@ h2.grad-border {
   }
   .portfolio-card:first-child,
   .portfolio-card:nth-child(2) {
-    max-width: 420px;
+    width: 420px;
     height: 366px;
   }
   .portfolio-card:first-child .portfolio-card__img,
@@ -1005,6 +1005,13 @@ h2.grad-border {
   .title {
     font-size: 42px;
   }
+  .title.grad-border {
+    background-position: center bottom 7px;
+    background-size: 100% 8px;
+  }
+  h2.grad-border {
+    background-position: center bottom 3px;
+  }
   .section-title {
     font-size: 32px;
   }
@@ -1013,9 +1020,6 @@ h2.grad-border {
   }
   .logo, .nav-icon {
     display: flex;
-  }
-  h2.grad-border {
-    background-position: center bottom 4px;
   }
   .button {
     display: none;
@@ -1284,11 +1288,17 @@ h2.grad-border {
     font-size: 32px;
   }
   .title.grad-border {
-    background-position: center bottom 3px;
+    background-position: center bottom 4px;
     background-size: 100% 8px;
+  }
+  .timeline-item__title.grad-border {
+    background-position: center bottom 1px;
   }
   .header-top .container {
     width: 100%;
+  }
+  .header-intro__text {
+    padding-top: 2px;
   }
   .header-intro__title {
     margin-bottom: 18px;

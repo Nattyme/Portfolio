@@ -4,6 +4,15 @@
         font-size: 42px;
     }
 
+    .title.grad-border {
+        background-position: center bottom 7px;
+        background-size: 100% 8px;
+    }
+
+    h2.grad-border {
+        background-position: center bottom 3px;
+    }
+
     .section-title {
         font-size: 32px;
     }
@@ -14,10 +23,6 @@
 
     .logo, .nav-icon {
         display: flex;
-    }
-
-    h2.grad-border {
-        background-position: center bottom 4px;
     }
 
     .button {
