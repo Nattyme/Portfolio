@@ -892,7 +892,7 @@ h2.grad-border {
   }
   /**** Portfolio-card ****/
   .portfolio-card {
-    max-width: 270px;
+    width: 270px;
     height: 224px;
   }
   .portfolio-card__img {
@@ -1332,7 +1332,6 @@ h2.grad-border {
   }
   .header-about {
     margin-top: -70px;
-    padding-bottom: 40px;
   }
   .header-about__subtitle {
     margin-bottom: 21px;
