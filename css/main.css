@@ -164,10 +164,10 @@ h2.grad-border {
 }
 
 .svg-ln, .svg-git {
-  transition: fill 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
 }
-.svg-ln:hover, .svg-git:hover {
-  fill: #fbdc4d;
+.svg-ln:hover, .svg-ln:active, .svg-ln:focus, .svg-git:hover, .svg-git:active, .svg-git:focus {
+  opacity: 0.75;
 }
 
 .svg-tg, .svg-vk, .svg-fb, .svg-inst, .svg-wa {

@@ -77,10 +77,10 @@ h2.grad-border  {
 }
 
 .svg-ln, .svg-git {
-    transition: fill 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
 
-    &:hover {
-        fill: $accent-color;
+    &:hover, &:active, &:focus {
+        opacity: 0.75;
     }
 }
 
