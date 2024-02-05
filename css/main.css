@@ -386,7 +386,7 @@ h2.grad-border {
 .button--accent {
   background-color: #fbdc4d;
 }
-.button--accent:hover:focus {
+.button--accent:hover, .button--accent:focus {
   background-color: #ffeb8d;
 }
 .button--accent:active {

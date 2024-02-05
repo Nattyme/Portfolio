@@ -22,7 +22,7 @@
         background-color: $accent-color;
     }
 
-    &--accent:hover:focus  {
+    &--accent:hover, &--accent:focus  {
         background-color: #ffeb8d;
     }
     
