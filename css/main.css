@@ -377,11 +377,20 @@ h2.grad-border {
   color: #000;
   transition: background-color 0.2s ease-in;
 }
+.button:hover, .button:focus {
+  background-color: #d1edff;
+}
+.button:active {
+  background-color: #b0dcf8;
+}
 .button--accent {
   background-color: #fbdc4d;
 }
-.button:hover {
-  background: #fbdc4d;
+.button--accent:hover:focus {
+  background-color: #ffeb8d;
+}
+.button--accent:active {
+  background-color: #f5d22d;
 }
 
 .header-banner {
