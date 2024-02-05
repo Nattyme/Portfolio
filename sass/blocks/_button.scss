@@ -10,12 +10,24 @@
 
     transition: background-color 0.2s ease-in;
 
+    &:hover, &:focus {
+        background-color: #d1edff;
+    }
+
+    &:active {
+        background-color: #b0dcf8;
+    }
+
     &--accent {
         background-color: $accent-color;
     }
 
-    &:hover {
-        background: #fbdc4d;
+    &--accent:hover:focus  {
+        background-color: #ffeb8d;
+    }
+    
+    &--accent:active {
+        background-color: #f5d22d;
     }
 }
 

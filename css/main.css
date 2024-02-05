@@ -164,10 +164,10 @@ h2.grad-border {
 }
 
 .svg-ln, .svg-git {
-  transition: fill 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
 }
-.svg-ln:hover, .svg-git:hover {
-  fill: #fbdc4d;
+.svg-ln:hover, .svg-ln:active, .svg-ln:focus, .svg-git:hover, .svg-git:active, .svg-git:focus {
+  opacity: 0.75;
 }
 
 .svg-tg, .svg-vk, .svg-fb, .svg-inst, .svg-wa {
@@ -377,11 +377,20 @@ h2.grad-border {
   color: #000;
   transition: background-color 0.2s ease-in;
 }
+.button:hover, .button:focus {
+  background-color: #d1edff;
+}
+.button:active {
+  background-color: #b0dcf8;
+}
 .button--accent {
   background-color: #fbdc4d;
 }
-.button:hover {
-  background: #fbdc4d;
+.button--accent:hover:focus {
+  background-color: #ffeb8d;
+}
+.button--accent:active {
+  background-color: #f5d22d;
 }
 
 .header-banner {
