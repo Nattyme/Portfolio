@@ -198,23 +198,11 @@ h2.grad-border {
 }
 
 .nav a {
-  position: relative;
   transition: color 0.2s ease-in;
   color: #000;
 }
-.nav a::after {
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  content: "";
-  height: 2px;
-  width: 0;
-  background-color: #fbdc4d;
-  transition: bottom 0.2s ease-in;
-}
-.nav a:hover::after {
-  width: 100%;
-  bottom: -5px;
+.nav a:hover {
+  color: #ff543e;
 }
 
 .logo {
@@ -409,19 +397,10 @@ h2.grad-border {
   position: relative;
   font-size: 22px;
   color: #1a71d2;
+  transition: color 0.2s ease-in;
 }
-.link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  height: 1px;
-  background-color: #1a71d2;
-  transition: bottom 0.2s ease-in;
-}
-.link:hover::after {
-  bottom: -3px;
-  width: 100%;
+.link:hover {
+  color: #ff543e;
 }
 
 .link-muted {
@@ -434,10 +413,12 @@ h2.grad-border {
   align-items: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  transition: filter 0.5s ease-in;
 }
-.socials a:hover {
-  filter: contrast(200%);
+.socials a {
+  transition: opacity 0.2s ease-in;
+}
+.socials a:hover, .socials a:active, .socials a:focus {
+  opacity: 0.75;
 }
 
 .header-about {

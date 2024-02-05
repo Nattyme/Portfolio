@@ -11,25 +11,11 @@
 }
 
 .nav a {
-    position: relative;
     transition: color 0.2s ease-in;
     color: #000;
 
-    &::after {
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-
-        content: "";
-        height: 2px;
-        width: 0;
-        background-color: $accent-color;
-        transition: bottom 0.2s ease-in;
-    }
-
-    &:hover::after {
-        width: 100%;
-        bottom: -5px;
+    &:hover {
+        color: #ff543e;
     }
 }
 
