@@ -15,6 +15,22 @@
     justify-content: space-between;
 }
 
+.contacts__form {
+    position: relative;
+    z-index: 0;
+}
+
+
+.contacts__form::before {
+    content: url("./../img/contacts/figure.svg");
+    position: absolute;
+    top: -113px;
+    right: 0;
+    transform: translateX(40%);
+    width: 280px;
+    height: 243px;
+}
+
 .contacts__list {
     margin-bottom: 34px;
     line-height: 1.6;
@@ -36,8 +52,8 @@
 }
 
 .contacts__text {
+    margin-bottom: 32px;
     width: 538px;
-    position: relative;
 
     font-size: 18px;
     line-height: 1.6; /* 28.8px */
@@ -45,14 +61,4 @@
     p + p {
         margin-top: 8px;
     }
-}
-
-.contacts__text::before {
-    content: url("./../img/contacts/figure.svg");
-    position: absolute;
-    top: -113px;
-    right: 0;
-    transform: translateX(40%);
-    width: 280px;
-    height: 243px;
 }

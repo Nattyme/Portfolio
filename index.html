@@ -352,6 +352,9 @@
 
                         <!-- column -->
                         <div class="contacts__column">
+                            <div class="contacts__text">
+                                <p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом &mdash; напишите мне.</p>
+                            </div>
                             <ul class="contacts__list">
                                 <li><span>Email</span><a class="link" href="mailto:yurij.kluchevsky@gmail.com">yurij.kluchevsky@gmail.com</a></li>
                                 <li><span>Телефон</span><a class="link" href="tel:7980234567">+7 (980) 123-45-67</a></li>
@@ -386,9 +389,24 @@
 
                         <!-- column -->
                         <div class="contacts__column">
-                            <div class="contacts__text">
-                                <p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом &mdash; напишите мне.</p>
-                            </div>
+                            
+                            <form action="#" class="contact-form">
+                                <div class="form-item">
+                                    <span class="fake-placeholder">Ваш Email</span>
+                                    <input class="form-input" type="text">
+                                </div>
+                                <div class="form-item">
+                                    <span class="fake-placeholder">Сообщение</span>
+                                    <textarea class="form-input" name="message" id="#" cols="30" rows="10"></textarea>
+                                </div>
+
+                                <div class="form-item">
+                                    <button class="button button--accent" type="submit">Отправить</button>
+                                </div>
+                                <div id="answer"></div>
+                            </form>
+
+                            
                         </div>
                         <!--// column -->
 

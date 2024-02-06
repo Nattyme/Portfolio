@@ -2,20 +2,10 @@
     position: relative;
     font-size: 22px;
     color: $link-color;
-
-    &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -8px;
-        height: 1px;
-        background-color: $link-color;
-        transition: bottom 0.2s ease-in;
-    }
-
-    &:hover::after {
-        bottom: -3px;
-        width: 100%;
+    transition: color 0.2s ease-in;
+    
+    &:hover {
+        color: #ff543e;
     }
 }
 

@@ -1,0 +1,45 @@
+.contact-form {
+    padding: 50px 62px;
+
+    z-index: 1;
+    width: 540px;
+    height: 449px;
+
+    box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
+    background: #fff;
+}
+
+.form-item {
+    position: relative;
+
+    & + & {
+        margin-top: 42px;
+    }
+
+    textarea {
+        height: 162px;
+    }
+}
+
+.fake-placeholder {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    font-size: 22px;
+    line-height: 1;
+    color: #9d9d9d;
+
+    pointer-events: none;
+
+}
+
+.form-input {
+    height: 39px;
+    width: 100%;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.form__button {
+}
