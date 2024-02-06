@@ -613,6 +613,16 @@ h2.grad-border {
   transform: translateX(-50%);
 }
 
+.form {
+  padding: 50px 62px;
+  position: relative;
+  z-index: 1;
+  width: 540px;
+  height: 449px;
+  box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
+  background: #fff;
+}
+
 .header-top {
   padding-top: 63px;
   padding-bottom: 62px;
@@ -671,6 +681,10 @@ h2.grad-border {
   overflow: hidden;
 }
 
+.contacts__column:first-child {
+  width: 538px;
+}
+
 .contacts__header {
   margin-bottom: 60px;
   text-align: center;
@@ -679,6 +693,21 @@ h2.grad-border {
 .contacts__row {
   display: flex;
   justify-content: space-between;
+}
+
+.contacts__form {
+  position: relative;
+  z-index: 0;
+}
+
+.contacts__form::before {
+  content: url("./../img/contacts/figure.svg");
+  position: absolute;
+  top: -113px;
+  right: 0;
+  transform: translateX(40%);
+  width: 280px;
+  height: 243px;
 }
 
 .contacts__list {
@@ -699,23 +728,12 @@ h2.grad-border {
 }
 
 .contacts__text {
-  width: 538px;
-  position: relative;
+  margin-bottom: 32px;
   font-size: 18px;
   line-height: 1.6; /* 28.8px */
 }
 .contacts__text p + p {
   margin-top: 8px;
-}
-
-.contacts__text::before {
-  content: url("./../img/contacts/figure.svg");
-  position: absolute;
-  top: -113px;
-  right: 0;
-  transform: translateX(40%);
-  width: 280px;
-  height: 243px;
 }
 
 .footer {
