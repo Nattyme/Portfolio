@@ -615,7 +615,6 @@ h2.grad-border {
 
 .contact-form {
   padding: 50px 62px;
-  position: relative;
   z-index: 1;
   width: 540px;
   height: 449px;
@@ -623,47 +622,21 @@ h2.grad-border {
   background: #fff;
 }
 
-.form-input {
-  margin-bottom: 30px;
-  border-bottom: 2px solid #e5e5e5;
-}
-.form-input:not(:last-child) {
-  margin-bottom: 42px;
-}
-
-.form-input__span {
-  font-size: 22px;
-  line-height: 1;
-  color: #9d9d9d;
-}
-
-.form__button {
-  margin-top: auto;
-}
-
-.form-input {
+.form-item {
   position: relative;
-  height: 39px;
+}
+.form-item + .form-item {
+  margin-top: 42px;
 }
 
-.form-input:last-child {
-  height: 100%;
-}
-
-.form-input__span {
+.fake-placeholder {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
-  width: 100%;
-}
-
-.form-input__input {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  font-size: 22px;
+  line-height: 1;
+  color: #9d9d9d;
 }
 
 .header-top {

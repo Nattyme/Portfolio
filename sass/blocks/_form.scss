@@ -1,7 +1,6 @@
 .contact-form {
     padding: 50px 62px;
 
-    position: relative;
     z-index: 1;
     width: 540px;
     height: 449px;
@@ -11,36 +10,26 @@
 }
 
 .form-item {
-}
+    position: relative;
 
-.form-item__fake-placeholder {
-}
-
-.form-item__formfield {
-}
-
-.form__button {
-}
-
-.form-input {
-    margin-bottom: 30px;
-    border-bottom: 2px solid #e5e5e5;
-
-    &:not(:last-child) {
-        margin-bottom: 42px;
+    & + & {
+        margin-top: 42px;
     }
 }
 
-.form-input__span {
+.fake-placeholder {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
     font-size: 22px;
     line-height: 1;
     color: #9d9d9d;
 }
 
-.form-input__input {
+.form-input {
 }
 
 .form__button {
-    margin-top: auto;
 }
-
