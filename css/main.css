@@ -13,6 +13,11 @@
   box-sizing: border-box;
 }
 
+:focus,
+:active {
+  outline: none;
+}
+
 /* Links */
 a, a:visited {
   text-decoration: none;
@@ -628,6 +633,9 @@ h2.grad-border {
 .form-item + .form-item {
   margin-top: 42px;
 }
+.form-item textarea {
+  height: 162px;
+}
 
 .fake-placeholder {
   position: absolute;
@@ -637,6 +645,13 @@ h2.grad-border {
   font-size: 22px;
   line-height: 1;
   color: #9d9d9d;
+  pointer-events: none;
+}
+
+.form-input {
+  height: 39px;
+  width: 100%;
+  border-bottom: 2px solid #e5e5e5;
 }
 
 .header-top {
@@ -697,10 +712,6 @@ h2.grad-border {
   overflow: hidden;
 }
 
-.contacts__column:first-child {
-  width: 538px;
-}
-
 .contacts__header {
   margin-bottom: 60px;
   text-align: center;
@@ -745,6 +756,7 @@ h2.grad-border {
 
 .contacts__text {
   margin-bottom: 32px;
+  width: 538px;
   font-size: 18px;
   line-height: 1.6; /* 28.8px */
 }

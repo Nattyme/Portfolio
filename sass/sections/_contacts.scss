@@ -5,10 +5,6 @@
     overflow: hidden;
 }
 
-.contacts__column:first-child {
-    width: 538px;
-}
-
 .contacts__header {
     margin-bottom: 60px;
     text-align: center;
@@ -57,6 +53,7 @@
 
 .contacts__text {
     margin-bottom: 32px;
+    width: 538px;
 
     font-size: 18px;
     line-height: 1.6; /* 28.8px */
