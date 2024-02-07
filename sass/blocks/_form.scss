@@ -3,7 +3,6 @@
     padding: 50px 62px;
 
     width: 540px;
-    height: 449px;
 
     box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
     background: #fff;
@@ -29,6 +28,10 @@
         margin-top: 42px;
     }
 
+    &:last-child {
+        margin-top: 30px;
+    }
+
     textarea {
         height: 162px;
     }
@@ -47,6 +50,15 @@
     transition: all 0.2s ease-in;
     pointer-events: none;
 
+    &--active {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+        color: #eca73f;
+
+        transform: translateY(-100%);
+    }
+
 }
 
 .form-input {
@@ -59,15 +71,6 @@
         font-size: 18px;
         line-height: 1;
         color: #000;
-
-        & ~ .fake-placeholder {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1;
-            color: #eca73f;
-
-            transform: translateY(-100%);
-        }
     }
 
     &:active, &:focus {
@@ -77,7 +80,4 @@
     &:valid {
         border-bottom-color: #e5e5e5;
     }
-}
-
-.form__button {
 }

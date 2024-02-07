@@ -611,7 +611,6 @@ h2.grad-border {
   position: relative;
   padding: 50px 62px;
   width: 540px;
-  height: 449px;
   box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
   background: #fff;
 }
@@ -633,6 +632,9 @@ h2.grad-border {
 .form-item + .form-item {
   margin-top: 42px;
 }
+.form-item:last-child {
+  margin-top: 30px;
+}
 .form-item textarea {
   height: 162px;
 }
@@ -648,6 +650,13 @@ h2.grad-border {
   transition: all 0.2s ease-in;
   pointer-events: none;
 }
+.fake-placeholder--active {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #eca73f;
+  transform: translateY(-100%);
+}
 
 .form-input {
   height: 39px;
@@ -659,13 +668,6 @@ h2.grad-border {
   font-size: 18px;
   line-height: 1;
   color: #000;
-}
-.form-input:active ~ .fake-placeholder, .form-input:focus ~ .fake-placeholder, .form-input:valid ~ .fake-placeholder {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1;
-  color: #eca73f;
-  transform: translateY(-100%);
 }
 .form-input:active, .form-input:focus {
   border-bottom-color: #ff543e;
@@ -1485,6 +1487,18 @@ h2.grad-border {
   }
   .fake-placeholder {
     font-size: 18px;
+  }
+  .form-item + .form-item {
+    margin-top: 20px;
+  }
+  .form-item:last-child {
+    margin-top: 30px;
+  }
+  .form-item textarea {
+    height: 188px;
+  }
+  .form-input {
+    height: 30px;
   }
   .contacts__text {
     margin-bottom: 20px;
