@@ -457,12 +457,33 @@ h2.grad-border {
   color: #000;
   transition: filter 0.2s ease-in;
 }
-.portfolio-card:hover {
-  filter: contrast(1.1) saturate(1.2);
+.portfolio-card:hover .portfolio-card__img::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 221, 85, 0.75);
 }
-.portfolio-card:hover img {
-  overflow: hidden;
-  transform: scale(1.2);
+.portfolio-card:hover .portfolio-card__img span {
+  display: block;
+}
+.portfolio-card:hover .portfolio-card__img span::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: -50%;
+  transform: translateX(-50%);
+  width: 208px;
+  height: 51px;
+  border-radius: 80px;
+  background-color: #ef6857;
+}
+.portfolio-card:hover .portfolio-card__title {
+  line-height: 1.3;
+  color: #ff543e;
 }
 .portfolio-card:first-child, .portfolio-card:nth-child(2) {
   max-width: 540px;
@@ -489,6 +510,7 @@ h2.grad-border {
 .portfolio-card__img {
   margin-bottom: 16px;
   overflow: hidden;
+  position: relative;
 }
 .portfolio-card__img img {
   width: 350px;
@@ -498,12 +520,29 @@ h2.grad-border {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.portfolio-card__img span {
+  display: none;
+}
+
+.portfolio-card__img span {
+  z-index: 1;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #fff;
+}
 
 .portfolio-card__text {
   height: 60px;
   overflow: hidden;
 }
-.portfolio-card__text h3, .portfolio-card__text p {
+.portfolio-card__text h3,
+.portfolio-card__text p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -514,6 +553,7 @@ h2.grad-border {
   margin-bottom: 7px;
   font-size: 24px;
   font-weight: 600;
+  transition: color 0.2s ease-in;
 }
 
 .portfolio-card__desc {
@@ -611,7 +651,6 @@ h2.grad-border {
   position: relative;
   padding: 50px 62px;
   width: 540px;
-  height: 449px;
   box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
   background: #fff;
 }
@@ -633,6 +672,9 @@ h2.grad-border {
 .form-item + .form-item {
   margin-top: 42px;
 }
+.form-item:last-child {
+  margin-top: 30px;
+}
 .form-item textarea {
   height: 162px;
 }
@@ -648,6 +690,13 @@ h2.grad-border {
   transition: all 0.2s ease-in;
   pointer-events: none;
 }
+.fake-placeholder--active {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #eca73f;
+  transform: translateY(-100%);
+}
 
 .form-input {
   height: 39px;
@@ -659,13 +708,6 @@ h2.grad-border {
   font-size: 18px;
   line-height: 1;
   color: #000;
-}
-.form-input:active ~ .fake-placeholder, .form-input:focus ~ .fake-placeholder, .form-input:valid ~ .fake-placeholder {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1;
-  color: #eca73f;
-  transform: translateY(-100%);
 }
 .form-input:active, .form-input:focus {
   border-bottom-color: #ff543e;
@@ -1485,6 +1527,18 @@ h2.grad-border {
   }
   .fake-placeholder {
     font-size: 18px;
+  }
+  .form-item + .form-item {
+    margin-top: 20px;
+  }
+  .form-item:last-child {
+    margin-top: 30px;
+  }
+  .form-item textarea {
+    height: 188px;
+  }
+  .form-input {
+    height: 30px;
   }
   .contacts__text {
     margin-bottom: 20px;

@@ -195,6 +195,24 @@
         font-size: 18px;
     }
 
+    .form-item {
+        & + & {
+            margin-top: 20px;
+        }
+    
+        &:last-child {
+            margin-top: 30px;
+        }
+    
+        textarea {
+            height: 188px;
+        }
+    }
+
+    .form-input {
+        height: 30px;
+    }
+
     .contacts__text {
         margin-bottom: 20px;
         p + p {
