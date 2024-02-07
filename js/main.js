@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("#mobile-nav a");
   const formInputs = document.querySelectorAll(".form-input");
 
+  /* Вызов анимации AOS */
+  AOS.init();
+
   /****** Мобильная навигация и кнопка ******/
   navIcon.addEventListener("click", function () {
     this.classList.toggle("nav-icon--active");
@@ -33,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Когда выходит из фокуса
     item.addEventListener("blur", function () {
-      if (item.value.length > 0) {} 
-      else {
+      if (item.value.length > 0) {
+      } else {
         thisPlaceHolder.classList.remove("fake-placeholder--active");
       }
     });

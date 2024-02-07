@@ -15,6 +15,7 @@
     />
 
     <!-- Styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
 
     <!-- Open Graph -->
@@ -195,7 +196,7 @@
       <!--// banner -->
 
       <!-- about -->
-      <div class="header-about" id="about">
+      <div class="header-about" id="about" data-aos="fade-up">
         <div class="container">
           <div class="header-about__content">
             <!-- column -->
@@ -380,7 +381,7 @@
           <!--  wrapper -->
           <div class="timeline-wrapper">
             <!-- item -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-left">
               <div class="timeline-item__title grad-border">Оцениваю макет</div>
               <p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
               <strong>Время: 2 часа</strong>
@@ -388,7 +389,7 @@
             <!--// item -->
 
             <!-- item -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-right">
               <div class="timeline-item__title grad-border">
                 ТЗ, смета и график работ
               </div>
@@ -401,7 +402,7 @@
             <!--// item -->
 
             <!-- item -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-left">
               <div class="timeline-item__title grad-border">
                 Вы держите руку на пульсе
               </div>
@@ -413,7 +414,7 @@
             <!--// item -->
 
             <!-- item -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-right">
               <div class="timeline-item__title grad-border">
                 Выполняю каждый этап
               </div>
@@ -425,7 +426,7 @@
             <!--// item -->
 
             <!-- item -->
-            <div class="timeline-item">
+            <div class="timeline-item" data-aos="fade-left">
               <div class="timeline-item__title grad-border">
                 Финальное ревью проекта
               </div>
@@ -514,10 +515,12 @@
 
           <!-- column -->
           <div class="contacts__column">
-            <form action="#" class="contact-form">
+            <form action="#" class="contact-form" data-aos="fade-left">
               <div class="form-item">
-                  <span class="fake-placeholder fake-placeholder--active">Ваш Email</span>
-                  <input class="form-input" type="text" required />
+                <span class="fake-placeholder fake-placeholder--active"
+                  >Ваш Email</span
+                >
+                <input class="form-input" type="text" required />
               </div>
               <div class="form-item">
                 <span class="fake-placeholder">Сообщение</span>
@@ -532,7 +535,11 @@
               </div>
 
               <div class="form-item">
-                <input type="submit" class="button button--accent" value="Отправить">
+                <input
+                  type="submit"
+                  class="button button--accent"
+                  value="Отправить"
+                />
               </div>
             </form>
           </div>
@@ -562,6 +569,10 @@
       </div>
     </footer>
 
+    <!-- libs -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Main JS -->
     <script src="./js/main.js"></script>
   </body>
 </html>
