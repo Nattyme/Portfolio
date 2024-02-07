@@ -56,7 +56,6 @@ img, svg {
 /* Form */
 input, textarea, button, select {
   font-family: inherit;
-  font-size: inherit;
 }
 
 input::-ms-clear {
@@ -645,6 +644,7 @@ h2.grad-border {
   font-size: 22px;
   line-height: 1;
   color: #9d9d9d;
+  transition: all 0.2s ease-in;
   pointer-events: none;
 }
 
@@ -652,6 +652,25 @@ h2.grad-border {
   height: 39px;
   width: 100%;
   border-bottom: 2px solid #e5e5e5;
+}
+.form-input:active, .form-input:focus, .form-input:valid {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #000;
+}
+.form-input:active ~ .fake-placeholder, .form-input:focus ~ .fake-placeholder, .form-input:valid ~ .fake-placeholder {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #eca73f;
+  transform: translateY(-100%);
+}
+.form-input:active, .form-input:focus {
+  border-bottom-color: #ff543e;
+}
+.form-input:valid {
+  border-bottom-color: #e5e5e5;
 }
 
 .header-top {
