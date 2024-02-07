@@ -297,9 +297,13 @@
         }
     }
     
-    .contacts__text::before {
+    .contact-form::before {
         top: -95px;
-        transform: unset;
+    }
+
+    .contact-form {
+        padding: 40px 50px;
+        width: 400px;
     }
 
     /***** Footer *****/

@@ -1,436 +1,568 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<!-- encoding -->
-		<meta charset="UTF-8">
-		<!-- Mobile support -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- encoding -->
+    <meta charset="UTF-8" />
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- Title and SEO -->
-		<title>Портфолио</title>
-		<meta name="description" content="Портфолио">
-		<meta name="keywords" content="Портфолио, верстальщик, веб-разработчик, создание сайта, оперативная верстка">
+    <!-- Title and SEO -->
+    <title>Портфолио</title>
+    <meta name="description" content="Портфолио" />
+    <meta
+      name="keywords"
+      content="Портфолио, верстальщик, веб-разработчик, создание сайта, оперативная верстка"
+    />
 
-		<!-- Styles -->
-		<link rel="stylesheet" href="./css/main.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
 
-		<!-- Open Graph -->
-		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Портфолио Юрий Ключевский">
-		<meta property="og:description" content="Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.">
-		<meta property="og:image" content="./img/opengraph.jpg">
+    <!-- Open Graph -->
+    <!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Портфолио Юрий Ключевский" />
+    <meta
+      property="og:description"
+      content="Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ."
+    />
+    <meta property="og:image" content="./img/opengraph.jpg" />
 
-		<!-- Favicons -->
-		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-		<link rel="manifest" href="./img/favicon/site.webmanifest">
-		<link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf">
-		<link rel="shortcut icon" href="./img/favicon/favicon.ico">
-		<meta name="msapplication-TileColor" content="#00aba9">
-		<meta name="msapplication-config" content="./img/favicon/browserconfig.xml">
-		<meta name="theme-color" content="#ffffff">
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicon/safari-pinned-tab.svg"
+      color="#1a60cf"
+    />
+    <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta
+      name="msapplication-config"
+      content="./img/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <header class="header-top">
+      <div class="container">
+        <div class="header-top__nav">
+          <!-- Логотип -->
+          <div class="logo">HTML Верстальщик</div>
 
-	</head>
-	<body>
-        <header class="header-top">
-            <div class="container">
-                <div class="header-top__nav">
+          <!-- Кнопка навигации -->
+          <div class="nav-icon">
+            <span class="nav-icon__middle"></span>
+          </div>
 
-                    <!-- Логотип -->
-                    <div class="logo">HTML Верстальщик</div>
+          <!--===== Мобильная навигация =====-->
+          <div class="nav-mobile">
+            <!-- Wrapper -->
+            <div class="nav-mobile__content">
+              <nav class="nav" id="mobile-nav">
+                <ul>
+                  <li><a href="#about">Навыки</a></li>
+                  <li><a href="#portfolio">Портфолио</a></li>
+                  <li><a href="#timeline">Как я работаю</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
+                </ul>
+              </nav>
 
-                    <!-- Кнопка навигации -->
-                    <div class="nav-icon">
-                        <span class="nav-icon__middle"></span>
-                    </div>
-
-                     <!--===== Мобильная навигация =====-->
-                    <div class="nav-mobile"> 
-
-                        <!-- Wrapper -->
-                        <div class="nav-mobile__content">
-
-                            <nav class="nav" id="mobile-nav">
-                                <ul>
-                                    <li><a href="#about">Навыки</a></li>
-                                    <li><a href="#portfolio">Портфолио</a></li>
-                                    <li><a href="#timeline">Как я работаю</a></li>
-                                    <li><a href="#contacts">Контакты</a></li>
-                                </ul>
-                            </nav>
-
-                            <div class="nav-mobile__contacts">
-                                <ul class="socials">
-                                    <li><a href="tel:89258260741">
-                                        <svg class="svg-tg">
-                                            <use href="./img/socials/svgSprite.svg#svg-tg"></use>
-                                        </svg>
-                                    </a></li>
-                                    <li><a href="https://vk.com/natashabalashova"  target="_blank">
-                                        <svg class="svg-vk">
-                                            <use href="./img/socials/svgSprite.svg#svg-vk"></use>
-                                        </svg>
-                                    </a></li>
-                                    <li><a href="https://www.facebook.com/" target="_blank">
-                                        <svg class="svg-fb">
-                                            <use href="./img/socials/svgSprite.svg#svg-fb"></use>
-                                        </svg>
-                                    </a></li>
-                                    <li><a href="https://instagram.com/nattyme/" target="_blank">
-                                        <object class="svg-inst" type="image/svg+xml" data="./img/socials/instagram.svg"></object>
-                                    </a></li>
-                                    <li><a href="tel:89258260741">
-                                        <svg class="svg-wa">
-                                            <use href="./img/socials/svgSprite.svg#svg-wa"></use>
-                                        </svg>
-                                    </a></li>
-                                </ul>
-                                <a href="mailto:yurij.kluchevsky@gmail.com" class="link">yurij.kluchevsky@gmail.com</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                        
-                    <div class="header-top__social">
-                        <a href="https://www.linkedin.com/in/natasha-balashova-98853376/" target="_blank">
-                            <svg class="svg-ln">
-                                <use href="./img/socials/svgSprite.svg#svg-ln"></use>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/Nattyme" target="_blank">
-                            <svg class="svg-git">
-                                <use href="./img/socials/svgSprite.svg#svg-git"></use>
-                            </svg>
-                        </a>    
-                    </div>
-                </div>
+              <div class="nav-mobile__contacts">
+                <ul class="socials">
+                  <li>
+                    <a href="tel:89258260741">
+                      <svg class="svg-tg">
+                        <use href="./img/socials/svgSprite.svg#svg-tg"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://vk.com/natashabalashova" target="_blank">
+                      <svg class="svg-vk">
+                        <use href="./img/socials/svgSprite.svg#svg-vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <svg class="svg-fb">
+                        <use href="./img/socials/svgSprite.svg#svg-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com/nattyme/" target="_blank">
+                      <object
+                        class="svg-inst"
+                        type="image/svg+xml"
+                        data="./img/socials/instagram.svg"
+                      ></object>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:89258260741">
+                      <svg class="svg-wa">
+                        <use href="./img/socials/svgSprite.svg#svg-wa"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <a href="mailto:yurij.kluchevsky@gmail.com" class="link"
+                  >yurij.kluchevsky@gmail.com</a
+                >
+              </div>
             </div>
-        </header>
+          </div>
 
-        <section class="header">
+          <div class="header-top__social">
+            <a
+              href="https://www.linkedin.com/in/natasha-balashova-98853376/"
+              target="_blank"
+            >
+              <svg class="svg-ln">
+                <use href="./img/socials/svgSprite.svg#svg-ln"></use>
+              </svg>
+            </a>
+            <a href="https://github.com/Nattyme" target="_blank">
+              <svg class="svg-git">
+                <use href="./img/socials/svgSprite.svg#svg-git"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-            <!-- intro -->
-            <div class="header-intro">
-                <div class="container">
-                    <div class="header-intro__content">
-                        <div class="header-intro__text">
-                            <div class="header-intro__title">
-                                <h1 class="title grad-border">Юрий Ключевский</h1>
-                            </div>
-        
-                            <div class="header-intro__desc">
-                                <p>Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
-                            </div>
-        
-                            <div class="header-intro__buttons">
-                                <a href="#about" class="button button--accent">Познакомиться</a>
-                                <a href="#contacts" class="button">Контакты</a>
-                            </div>
-                                
-                        </div>
+    <section class="header">
+      <!-- intro -->
+      <div class="header-intro">
+        <div class="container">
+          <div class="header-intro__content">
+            <div class="header-intro__text">
+              <div class="header-intro__title">
+                <h1 class="title grad-border">Юрий Ключевский</h1>
+              </div>
 
-                        <div class="header-intro__img">
-                            <img src="./img/header/01.jpg" alt="image">
-                        </div>
+              <div class="header-intro__desc">
+                <p>
+                  Верстальщик сайтов, веб-разработчик. Оперативная верстка.
+                  Работаю с соблюдением сроков и выполнением ТЗ.
+                </p>
+              </div>
 
-                        <div class="header-intro__desc">
-                            <p>Верстальщик сайтов, веб&#8209;разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
-                        </div>
-                          
-                    </div>
-    
-                </div>
+              <div class="header-intro__buttons">
+                <a href="#about" class="button button--accent">Познакомиться</a>
+                <a href="#contacts" class="button">Контакты</a>
+              </div>
             </div>
-            <!--// intro -->
-                    
-            <!-- banner -->
-            <div class="header-banner">
-                <img src="./img/header/header-bg.png" alt="banner">
-            </div> 
-            <!--// banner -->
 
-            <!-- about -->
-            <div class="header-about" id="about">
-                <div class="container">
-                    <div class="header-about__content">
-
-                        <!-- column -->
-                        <div class="header-about__column">
-                            <div class="header-about__subtitle">
-                                <p class="section-title-42px">Что я умею:</p>
-                            </div>
-                            <ul class="header-about__skills">
-                                <li>pixel perfect, полное соответствие макету</li>
-                                <li>верстаю с сеткой или без</li>
-                                <li>адаптивная верстка под мобильные устройства</li>
-                                <li>оптимизация по retina экраны</li>
-                                <li>с Bootstrap и без него</li>
-                            </ul>
-                        </div>
-                        <!--// column -->
-
-                        <!-- column -->
-                        <div class="header-about__column">
-                            <div class="header-about__subtitle">
-                                <p class="section-title-42px">На связи:</p>
-                            </div>
-                            <div class="header-about__socials">
-                                <ul class="socials">
-                                    <li><a href="tel:89258260741">
-                                        <svg class="svg-tg">
-                                            <use href="./img/socials/svgSprite.svg#svg-tg"></use>
-                                        </svg>
-                                    </a></li>
-                                    <li><a href="https://vk.com/natashabalashova" target="_blank">
-                                        <svg class="svg-vk">
-                                            <use href="./img/socials/svgSprite.svg#svg-vk"></use>
-                                        </svg>
-                                    </a></li>
-                                    <li><a href="https://www.facebook.com/" target="_blank">
-                                        <svg class="svg-fb">
-                                            <use href="./img/socials/svgSprite.svg#svg-fb"></use>
-                                        </svg>
-                                    </a></li>
-                                    <li><a href="https://instagram.com/nattyme/" target="_blank">
-                                        <object class="svg-inst" type="image/svg+xml" data="./img/socials/instagram.svg"></object>
-                                    </a></li>
-                                    <li><a href="tel:89258260741">
-                                        <svg class="svg-wa">
-                                            <use href="./img/socials/svgSprite.svg#svg-wa"></use>
-                                        </svg>
-                                    </a></li>
-                                </ul>
-                            </div>
-                            
-                            <a href="mailto:ifrance@yandex.ru" class="link">yurij.kluchevsky@gmail.com</a>
-                        </div>
-                        <!--// column -->
-
-                    </div>
-                </div>
+            <div class="header-intro__img">
+              <img src="./img/header/01.jpg" alt="image" />
             </div>
-            <!--// about -->
-        </section>
 
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="portfolio__content">
-                    <div class="portfolio__title">
-                        <h2 class="section-title grad-border">Портфолио</h2>
-                    </div>
-                    <div class="portfolio__cards">
-
-                        <!-- card -->
-                        <a href="http://b92582vu.beget.tech/forest-travel/index.html" target="_blank" class="portfolio-card" >
-                            <div class="portfolio-card__img">
-                                <img src="./img/portfolio/img-01.jpg" alt="project preview">
-                            </div>
-                            <div class="portfolio-card__text">
-                                <h3 class="portfolio-card__title">Верстка “Форест тревел”</h3>
-                                <p class="portfolio-card__desc">Верстка многостраничного сайта</p>
-                            </div>
-                        </a>
-                        <!--// card -->
-
-                        <!-- card -->
-                        <a href="https://nattyme.github.io/Unit/?" target="_blank" class="portfolio-card" >
-                            <div class="portfolio-card__img">
-                                <img src="./img/portfolio/img-02.jpg" alt="project preview">
-                            </div>
-                            <div class="portfolio-card__text">
-                                <h3 class="portfolio-card__title">Сайт приложения “Юнит”</h3>
-                                <p class="portfolio-card__desc">Верстка лендинга</p>
-                            </div>
-                        </a>
-                        <!--// card -->
-
-                        <!-- card -->
-                        <a href="https://nattyme.github.io/Elegance/" target="_blank" class="portfolio-card" >
-                            <div class="portfolio-card__img">
-                                <img src="./img/portfolio/img-03.jpg" alt="project preview">
-                            </div>
-                            <div class="portfolio-card__text">
-                                <h3 class="portfolio-card__title">Верстка “Мир Авто”</h3>
-                                <p class="portfolio-card__desc">Верстка многостраничного сайта</p>
-                            </div>
-                        </a>
-                        <!--// card -->
-
-                        <!-- card -->
-                        <a href="https://nattyme.github.io/LoftHouse/" target="_blank" class="portfolio-card" >
-                            <div class="portfolio-card__img">
-                                <img src="./img/portfolio/img-04.jpg" alt="project preview">
-                            </div>
-                            <div class="portfolio-card__text">
-                                <h3 class="portfolio-card__title">Верстка “Мир Авто”</h3>
-                                <p class="portfolio-card__desc">Верстка многостраничного сайта </p>
-                            </div>
-                        </a>
-                        <!--// card -->
-
-                        <!-- card -->
-                        <a href="https://nattyme.github.io/2rism-travel-site/" target="_blank" class="portfolio-card" >
-                            <div class="portfolio-card__img">
-                                <img src="./img/portfolio/img-05.jpg" alt="project preview">
-                            </div>
-                            <div class="portfolio-card__text">
-                                <h3 class="portfolio-card__title">Верстка “Мир Авто”</h3>
-                                <p class="portfolio-card__desc">Верстка многостраничного сайта</p>
-                            </div>
-                        </a>
-                        <!--// card -->
-                    </div>
-                </div>
+            <div class="header-intro__desc">
+              <p>
+                Верстальщик сайтов, веб&#8209;разработчик. Оперативная верстка.
+                Работаю с соблюдением сроков и выполнением ТЗ.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+      <!--// intro -->
 
-        <section class="timeline" id="timeline">
-            <div class="container">
-                <div class="timeline__content">
+      <!-- banner -->
+      <div class="header-banner">
+        <img src="./img/header/header-bg.png" alt="banner" />
+      </div>
+      <!--// banner -->
 
-                    <div class="timeline__header">
-                        <h2 class="section-title grad-border">Как я работаю</h2>
-                    </div>
-
-                    <!--  wrapper -->
-                    <div class="timeline-wrapper">
-
-                        <!-- item -->
-                        <div class="timeline-item">
-                            <div class="timeline-item__title grad-border">Оцениваю макет</div>
-                            <p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
-                            <strong>Время: 2 часа</strong>
-                        
-                        </div>
-                        <!--// item -->
-
-                         <!-- item -->
-                         <div class="timeline-item">
-                            <div class="timeline-item__title grad-border">ТЗ, смета и график работ</div>
-                            <p>Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.</p>
-                            <strong>Время: 2 - 4 часа</strong>
-                        </div>
-                        <!--// item -->
-
-                         <!-- item -->
-                         <div class="timeline-item">
-                            <div class="timeline-item__title grad-border">Вы держите руку на пульсе</div>
-                            <p>Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</p>
-                        </div>
-                        <!--// item -->
-
-                         <!-- item -->
-                         <div class="timeline-item">
-                            <div class="timeline-item__title grad-border">Выполняю каждый этап</div>
-                            <p>Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p>
-                        </div>
-                        <!--// item -->
-
-                         <!-- item -->
-                         <div class="timeline-item">
-                            <div class="timeline-item__title grad-border">Финальное ревью проекта</div>
-                            <p>Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
-                            <strong>Время: 2 - 4 часа</strong>
-                        </div>
-                        <!--// item -->
-                    </div>
-                    <!--//  wrapper -->
-
-                </div>
+      <!-- about -->
+      <div class="header-about" id="about">
+        <div class="container">
+          <div class="header-about__content">
+            <!-- column -->
+            <div class="header-about__column">
+              <div class="header-about__subtitle">
+                <p class="section-title-42px">Что я умею:</p>
+              </div>
+              <ul class="header-about__skills">
+                <li>pixel perfect, полное соответствие макету</li>
+                <li>верстаю с сеткой или без</li>
+                <li>адаптивная верстка под мобильные устройства</li>
+                <li>оптимизация по retina экраны</li>
+                <li>с Bootstrap и без него</li>
+              </ul>
             </div>
-        </section>
+            <!--// column -->
 
-        <section class="contacts" id="contacts">
-            <div class="container">
-                
-                    <div class="contacts__header">
-                        <h2 class="section-title grad-border">Контакты</h2>
-                    </div>
-                    <div class="contacts__row">
+            <!-- column -->
+            <div class="header-about__column">
+              <div class="header-about__subtitle">
+                <p class="section-title-42px">На связи:</p>
+              </div>
+              <div class="header-about__socials">
+                <ul class="socials">
+                  <li>
+                    <a href="tel:89258260741">
+                      <svg class="svg-tg">
+                        <use href="./img/socials/svgSprite.svg#svg-tg"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://vk.com/natashabalashova" target="_blank">
+                      <svg class="svg-vk">
+                        <use href="./img/socials/svgSprite.svg#svg-vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                      <svg class="svg-fb">
+                        <use href="./img/socials/svgSprite.svg#svg-fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://instagram.com/nattyme/" target="_blank">
+                      <object
+                        class="svg-inst"
+                        type="image/svg+xml"
+                        data="./img/socials/instagram.svg"
+                      ></object>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:89258260741">
+                      <svg class="svg-wa">
+                        <use href="./img/socials/svgSprite.svg#svg-wa"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-                        <!-- column -->
-                        <div class="contacts__column">
-                            <div class="contacts__text">
-                                <p>Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над проектом &mdash; напишите мне.</p>
-                            </div>
-                            <ul class="contacts__list">
-                                <li><span>Email</span><a class="link" href="mailto:yurij.kluchevsky@gmail.com">yurij.kluchevsky@gmail.com</a></li>
-                                <li><span>Телефон</span><a class="link" href="tel:7980234567">+7 (980) 123-45-67</a></li>
-                            </ul>
-                            <ul class="socials">
-                                <li><a href="tel:89258260741">
-                                    <svg class="svg-tg">
-                                        <use href="./img/socials/svgSprite.svg#svg-tg"></use>
-                                    </svg>
-                                </a></li>
-                                <li><a href="https://vk.com/natashabalashova"  target="_blank">
-                                    <svg class="svg-vk">
-                                        <use href="./img/socials/svgSprite.svg#svg-vk"></use>
-                                    </svg>
-                                </a></li>
-                                <li><a href="https://www.facebook.com/" target="_blank">
-                                    <svg class="svg-fb">
-                                        <use href="./img/socials/svgSprite.svg#svg-fb"></use>
-                                    </svg>
-                                </a></li>
-                                <li><a href="https://instagram.com/nattyme/" target="_blank">
-                                    <object class="svg-inst" type="image/svg+xml" data="./img/socials/instagram.svg"></object>
-                                </a></li>
-                                <li><a href="tel:89258260741">
-                                    <svg class="svg-wa">
-                                        <use href="./img/socials/svgSprite.svg#svg-wa"></use>
-                                    </svg>
-                                </a></li>
-                            </ul>
-                        </div>
-                        <!--// column -->
-
-                        <!-- column -->
-                        <div class="contacts__column">
-                            
-                            <form action="#" class="contact-form">
-                                <div class="form-item">
-                                    <span class="fake-placeholder">Ваш Email</span>
-                                    <input class="form-input" type="text">
-                                </div>
-                                <div class="form-item">
-                                    <span class="fake-placeholder">Сообщение</span>
-                                    <textarea class="form-input" name="message" id="#" cols="30" rows="10"></textarea>
-                                </div>
-
-                                <div class="form-item">
-                                    <button class="button button--accent" type="submit">Отправить</button>
-                                </div>
-                                <div id="answer"></div>
-                            </form>
-
-                            
-                        </div>
-                        <!--// column -->
-
-                    </div>
-               
+              <a href="mailto:ifrance@yandex.ru" class="link"
+                >yurij.kluchevsky@gmail.com</a
+              >
             </div>
-        </section>
+            <!--// column -->
+          </div>
+        </div>
+      </div>
+      <!--// about -->
+    </section>
 
-        <footer class="footer">
-            <div class="container">
-    
-                <div class="footer__copyright">
-                        <p class="footer__date">&copy; 2021 &mdash; Юрий Ключевский</p>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="portfolio__content">
+          <div class="portfolio__title">
+            <h2 class="section-title grad-border">Портфолио</h2>
+          </div>
+          <div class="portfolio__cards">
+            <!-- card -->
+            <a
+              href="http://b92582vu.beget.tech/forest-travel/index.html"
+              target="_blank"
+              class="portfolio-card"
+            >
+              <div class="portfolio-card__img">
+                <img src="./img/portfolio/img-01.jpg" alt="project preview" />
+              </div>
+              <div class="portfolio-card__text">
+                <h3 class="portfolio-card__title">Верстка “Форест тревел”</h3>
+                <p class="portfolio-card__desc">
+                  Верстка многостраничного сайта
+                </p>
+              </div>
+            </a>
+            <!--// card -->
 
-                        <div class="footer__text">
-                            <p>Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.</p>
-                            <p>Этот сайт сделал в рамках прохождения обучения по верстке на&nbsp;курсах от  <a class="link-muted" href="https://webcademy.ru/" target="_blank">WebCademy.ru</a>.</p>
-                        </div>
-                </div>
+            <!-- card -->
+            <a
+              href="https://nattyme.github.io/Unit/?"
+              target="_blank"
+              class="portfolio-card"
+            >
+              <div class="portfolio-card__img">
+                <img src="./img/portfolio/img-02.jpg" alt="project preview" />
+              </div>
+              <div class="portfolio-card__text">
+                <h3 class="portfolio-card__title">Сайт приложения “Юнит”</h3>
+                <p class="portfolio-card__desc">Верстка лендинга</p>
+              </div>
+            </a>
+            <!--// card -->
 
+            <!-- card -->
+            <a
+              href="https://nattyme.github.io/Elegance/"
+              target="_blank"
+              class="portfolio-card"
+            >
+              <div class="portfolio-card__img">
+                <img src="./img/portfolio/img-03.jpg" alt="project preview" />
+              </div>
+              <div class="portfolio-card__text">
+                <h3 class="portfolio-card__title">Верстка “Мир Авто”</h3>
+                <p class="portfolio-card__desc">
+                  Верстка многостраничного сайта
+                </p>
+              </div>
+            </a>
+            <!--// card -->
+
+            <!-- card -->
+            <a
+              href="https://nattyme.github.io/LoftHouse/"
+              target="_blank"
+              class="portfolio-card"
+            >
+              <div class="portfolio-card__img">
+                <img src="./img/portfolio/img-04.jpg" alt="project preview" />
+              </div>
+              <div class="portfolio-card__text">
+                <h3 class="portfolio-card__title">Верстка “Мир Авто”</h3>
+                <p class="portfolio-card__desc">
+                  Верстка многостраничного сайта
+                </p>
+              </div>
+            </a>
+            <!--// card -->
+
+            <!-- card -->
+            <a
+              href="https://nattyme.github.io/2rism-travel-site/"
+              target="_blank"
+              class="portfolio-card"
+            >
+              <div class="portfolio-card__img">
+                <img src="./img/portfolio/img-05.jpg" alt="project preview" />
+              </div>
+              <div class="portfolio-card__text">
+                <h3 class="portfolio-card__title">Верстка “Мир Авто”</h3>
+                <p class="portfolio-card__desc">
+                  Верстка многостраничного сайта
+                </p>
+              </div>
+            </a>
+            <!--// card -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline" id="timeline">
+      <div class="container">
+        <div class="timeline__content">
+          <div class="timeline__header">
+            <h2 class="section-title grad-border">Как я работаю</h2>
+          </div>
+
+          <!--  wrapper -->
+          <div class="timeline-wrapper">
+            <!-- item -->
+            <div class="timeline-item">
+              <div class="timeline-item__title grad-border">Оцениваю макет</div>
+              <p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
+              <strong>Время: 2 часа</strong>
             </div>
-        </footer>
+            <!--// item -->
 
-        <script src="./js/main.js"></script>
-        
-	</body>
+            <!-- item -->
+            <div class="timeline-item">
+              <div class="timeline-item__title grad-border">
+                ТЗ, смета и график работ
+              </div>
+              <p>
+                Согласовываем техническое задание и график работ по проекту.
+                Осмечиваю стоимость по этапам работы.
+              </p>
+              <strong>Время: 2 - 4 часа</strong>
+            </div>
+            <!--// item -->
+
+            <!-- item -->
+            <div class="timeline-item">
+              <div class="timeline-item__title grad-border">
+                Вы держите руку на пульсе
+              </div>
+              <p>
+                Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в
+                любое время можете видеть актуальное состояние проекта и задач.
+              </p>
+            </div>
+            <!--// item -->
+
+            <!-- item -->
+            <div class="timeline-item">
+              <div class="timeline-item__title grad-border">
+                Выполняю каждый этап
+              </div>
+              <p>
+                Поочередно выполняю каждый этап работы. Передаю результаты.
+                Заказчик производит поэтапную оплату.
+              </p>
+            </div>
+            <!--// item -->
+
+            <!-- item -->
+            <div class="timeline-item">
+              <div class="timeline-item__title grad-border">
+                Финальное ревью проекта
+              </div>
+              <p>
+                Проект готов. Финальное ревью и полировка до идеального
+                состояния. Передаю файлы проекта, заливаю сайт на хостинг
+                заказчика.
+              </p>
+              <strong>Время: 2 - 4 часа</strong>
+            </div>
+            <!--// item -->
+          </div>
+          <!--//  wrapper -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__header">
+          <h2 class="section-title grad-border">Контакты</h2>
+        </div>
+        <div class="contacts__row">
+          <!-- column -->
+          <div class="contacts__column">
+            <div class="contacts__text">
+              <p>
+                Если вы ищите специалиста по верстке сайтов или frontend
+                разработчика в команду для работы над проектом &mdash; напишите
+                мне.
+              </p>
+            </div>
+            <ul class="contacts__list">
+              <li>
+                <span>Email</span
+                ><a class="link" href="mailto:yurij.kluchevsky@gmail.com"
+                  >yurij.kluchevsky@gmail.com</a
+                >
+              </li>
+              <li>
+                <span>Телефон</span
+                ><a class="link" href="tel:7980234567">+7 (980) 123-45-67</a>
+              </li>
+            </ul>
+            <ul class="socials">
+              <li>
+                <a href="tel:89258260741">
+                  <svg class="svg-tg">
+                    <use href="./img/socials/svgSprite.svg#svg-tg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://vk.com/natashabalashova" target="_blank">
+                  <svg class="svg-vk">
+                    <use href="./img/socials/svgSprite.svg#svg-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <svg class="svg-fb">
+                    <use href="./img/socials/svgSprite.svg#svg-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com/nattyme/" target="_blank">
+                  <object
+                    class="svg-inst"
+                    type="image/svg+xml"
+                    data="./img/socials/instagram.svg"
+                  ></object>
+                </a>
+              </li>
+              <li>
+                <a href="tel:89258260741">
+                  <svg class="svg-wa">
+                    <use href="./img/socials/svgSprite.svg#svg-wa"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!--// column -->
+
+          <!-- column -->
+          <div class="contacts__column">
+            <form action="#" class="contact-form">
+              <div class="form-item">
+                  <input class="form-input" type="text" required />
+                  <span class="fake-placeholder">Ваш Email</span>
+              </div>
+              <div class="form-item">
+                <textarea
+                  class="form-input"
+                  name="message"
+                  id="#"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+                <span class="fake-placeholder">Сообщение</span>
+              </div>
+
+              <div class="form-item">
+                <input type="submit" class="button button--accent" value="Отправить">
+              </div>
+              <div id="answer"></div>
+            </form>
+          </div>
+          <!--// column -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__copyright">
+          <p class="footer__date">&copy; 2021 &mdash; Юрий Ключевский</p>
+
+          <div class="footer__text">
+            <p>
+              Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов.
+            </p>
+            <p>
+              Этот сайт сделал в рамках прохождения обучения по верстке
+              на&nbsp;курсах от
+              <a class="link-muted" href="https://webcademy.ru/" target="_blank"
+                >WebCademy.ru</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>

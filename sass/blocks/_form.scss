@@ -1,13 +1,26 @@
 .contact-form {
+    position: relative;
     padding: 50px 62px;
 
-    z-index: 1;
     width: 540px;
     height: 449px;
 
     box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
     background: #fff;
 }
+
+
+.contact-form::before {
+    z-index: -1;
+    content: url("./../img/contacts/figure.svg");
+    position: absolute;
+    top: -113px;
+    right: 0;
+    transform: translateX(40%);
+    width: 280px;
+    height: 243px;
+}
+
 
 .form-item {
     position: relative;
@@ -31,6 +44,7 @@
     line-height: 1;
     color: #9d9d9d;
 
+    transition: all 0.2s ease-in;
     pointer-events: none;
 
 }
@@ -39,6 +53,30 @@
     height: 39px;
     width: 100%;
     border-bottom: 2px solid #e5e5e5;
+
+    &:active, &:focus, &:valid {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1;
+        color: #000;
+
+        & ~ .fake-placeholder {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1;
+            color: #eca73f;
+
+            transform: translateY(-100%);
+        }
+    }
+
+    &:active, &:focus {
+        border-bottom-color: #ff543e;
+    }
+
+    &:valid {
+        border-bottom-color: #e5e5e5;
+    }
 }
 
 .form__button {
