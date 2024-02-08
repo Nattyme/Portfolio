@@ -2,62 +2,36 @@
 <html lang="ru">
   <head>
     <!-- encoding -->
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <!-- Mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title and SEO -->
     <title>Портфолио</title>
-    <meta name="description" content="Портфолио" />
-    <meta
-      name="keywords"
-      content="Портфолио, верстальщик, веб-разработчик, создание сайта, оперативная верстка"
-    />
+    <meta name="description" content="Портфолио">
+    <meta name="keywords" content="Портфолио, верстальщик, веб-разработчик, создание сайта, оперативная верстка">
 
     <!-- Styles -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="./css/main.css" />
 
     <!-- Open Graph -->
     <!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Портфолио Юрий Ключевский" />
-    <meta
-      property="og:description"
-      content="Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ."
-    />
-    <meta property="og:image" content="./img/opengraph.jpg" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Портфолио Юрий Ключевский">
+    <meta property="og:description" content="Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ."/>
+    <meta property="og:image" content="./img/opengraph.jpg">
 
     <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./img/favicon/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png"/>
     <link rel="manifest" href="./img/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="./img/favicon/safari-pinned-tab.svg"
-      color="#1a60cf"
-    />
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#1a60cf"/>
     <link rel="shortcut icon" href="./img/favicon/favicon.ico" />
     <meta name="msapplication-TileColor" content="#00aba9" />
-    <meta
-      name="msapplication-config"
-      content="./img/favicon/browserconfig.xml"
-    />
+    <meta name="msapplication-config" content="./img/favicon/browserconfig.xml"/>
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
@@ -175,7 +149,7 @@
             </div>
 
             <div class="header-intro__img">
-              <img src="./img/header/01.jpg" alt="image" />
+              <img src="./img/header/01.jpg" alt="image">
             </div>
 
             <div class="header-intro__desc">
@@ -191,7 +165,7 @@
 
       <!-- banner -->
       <div class="header-banner">
-        <img src="./img/header/header-bg.png" alt="banner" />
+        <img src="./img/header/header-bg.png" alt="banner">
       </div>
       <!--// banner -->
 
@@ -279,26 +253,31 @@
             <h2 class="section-title grad-border">Портфолио</h2>
           </div>
 
+          <!-- mix block -->
           <div class="mix-block">
-            <div class="mix-block__btn">
-                <button class="button" type="button" data-filter = "all" >Все</button>
-                <button class="button" type="button" data-filter = ".html" >HTML верстка</button>
-                <button class="button" type="button" data-filter = ".wp" >WordPress</button>
-            </div>
 
+            <!-- controls -->
+            <div class="mix-block__controls">
+                <button class="mix-block__btn" type="button" data-filter = "all" >Все работы</button>
+                <button class="mix-block__btn" type="button" data-filter = ".html" >HTML верстка</button>
+                <button class="mix-block__btn" type="button" data-filter = ".wp" >WordPress</button>
+            </div>
+            <!--// controls -->
+
+            <!-- cards gallery -->
             <div class="portfolio__cards" id="mix-cards">
                 <!-- card -->
-                <a class="portfolio-card mix wp" href="http://b92582vu.beget.tech/forest-travel/index.html" target="_blank">
-                  <div class="portfolio-card__img">
+                <div class="portfolio-card mix wp">
+                  <a class="portfolio-card__img" href="http://b92582vu.beget.tech/forest-travel/index.html" target="_blank">
                     <img src="./img/portfolio/img-01.jpg" alt="project preview">
                     <span>Смотреть проект</span>
-                  </div>
+                  </a>
     
                   <div class="portfolio-card__text">
-                    <h3 class="portfolio-card__title">Верстка “Форест тревел”</h3>
+                    <a data-fancybox href="./img/fancybox/forest-2.jpg" class="portfolio-card__title">Верстка “Форест тревел”</a>
                     <p class="portfolio-card__desc">Верстка многостраничного сайта</p>
                   </div>
-                </a>
+                </div>
                 <!--// card -->
     
                 <!-- card -->
@@ -355,8 +334,10 @@
                 </a>
                 <!--// card -->
             </div>
+             <!-- cards gallery -->
 
           </div>
+           <!--// mix block -->
 
         </div>
       </div>
@@ -559,14 +540,17 @@
     <!-- библиотка jQuery  -->
     <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
 
+    <!-- валидатор формы -->
+    <script src="./libs/jquery-validate/jquery.validate.min.js"></script>
+
     <!-- mixItUp -->
     <script src="./libs/mixItUp/mixitup.min.js"></script>
 
     <!-- анимации AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- валидатор формы -->
-    <script src="./libs/jquery-validate/jquery.validate.min.js"></script>
+    <!-- галерея fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <!--*** Custom JS ***-->
     <script src="./js/main.js"></script>

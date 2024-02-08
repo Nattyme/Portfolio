@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Вызов анимации AOS */
   AOS.init();
 
+  /* Вызов галереи FancyBox */
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
+
   /****** Мобильная навигация и кнопка ******/
   navIcon.addEventListener("click", function () {
     this.classList.toggle("nav-icon--active");
@@ -26,7 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /****** Переключение категорий карточек ******/
   let containerEl = document.querySelector('#mix-cards');
-  let mixer = mixitup(containerEl);
+  let mixer = mixitup(containerEl, {
+    classNames: {
+        block: ""
+    }
+  });
 
   /**** Перемещение названия поля input наверх *****/
   for (let item of formInputs) {
