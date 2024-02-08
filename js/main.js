@@ -4,9 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const bodyEl = document.body;
   const navLinks = document.querySelectorAll("#mobile-nav a");
   const formInputs = document.querySelectorAll(".form-input");
+  const backTopBtn = document.querySelector("#backtop");
 
   /* Вызов анимации AOS */
   AOS.init();
+
+  /* Вызов галереи FancyBox */
+  Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });
 
   /****** Мобильная навигация и кнопка ******/
   navIcon.addEventListener("click", function () {
@@ -14,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.classList.toggle("nav-mobile--active");
     bodyEl.classList.toggle("lock");
   });
-  // Обходим ссылки методом forEach
   navLinks.forEach(function (item) {
     // Для каждой ссылки добавляем прослушку по событию "Клик"
     item.addEventListener("click", function () {
@@ -22,6 +27,14 @@ document.addEventListener("DOMContentLoaded", function () {
       nav.classList.remove("nav-mobile--active"); // Убираем активный класс у блока моб. навигации
       bodyEl.classList.remove("lock");
     });
+  });
+
+  /****** Переключение категорий карточек ******/
+  let containerEl = document.querySelector('#mix-cards');
+  let mixer = mixitup(containerEl, {
+    classNames: {
+        block: ""
+    }
   });
 
   /**** Перемещение названия поля input наверх *****/
@@ -42,4 +55,64 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  /**** Кнопка перемещения наверх страницы *****/
+  backTopBtn.style.opacity = 0;
+
+  document.addEventListener('scroll', function(){
+    if(window.pageYOffset > 500) {
+        backTopBtn.style.opacity = 1;
+    } else {
+        backTopBtn.style.opacity = 0;
+    }
+  });
+
+   /**** Валидация формы *****/
+   $(".contact-form").validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+
+        message: {
+            required: true
+        }
+    },
+
+    messages: {
+        email: {
+            required: "Необходимо указать электронную почту",
+            email: "Неверно указан адрес"
+        },
+
+        message: {
+            required: "Отсутствует текст сообщения"
+        }
+    },
+
+    submitHandler: function (form){
+        ajaxFormSubmit();
+    }
+   });
+
+   // Функция AJAX запроса на сервер
+   function ajaxFormSubmit(){
+    let userData = $(".contact-form").serialize(); // Сохраняем данные из формы в строку
+
+    // Запрос ajax
+    $.ajax({
+        type: "POST", // тип запроса - POST
+        url: "php/mail.php", // адрес для отправки
+        data: userData, // какие данные отправляем. Здесь - данные переменной userData
+
+        // Функция, если код выполнен правильно
+        success: function (html) {
+            $(".contact-form").slideUp(800);
+            $("#answer").html(html);
+        }
+    });
+    // Чтобы по Submit больше ничего не выполнялось - делаем возврат false. Прерываем цепочку срабатывания остальных функций
+    return false
+   };
 });

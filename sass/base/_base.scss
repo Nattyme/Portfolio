@@ -1,9 +1,9 @@
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-	font-family:  "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: $black-color;
     font-size: 16px;
     line-height: 1.3;
@@ -13,14 +13,44 @@ body {
     overflow: hidden;
 }
 
+.backtop-btn {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    bottom: 15px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    transition: transform 0.2s ease-in;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    &:hover {
+        transform: scale(1.4);
+    }
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
 /* Grid styles */
 .container {
-	max-width: 1140px;
+    max-width: 1140px;
     width: 100%;
-	margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     &--fluid {
         max-width: unset;
@@ -51,10 +81,10 @@ body {
     background-repeat: no-repeat;
     background-position: center bottom 15px; // x y
     background-size: 100% 12px;
-    background-image: linear-gradient(to right,#fbdc4d,#fbdc4d);
+    background-image: linear-gradient(to right, #fbdc4d, #fbdc4d);
 }
 
-h2.grad-border  {
+h2.grad-border {
     background-size: 100% 8px;
     background-position: center bottom 10px;
 }
@@ -67,7 +97,7 @@ h2.grad-border  {
 .svg-ln {
     width: 32px;
     height: 32px;
-    fill: #000;  
+    fill: #000;
 }
 
 .svg-git {
@@ -76,17 +106,24 @@ h2.grad-border  {
     fill: #212121;
 }
 
-.svg-ln, .svg-git {
+.svg-ln,
+.svg-git {
     transition: opacity 0.2s ease-in;
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
         opacity: 0.75;
     }
 }
 
-.svg-tg, .svg-vk, .svg-fb, .svg-inst, .svg-wa {
+.svg-tg,
+.svg-vk,
+.svg-fb,
+.svg-inst,
+.svg-wa {
     width: 48px;
-    height: 48px; 
+    height: 48px;
 }
 
 .svg-inst {
@@ -95,7 +132,7 @@ h2.grad-border  {
 
 /* Utility */
 .none {
-	display: none !important;
+    display: none !important;
 }
 
 // .visually-hidden {
@@ -108,5 +145,3 @@ h2.grad-border  {
 //     background: transparent;
 //     font-size: 0;
 // }
-
-

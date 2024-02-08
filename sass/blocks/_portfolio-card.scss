@@ -110,8 +110,8 @@
     height: 60px;
     overflow: hidden;
 
-    h3,
-    p {
+    .portfolio-card__title,
+    .portfolio-card__desc {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
@@ -125,7 +125,6 @@
     font-weight: 600;
 
     transition: color 0.2s ease-in;
-
 }
 
 .portfolio-card__desc {

@@ -1,4 +1,6 @@
 .contacts {
+    position: relative;
+    z-index: 1;
     padding-top: 70px;
     padding-bottom: 90px;
     background: linear-gradient(0deg, #f5fbff 0%, #f5fbff 100%), #f4f8f9;
@@ -15,16 +17,11 @@
     justify-content: space-between;
 }
 
-.contacts__column {
-    position: relative;
-    z-index: 0;
-}
-
 .contacts__list {
     margin-bottom: 34px;
     line-height: 1.6;
 
-    li + li {
+    li+li {
         margin-top: 22px;
     }
 
@@ -45,9 +42,10 @@
     width: 538px;
 
     font-size: 18px;
-    line-height: 1.6; /* 28.8px */
+    line-height: 1.6;
+    /* 28.8px */
 
-    p + p {
+    p+p {
         margin-top: 8px;
     }
 }

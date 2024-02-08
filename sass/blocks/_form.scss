@@ -1,30 +1,50 @@
 .contact-form {
-    position: relative;
     padding: 50px 62px;
-
+    position: relative;
     width: 540px;
 
     box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
-    background: #fff;
+    background-color: #fff;
 }
 
-
-.contact-form::before {
+.contact-form__img {
     z-index: -1;
-    content: url("./../img/contacts/figure.svg");
     position: absolute;
-    top: -113px;
-    right: 0;
-    transform: translateX(40%);
-    width: 280px;
-    height: 243px;
+    top: -108px;
+    right: 109px;
+    max-width: 400px;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
+
+.move-quot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    // opacity: 0.3;
+    max-width: 200px;
+}
+
+// .contact-form::after {
+//     z-index: -1;
+//     position: absolute;
+//     top: -113px;
+//     right: 0;
+//     content: url("./../img/contacts/figure.svg");
+//     transform: translateX(40%);
+//     width: 280px;
+//     height: 243px;
+// }
 
 
 .form-item {
     position: relative;
 
-    & + & {
+    &+& {
         margin-top: 42px;
     }
 
@@ -66,14 +86,17 @@
     width: 100%;
     border-bottom: 2px solid #e5e5e5;
 
-    &:active, &:focus, &:valid {
+    &:active,
+    &:focus,
+    &:valid {
         font-weight: 700;
         font-size: 18px;
         line-height: 1;
         color: #000;
     }
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
         border-bottom-color: #ff543e;
     }
 
