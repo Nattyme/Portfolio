@@ -60,6 +60,7 @@
               </nav>
 
               <div class="nav-mobile__contacts">
+                <!-- list -->
                 <ul class="socials">
                   <li>
                     <a href="tel:89258260741">
@@ -99,12 +100,13 @@
                     </a>
                   </li>
                 </ul>
-                <a href="mailto:yurij.kluchevsky@gmail.com" class="link"
-                  >yurij.kluchevsky@gmail.com</a
-                >
+                <!--// list -->
+                <a href="mailto:yurij.kluchevsky@gmail.com" class="link">yurij.kluchevsky@gmail.com</a>
               </div>
             </div>
+            <!--// Wrapper -->
           </div>
+          <!--=====// Мобильная навигация =====-->
 
           <div class="header-top__social">
             <a
@@ -130,6 +132,8 @@
       <div class="header-intro">
         <div class="container">
           <div class="header-intro__content">
+
+            <!-- text -->
             <div class="header-intro__text">
               <div class="header-intro__title">
                 <h1 class="title grad-border">Юрий Ключевский</h1>
@@ -147,10 +151,13 @@
                 <a href="#contacts" class="button">Контакты</a>
               </div>
             </div>
+             <!--// text -->
 
+            <!-- image -->
             <div class="header-intro__img">
               <img src="./img/header/01.jpg" alt="image">
             </div>
+             <!--// image -->
 
             <div class="header-intro__desc">
               <p>
@@ -249,95 +256,97 @@
     <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="portfolio__content">
-          <div class="portfolio__title">
-            <h2 class="section-title grad-border">Портфолио</h2>
-          </div>
-
-          <!-- mix block -->
-          <div class="mix-block">
-
-            <!-- controls -->
-            <div class="mix-block__controls">
-                <button class="mix-block__btn" type="button" data-filter = "all" >Все работы</button>
-                <button class="mix-block__btn" type="button" data-filter = ".html" >HTML верстка</button>
-                <button class="mix-block__btn" type="button" data-filter = ".wp" >WordPress</button>
+            <div class="portfolio__title">
+                <h2 class="section-title grad-border">Портфолио</h2>
             </div>
-            <!--// controls -->
 
-            <!-- cards gallery -->
-            <div class="portfolio__cards" id="mix-cards">
-                <!-- card -->
-                <div class="portfolio-card mix wp">
-                  <a class="portfolio-card__img" href="http://b92582vu.beget.tech/forest-travel/index.html" target="_blank">
-                    <img src="./img/portfolio/img-01.jpg" alt="project preview">
-                    <span>Смотреть проект</span>
-                  </a>
-    
-                  <div class="portfolio-card__text">
-                    <a data-fancybox href="./img/fancybox/forest-2.jpg" class="portfolio-card__title">Верстка “Форест тревел”</a>
-                    <p class="portfolio-card__desc">Верстка многостраничного сайта</p>
-                  </div>
+            <!-- mix block -->
+            <div class="mix-block">
+
+                <!-- controls -->
+                <div class="mix-block__controls">
+                    <button class="mix-block__btn" type="button" data-filter = "all" >Все работы</button>
+                    <button class="mix-block__btn" type="button" data-filter = ".html" >HTML верстка</button>
+                    <button class="mix-block__btn" type="button" data-filter = ".wp" >WordPress</button>
                 </div>
-                <!--// card -->
-    
-                <!-- card -->
-                <a class="portfolio-card mix html" href="https://nattyme.github.io/Unit/?" target="_blank">
-                  <div class="portfolio-card__img">
-                    <img src="./img/portfolio/img-02.jpg" alt="project preview">
-                    <span>Смотреть проект</span>
-                  </div>
-                  <div class="portfolio-card__text">
-                    <h3 class="portfolio-card__title">Сайт приложения “Юнит”</h3>
-                    <p class="portfolio-card__desc">Верстка лендинга</p>
-                  </div>
-                </a>
-                <!--// card -->
-    
-                <!-- card -->
-                <a class="portfolio-card mix wp" href="https://nattyme.github.io/Elegance/" target="_blank">
-                  <div class="portfolio-card__img">
-                    <img src="./img/portfolio/img-03.jpg" alt="project preview">
-                    <span>Смотреть проект</span>
-                  </div>
-                  <div class="portfolio-card__text">
-                    <h3 class="portfolio-card__title">Верстка “Мир Авто”</h3>
-                    <p class="portfolio-card__desc">Верстка многостраничного сайта</p>
-                  </div>
-                </a>
-                <!--// card -->
-    
-                <!-- card -->
-                <a class="portfolio-card mix html" href="https://nattyme.github.io/LoftHouse/" target="_blank">
-                  <div class="portfolio-card__img">
-                    <img src="./img/portfolio/img-04.jpg" alt="project preview">
-                    <span>Смотреть проект</span>
-                  </div>
-                  <div class="portfolio-card__text">
-                    <h3 class="portfolio-card__title">Верстка “Мир Авто”</h3>
-                    <p class="portfolio-card__desc">Верстка многостраничного сайта</p>
-                  </div>
-                </a>
-                <!--// card -->
-    
-                <!-- card -->
-                <a class="portfolio-card mix html wp" href="https://nattyme.github.io/2rism-travel-site/" target="_blank">
-    
-                  <div class="portfolio-card__img">
-                    <img src="./img/portfolio/img-05.jpg" alt="project preview">
-                    <span>Смотреть проект</span>
-                  </div>
-                  
-                  <div class="portfolio-card__text">
-                    <h3 class="portfolio-card__title">Верстка “Мир Авто”</h3>
-                    <p class="portfolio-card__desc">Верстка многостраничного сайта</p>
-                  </div>
-                </a>
-                <!--// card -->
-            </div>
-             <!-- cards gallery -->
+                <!--// controls -->
 
-          </div>
-           <!--// mix block -->
+                <!-- cards wrapper -->
+                <div class="portfolio__cards" id="mix-cards">
+                    <!-- card -->
+                    <div class="portfolio-card mix wp">
+                        <a class="portfolio-card__img" href="http://b92582vu.beget.tech/forest-travel/index.html" target="_blank">
+                            <img src="./img/portfolio/forest-1.jpg" alt="project preview">
+                            <span>Смотреть проект</span>
+                        </a>
+
+                        <div class="portfolio-card__text">
+                            <a class="portfolio-card__title" href="./img/fancybox/forest-2.jpg" data-fancybox>Верстка “Форест тревел”</a>
+                            <p class="portfolio-card__desc">Верстка многостраничного сайта</p>
+                        </div>
+                    </div>
+                    <!--// card -->
+
+                    <!-- card -->
+                    <div class="portfolio-card mix html">
+                        <a class="portfolio-card__img" href="https://nattyme.github.io/Unit/?" target="_blank">
+                            <img src="./img/portfolio/unit-1.jpg" alt="project preview">
+                            <span>Смотреть проект</span>
+                        </a>
+
+                        <div class="portfolio-card__text">
+                            <a class="portfolio-card__title" href="./img/fancybox/unit-2.jpg" data-fancybox>Сайт приложения “Юнит”</a>
+                            <p class="portfolio-card__desc">Верстка лендинга</p>
+                        </div>
+                    </div>
+                    <!--// card -->
+
+                    <!-- card -->
+                    <div class="portfolio-card mix wp">
+                        <a class="portfolio-card__img" href="https://nattyme.github.io/Elegance/" target="_blank">
+                            <img src="./img/portfolio/elegance-1.jpg" alt="project preview">
+                            <span>Смотреть проект</span>
+                        </a>
+
+                        <div class="portfolio-card__text">
+                            <a class="portfolio-card__title" href="./img/fancybox/elegance-2.jpg" data-fancybox>Верстка “Elegance”</a>
+                            <p class="portfolio-card__desc">Верстка лендинга</p>
+                        </div>
+                    </div>
+                    <!--// card -->
+
+                    <!-- card -->
+                    <div class="portfolio-card mix html">
+                        <a class="portfolio-card__img" href="https://nattyme.github.io/Freelancer-portfolio-/" target="_blank">
+                            <img src="./img/portfolio/designer-page-1.jpg" alt="project preview">
+                            <span>Смотреть проект</span>
+                        </a>
+
+                        <div class="portfolio-card__text">
+                            <a class="portfolio-card__title" href="./img/fancybox/designer-page-2.jpg" data-fancybox>Верстка “Freelancer-portfolio”</a>
+                            <p class="portfolio-card__desc">Верстка лендинга</p>
+                        </div>
+                    </div>
+                    <!--// card -->
+
+                    <!-- card -->
+                    <div class="portfolio-card mix html wp">
+                        <a class="portfolio-card__img" href="https://nattyme.github.io/Be-Prepared-For-The-Mountains/" target="_blank">
+                            <img src="./img/portfolio/mntn-1.jpg" alt="project preview">
+                            <span>Смотреть проект</span>
+                        </a>
+                        
+                        <div class="portfolio-card__text">
+                            <a class="portfolio-card__title" href="./img/fancybox/mntn-2.jpg" data-fancybox>Верстка “MNTN”</a>
+                            <p class="portfolio-card__desc">Верстка лендинга</p>
+                        </div>
+                    </div>
+                    <!--// card -->
+                </div>
+                <!-- cards wrapper -->
+
+            </div>
+            <!--// mix block -->
 
         </div>
       </div>
@@ -346,82 +355,76 @@
     <section class="timeline" id="timeline">
       <div class="container">
         <div class="timeline__content">
-          <div class="timeline__header">
+            <!-- header -->
+            <div class="timeline__header">
             <h2 class="section-title grad-border">Как я работаю</h2>
-          </div>
-
-          <!--  wrapper -->
-          <div class="timeline-wrapper">
-            <!-- item -->
-            <div class="timeline-item" data-aos="fade-left" data-aos-duration="800">
-              <div class="timeline-item__title grad-border">Оцениваю макет</div>
-              <p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
-              <strong>Время: 2 часа</strong>
             </div>
-            <!--// item -->
+            <!--// header -->
 
-            <!-- item -->
-            <div class="timeline-item" data-aos="fade-right" data-aos-duration="800">
-              <div class="timeline-item__title grad-border">
-                ТЗ, смета и график работ
-              </div>
-              <p>
-                Согласовываем техническое задание и график работ по проекту.
-                Осмечиваю стоимость по этапам работы.
-              </p>
-              <strong>Время: 2 - 4 часа</strong>
-            </div>
-            <!--// item -->
+            <!--  wrapper -->
+            <div class="timeline-wrapper">
+                <!-- item -->
+                <div class="timeline-item" data-aos="fade-left" data-aos-duration="800">
+                    <div class="timeline-item__title grad-border">Оцениваю макет</div>
+                    <p>Оцениваю объем работы, сложность, нюансы. Задаю вопросы.</p>
+                    <strong>Время: 2 часа</strong>
+                </div>
+                <!--// item -->
 
-            <!-- item -->
-            <div class="timeline-item" data-aos="fade-left" data-aos-duration="800">
-              <div class="timeline-item__title grad-border">
-                Вы держите руку на пульсе
-              </div>
-              <p>
-                Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в
-                любое время можете видеть актуальное состояние проекта и задач.
-              </p>
-            </div>
-            <!--// item -->
+                <!-- item -->
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="800">
+                    <div class="timeline-item__title grad-border">
+                    ТЗ, смета и график работ
+                    </div>
+                    <p>Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимость по этапам работы.</p>
+                    <strong>Время: 2 - 4 часа</strong>
+                </div>
+                <!--// item -->
 
-            <!-- item -->
-            <div class="timeline-item" data-aos="fade-right" data-aos-duration="800">
-              <div class="timeline-item__title grad-border">
-                Выполняю каждый этап
-              </div>
-              <p>
-                Поочередно выполняю каждый этап работы. Передаю результаты.
-                Заказчик производит поэтапную оплату.
-              </p>
-            </div>
-            <!--// item -->
+                <!-- item -->
+                <div class="timeline-item" data-aos="fade-left" data-aos-duration="800">
+                    <div class="timeline-item__title grad-border">
+                    Вы держите руку на пульсе
+                    </div>
+                    <p>Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</p>
+                </div>
+                <!--// item -->
 
-            <!-- item -->
-            <div class="timeline-item" data-aos="fade-left" data-aos-duration="800">
-              <div class="timeline-item__title grad-border">
-                Финальное ревью проекта
-              </div>
-              <p>
-                Проект готов. Финальное ревью и полировка до идеального
-                состояния. Передаю файлы проекта, заливаю сайт на хостинг
-                заказчика.
-              </p>
-              <strong>Время: 2 - 4 часа</strong>
+                <!-- item -->
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="800">
+                    <div class="timeline-item__title grad-border">
+                    Выполняю каждый этап
+                    </div>
+                    <p>Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p>
+                </div>
+                <!--// item -->
+
+                <!-- item -->
+                <div class="timeline-item" data-aos="fade-left" data-aos-duration="800">
+                    <div class="timeline-item__title grad-border">
+                    Финальное ревью проекта
+                    </div>
+                    <p>Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
+                    <strong>Время: 2 - 4 часа</strong>
+                </div>
+                <!--// item -->
             </div>
-            <!--// item -->
-          </div>
-          <!--//  wrapper -->
+            <!--//  wrapper -->
         </div>
       </div>
     </section>
 
     <section class="contacts" id="contacts">
       <div class="container">
+
+        <!-- header -->
         <div class="contacts__header">
-          <h2 class="section-title grad-border">Контакты</h2>
+            <h2 class="section-title grad-border">Контакты</h2>
         </div>
+        <!--// header -->
+
         <div class="contacts__row">
+
           <!-- column -->
           <div class="contacts__column">
             <div class="contacts__text">
@@ -432,25 +435,18 @@
               </p>
             </div>
             <ul class="contacts__list">
-              <li>
-                <span>Email</span
-                ><a class="link" href="mailto:yurij.kluchevsky@gmail.com"
-                  >yurij.kluchevsky@gmail.com</a
-                >
-              </li>
-              <li>
-                <span>Телефон</span
-                ><a class="link" href="tel:7980234567">+7 (980) 123-45-67</a>
-              </li>
+              <li><span>Email</span><a class="link" href="mailto:yurij.kluchevsky@gmail.com">yurij.kluchevsky@gmail.com</a></li>
+              <li><span>Телефон</span><a class="link" href="tel:7980234567">+7 (980) 123-45-67</a></li>
             </ul>
             <ul class="socials">
-              <li>
-                <a href="tel:89258260741">
-                  <svg class="svg-tg">
+                <!-- li -->
+              <li><a href="tel:89258260741"><svg class="svg-tg">
                     <use href="./img/socials/svgSprite.svg#svg-tg"></use>
                   </svg>
                 </a>
               </li>
+              <!--// li -->
+              <!-- li -->
               <li>
                 <a href="https://vk.com/natashabalashova" target="_blank">
                   <svg class="svg-vk">
@@ -458,6 +454,8 @@
                   </svg>
                 </a>
               </li>
+              <!--// li -->
+              <!-- li -->
               <li>
                 <a href="https://www.facebook.com/" target="_blank">
                   <svg class="svg-fb">
@@ -465,6 +463,9 @@
                   </svg>
                 </a>
               </li>
+              <!--// li -->
+
+              <!-- li -->
               <li>
                 <a href="https://instagram.com/nattyme/" target="_blank">
                   <object
@@ -474,6 +475,9 @@
                   ></object>
                 </a>
               </li>
+              <!--// li -->
+
+              <!-- li -->
               <li>
                 <a href="tel:89258260741">
                   <svg class="svg-wa">
@@ -481,6 +485,7 @@
                   </svg>
                 </a>
               </li>
+              <!--// li -->
             </ul>
           </div>
           <!--// column -->
@@ -488,25 +493,41 @@
           <!-- column -->
           <div class="contacts__column">
 
+            <!-- form -->
             <form action="#" class="contact-form">
+              <div class="contact-form__img">
+                    <img src="./img/contacts/figure-dots.svg" alt="figure">
+                    <img src="./img/contacts/figure.svg" alt="figure-move" class="move-quot">
+              </div>
+
+              <!-- form item -->
               <div class="form-item" data-aos="fade-left" data-aos-duration="700">
                 <span class="fake-placeholder">Ваш Email</span>
                 <input class="form-input" type="text" name="email" type="email"/>
               </div>
+              <!--// form item -->
 
+              <!-- form item -->
               <div class="form-item" data-aos="fade-left" data-aos-duration="700">
                 <span class="fake-placeholder">Сообщение</span>
                 <textarea class="form-input" name="message" id="#" cols="30" rows="10"></textarea>
               </div>
+              <!--// form item -->
 
+              <!-- form item -->
               <div class="form-item">
                 <input type="submit" class="button button--accent" value="Отправить"/>
               </div>
+              <!--// form item -->
             </form>
+            <!--// form -->
+
             <div id="answer"></div>
           </div>
           <!--// column -->
+
         </div>
+
       </div>
     </section>
 

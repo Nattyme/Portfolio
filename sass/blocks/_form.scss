@@ -7,17 +7,38 @@
     background-color: #fff;
 }
 
-
-.contact-form::after {
+.contact-form__img {
     z-index: -1;
     position: absolute;
-    top: -113px;
-    right: 0;
-    content: url("./../img/contacts/figure.svg");
-    transform: translateX(40%);
-    width: 280px;
-    height: 243px;
+    top: -108px;
+    right: 109px;
+    max-width: 400px;
+
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
+
+.move-quot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    // opacity: 0.3;
+    max-width: 200px;
+}
+
+// .contact-form::after {
+//     z-index: -1;
+//     position: absolute;
+//     top: -113px;
+//     right: 0;
+//     content: url("./../img/contacts/figure.svg");
+//     transform: translateX(40%);
+//     width: 280px;
+//     height: 243px;
+// }
 
 
 .form-item {
