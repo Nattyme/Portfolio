@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const bodyEl = document.body;
   const navLinks = document.querySelectorAll("#mobile-nav a");
   const formInputs = document.querySelectorAll(".form-input");
+  const backTopBtn = document.querySelector("#backtop");
 
   /* Вызов анимации AOS */
   AOS.init();
@@ -14,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.classList.toggle("nav-mobile--active");
     bodyEl.classList.toggle("lock");
   });
-  // Обходим ссылки методом forEach
   navLinks.forEach(function (item) {
     // Для каждой ссылки добавляем прослушку по событию "Клик"
     item.addEventListener("click", function () {
@@ -42,4 +42,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  /**** Кнопка перемещения наверх страницы *****/
+  backTopBtn.style.opacity = 0;
+
+  document.addEventListener('scroll', function(){
+    if(window.pageYOffset > 500) {
+        backTopBtn.style.opacity = 1;
+    } else {
+        backTopBtn.style.opacity = 0;
+    }
+  });
 });

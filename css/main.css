@@ -93,6 +93,28 @@ body {
   overflow: hidden;
 }
 
+.backtop-btn {
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 5%;
+  right: 10%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #fbdc4d;
+  transition: transform 0.2s ease-in;
+}
+.backtop-btn img {
+  width: 24px;
+  height: 24px;
+}
+.backtop-btn:hover {
+  transform: scale(1.4);
+}
+
 /* Grid styles */
 .container {
   max-width: 1140px;
@@ -157,14 +179,22 @@ h2.grad-border {
   fill: #212121;
 }
 
-.svg-ln, .svg-git {
+.svg-ln,
+.svg-git {
   transition: opacity 0.2s ease-in;
 }
-.svg-ln:hover, .svg-ln:active, .svg-ln:focus, .svg-git:hover, .svg-git:active, .svg-git:focus {
+.svg-ln:hover, .svg-ln:active, .svg-ln:focus,
+.svg-git:hover,
+.svg-git:active,
+.svg-git:focus {
   opacity: 0.75;
 }
 
-.svg-tg, .svg-vk, .svg-fb, .svg-inst, .svg-wa {
+.svg-tg,
+.svg-vk,
+.svg-fb,
+.svg-inst,
+.svg-wa {
   width: 48px;
   height: 48px;
 }
@@ -648,15 +678,14 @@ h2.grad-border {
 }
 
 .contact-form {
-  position: relative;
   padding: 50px 62px;
+  position: relative;
   width: 540px;
   box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
-  background: #fff;
+  background-color: #fff;
 }
 
-.contact-form::before {
-  z-index: -1;
+.contact-form::after {
   content: url("./../img/contacts/figure.svg");
   position: absolute;
   top: -113px;
@@ -784,11 +813,6 @@ h2.grad-border {
   justify-content: space-between;
 }
 
-.contacts__column {
-  position: relative;
-  z-index: 0;
-}
-
 .contacts__list {
   margin-bottom: 34px;
   line-height: 1.6;
@@ -810,7 +834,8 @@ h2.grad-border {
   margin-bottom: 32px;
   width: 538px;
   font-size: 18px;
-  line-height: 1.6; /* 28.8px */
+  line-height: 1.6;
+  /* 28.8px */
 }
 .contacts__text p + p {
   margin-top: 8px;

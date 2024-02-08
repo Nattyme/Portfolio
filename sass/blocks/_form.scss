@@ -1,16 +1,14 @@
 .contact-form {
-    position: relative;
     padding: 50px 62px;
-
+    position: relative;
     width: 540px;
 
     box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
-    background: #fff;
+    background-color: #fff;
 }
 
 
-.contact-form::before {
-    z-index: -1;
+.contact-form::after {
     content: url("./../img/contacts/figure.svg");
     position: absolute;
     top: -113px;
@@ -24,7 +22,7 @@
 .form-item {
     position: relative;
 
-    & + & {
+    &+& {
         margin-top: 42px;
     }
 
@@ -66,14 +64,17 @@
     width: 100%;
     border-bottom: 2px solid #e5e5e5;
 
-    &:active, &:focus, &:valid {
+    &:active,
+    &:focus,
+    &:valid {
         font-weight: 700;
         font-size: 18px;
         line-height: 1;
         color: #000;
     }
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
         border-bottom-color: #ff543e;
     }
 
