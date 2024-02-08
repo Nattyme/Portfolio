@@ -24,6 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  /****** Переключение категорий карточек ******/
+  let containerEl = document.querySelector('#mix-cards');
+  let mixer = mixitup(containerEl);
+
   /**** Перемещение названия поля input наверх *****/
   for (let item of formInputs) {
     const thisParent = item.closest(".form-item");
