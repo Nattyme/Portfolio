@@ -99,8 +99,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 5%;
-  right: 10%;
+  bottom: 15px;
+  right: 10px;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -686,10 +686,11 @@ h2.grad-border {
 }
 
 .contact-form::after {
-  content: url("./../img/contacts/figure.svg");
+  z-index: -1;
   position: absolute;
   top: -113px;
   right: 0;
+  content: url("./../img/contacts/figure.svg");
   transform: translateX(40%);
   width: 280px;
   height: 243px;
@@ -797,6 +798,8 @@ h2.grad-border {
 }
 
 .contacts {
+  position: relative;
+  z-index: 1;
   padding-top: 70px;
   padding-bottom: 90px;
   background: linear-gradient(0deg, #f5fbff 0%, #f5fbff 100%), #f4f8f9;

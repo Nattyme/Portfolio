@@ -497,21 +497,14 @@
           <div class="contacts__column">
 
             <form action="#" class="contact-form">
-              <div class="form-item">
+              <div class="form-item" data-aos="fade-left" data-aos-duration="700">
                 <span class="fake-placeholder">Ваш Email</span>
-                <input class="form-input" type="text" required />
+                <input class="form-input" type="text" name="email" type="email"/>
               </div>
 
-              <div class="form-item">
+              <div class="form-item" data-aos="fade-left" data-aos-duration="700">
                 <span class="fake-placeholder">Сообщение</span>
-                <textarea
-                  class="form-input"
-                  name="message"
-                  id="#"
-                  cols="30"
-                  rows="10"
-                  required
-                ></textarea>
+                <textarea class="form-input" name="message" id="#" cols="30" rows="10"></textarea>
               </div>
 
               <div class="form-item">
@@ -522,6 +515,7 @@
                 />
               </div>
             </form>
+            <div id="answer"></div>
           </div>
           <!--// column -->
         </div>
@@ -555,7 +549,9 @@
     </a>
 
     <!-- libs -->
+    <script src="./libs/jquery/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./libs/jquery-validate/jquery.validate.min.js"></script>
 
     <!-- Main JS -->
     <script src="./js/main.js"></script>

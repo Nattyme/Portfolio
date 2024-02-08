@@ -53,4 +53,53 @@ document.addEventListener("DOMContentLoaded", function () {
         backTopBtn.style.opacity = 0;
     }
   });
+
+   /**** Валидация формы *****/
+   $(".contact-form").validate({
+    rules: {
+        email: {
+            required: true,
+            email: true
+        },
+
+        message: {
+            required: true
+        }
+    },
+
+    messages: {
+        email: {
+            required: "Необходимо указать электронную почту",
+            email: "Неверно указан адрес"
+        },
+
+        message: {
+            required: "Отсутствует текст сообщения"
+        }
+    },
+
+    submitHandler: function (form){
+        ajaxFormSubmit();
+    }
+   });
+
+   // Функция AJAX запроса на сервер
+   function ajaxFormSubmit(){
+    let userData = $(".contact-form").serialize(); // Сохраняем данные из формы в строку
+
+    // Запрос ajax
+    $.ajax({
+        type: "POST", // тип запроса - POST
+        url: "php/mail.php", // адрес для отправки
+        data: userData, // какие данные отправляем. Здесь - данные переменной userData
+
+        // Функция, если код выполнен правильно
+        success: function (html) {
+            $(".contact-form").slideUp(800);
+            $("#answer").html(html);
+        }
+    });
+    // Чтобы по Submit больше ничего не выполнялось - делаем возврат false. Прерываем цепочку срабатывания остальных функций
+    return false
+   };
 });
