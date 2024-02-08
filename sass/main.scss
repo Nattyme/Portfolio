@@ -4,22 +4,22 @@
 // Base
 @import "./base/vars";
 @import "./base/reset";
+@import "./base/container";
 @import "./base/base";
+@import "./base/typography";
+@import "./base/icons";
+@import "./base/logo";
+@import "./base/links";
+@import "./base/nav-icon";
+@import "./base/button";
 
 // Blocks
 @import "./blocks/nav";
-@import "./blocks/logo";
-@import "./blocks/nav-icon";
 @import "./blocks/nav-mobile";
-@import "./blocks/title";
-@import "./blocks/section-title";
 @import "./blocks/header-intro";
-@import "./blocks/button";
 @import "./blocks/header-banner";
-@import "./blocks/links";
 @import "./blocks/socials";
 @import "./blocks/header-about";
-@import "./blocks/mix-block";
 @import "./blocks/portfolio-card";
 @import "./blocks/timeline-item";
 @import "./blocks/form";
@@ -31,6 +31,9 @@
 @import "./sections/timeline";
 @import "./sections/contacts";
 @import "./sections/footer";
+
+// Libs 
+@import "./mixitup/mix-block";
 
 // Media
 @import "./media/tablet-big";

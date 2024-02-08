@@ -1,0 +1,33 @@
+.title {
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.section-title {
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.section-title-42px {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.grad-border {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 15px; // x y
+    background-size: 100% 12px;
+    background-image: linear-gradient(to right, #fbdc4d, #fbdc4d);
+}
+
+h2.grad-border {
+    background-size: 100% 8px;
+    background-position: center bottom 10px;
+}
+
+.timeline-item__title.grad-border {
+    background-size: 100% 6px;
+    background-position: center bottom 4px;
+}

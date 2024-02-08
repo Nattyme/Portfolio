@@ -1,0 +1,35 @@
+.svg-ln {
+    width: 32px;
+    height: 32px;
+    fill: #000;
+}
+
+.svg-git {
+    width: 42px;
+    height: 42px;
+    fill: #212121;
+}
+
+.svg-ln,
+.svg-git {
+    transition: opacity 0.2s ease-in;
+
+    &:hover,
+    &:active,
+    &:focus {
+        opacity: 0.75;
+    }
+}
+
+.svg-tg,
+.svg-vk,
+.svg-fb,
+.svg-inst,
+.svg-wa {
+    width: 48px;
+    height: 48px;
+}
+
+.svg-inst {
+    pointer-events: none;
+}
