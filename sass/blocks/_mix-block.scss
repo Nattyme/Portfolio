@@ -16,6 +16,11 @@
     &.control-active {
         color: #000;
     }
+    
+    &:hover, &:active {
+        color: #ff543e;
+    }
+    
 }
 
 
