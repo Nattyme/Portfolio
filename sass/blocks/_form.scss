@@ -10,19 +10,19 @@
 .contact-form__img {
     z-index: -1;
     position: absolute;
-    top: -108px;
-    right: 109px;
     max-width: 400px;
+    top: -61px;
+    right: -142px;
 
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .move-quot {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    right: 0;
     transform: translate(-50%, -50%);
 
     // opacity: 0.3;

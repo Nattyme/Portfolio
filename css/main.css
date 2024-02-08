@@ -517,9 +517,6 @@ h2.grad-border {
 .portfolio-card:first-child .portfolio-card__img, .portfolio-card:nth-child(2) .portfolio-card__img {
   margin-bottom: 20px;
 }
-.portfolio-card:first-child .portfolio-card__img span, .portfolio-card:nth-child(2) .portfolio-card__img span {
-  font-size: 24px;
-}
 .portfolio-card:first-child img, .portfolio-card:nth-child(2) img {
   width: 540px;
   height: 370px;
@@ -712,15 +709,18 @@ h2.grad-border {
 .contact-form__img {
   z-index: -1;
   position: absolute;
-  top: -108px;
-  right: 109px;
   max-width: 400px;
+  top: -61px;
+  right: -142px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .move-quot {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  right: 0;
   transform: translate(-50%, -50%);
   max-width: 200px;
 }
@@ -1493,6 +1493,9 @@ h2.grad-border {
     margin-bottom: 0;
   }
   /**** Portfolio ****/
+  .mix-block__btn {
+    display: none;
+  }
   .portfolio__cards {
     row-gap: 30px;
     -moz-column-gap: 0;
@@ -1573,6 +1576,9 @@ h2.grad-border {
     display: block;
     width: unset;
     font-size: 16px;
+  }
+  .contact-form__img {
+    display: none;
   }
   .contact-form {
     padding: 44px 15px 40px;
