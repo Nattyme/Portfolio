@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /**** Перемещение названия поля input наверх *****/
   for (let item of formInputs) {
-    const thisParent = item.closest(".form-item");
+    const thisParent = item.closest(".contact-form__item");
     const thisPlaceHolder = thisParent.querySelector(".fake-placeholder");
 
     // Когда input находится в фокусе

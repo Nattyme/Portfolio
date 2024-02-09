@@ -86,7 +86,7 @@
     max-width: 540px;
     height: 463px;
 
-    &__img {
+    .portfolio-card__img {
         margin-bottom: 20px;
     }
 
@@ -95,16 +95,16 @@
         height: 370px;
     }
 
-    &__text {
+    .portfolio-card__text {
         height: 73px;
     }
 
-    &__title {
+    .portfolio-card__title {
         margin-bottom: 8px;
         font-size: 30px;
     }
 
-    &__desc {
+    .portfolio-card__desc {
         font-size: 20px;
     }
 
