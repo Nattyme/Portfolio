@@ -10,22 +10,15 @@
     fill: #212121;
 }
 
-.svg-ln,
-.svg-git {
+.svg-ln, .svg-git {
     transition: opacity 0.2s ease-in;
 
-    &:hover,
-    &:active,
-    &:focus {
+    &:hover, &:active, &:focus {
         opacity: 0.75;
     }
 }
 
-.svg-tg,
-.svg-vk,
-.svg-fb,
-.svg-inst,
-.svg-wa {
+.svg-tg, .svg-vk, .svg-fb, .svg-inst, .svg-wa {
     width: 48px;
     height: 48px;
 }

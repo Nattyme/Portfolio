@@ -1,5 +1,52 @@
-$accent-color: #fbdc4d;
-// $accent-color-hover: #ff6a00;
+// Fonts
+$font-main: "Montserrat", sans-serif;
+
+// Colors 
 $black-color: #000;
+$white-color: #fff;
+$accent-color: #fbdc4d;
+$accent-color-secondary: #ff543e;
+$accent-color-hover: #ff543e;
 $link-color: #1a71d2;
+$input-muted-color: #e5e5e5;
+
+$img-shadow: 40px 40px rgba(255, 255, 255, 0.5);
+$card-overlay: rgba(255, 221, 85, 0.75);
+$logo-color: $black-color;
+
+$footer-text: #b0b0b0;
+$footer-date: $white-color;
+$text-gradient: linear-gradient(to right, $accent-color, $accent-color);
+$error-text: $accent-color-secondary;
+
+$form-placeholder: #9d9d9d;
+$form-placeholder-active: #eca73f;
+$form-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
+$form-bg: $white-color;
+
+$portfolio-bg: linear-gradient(0deg, #F5FBFF 0%, #F5FBFF 100%), #F4F8F9;
+$contacts-bg: linear-gradient(0deg, #f5fbff 0%, #f5fbff 100%), #f4f8f9;
+$footer-bg: #333;
+
+$input-default-border: $input-muted-color;
+$input-active-border: $accent-color-secondary;
+$input-muted-border: $input-muted-color;
+$input-text-color: $black-color;
+
+
+$btn-text: $black-color;
+$btn-bg: #eff7fc;
+$btn-bg-hover: #d1edff;
+$btn-bg-active: #b0dcf8;
+$btn-accent-bg: $accent-color;
+$btn-accent-hover: #ffeb8d;
+$btn-accent-active: #f5d22d;
+
+$text-color: $black-color;
+$link-color-muted: $white-color;
+$link-color-hover: $accent-color-secondary;
+$nav-link: $black-color;
+$nav-link-hover: $accent-color-hover;
+$card-text: $black-color;
+
 

@@ -2,53 +2,7 @@
     position: relative;
     max-width: 350px;
     height: 296px;
-    color: $black-color;
-
-    &:first-child,
-    &:nth-child(2) {
-        max-width: 540px;
-        height: 463px;
-
-        .portfolio-card__img {
-            margin-bottom: 20px;
-        }
-
-        img {
-            width: 540px;
-            height: 370px;
-        }
-
-        .portfolio-card__text {
-            height: 73px;
-        }
-
-        .portfolio-card__title {
-            margin-bottom: 8px;
-            font-size: 30px;
-        }
-
-        .portfolio-card__desc {
-            font-size: 20px;
-        }
-
-    }
-
-}
-
-.portfolio-card:hover {
-
-    .portfolio-card__img::before {
-        transform: translateY(0);
-    }
-
-    .portfolio-card__title {
-        color: #ff543e;
-    }
-
-    .portfolio-card__img span {
-        z-index: 3;
-        opacity: 1;
-    }
+    color: $card-text;
 }
 
 .portfolio-card__img {
@@ -68,7 +22,7 @@
         transform: translateY(-100%);
         transition: transform 0.2s ease-in;
 
-        background-color: rgba(255, 221, 85, 0.75);
+        background-color: $card-overlay;
     }
 
     img {
@@ -106,8 +60,7 @@
     height: 60px;
     overflow: hidden;
 
-    .portfolio-card__title,
-    .portfolio-card__desc {
+    &__title, &__desc {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
@@ -125,4 +78,50 @@
 
 .portfolio-card__desc {
     font-size: 18px;
+}
+
+/* Большие карточки*/
+.portfolio-card:first-child,
+.portfolio-card:nth-child(2) {
+    max-width: 540px;
+    height: 463px;
+
+    &__img {
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 540px;
+        height: 370px;
+    }
+
+    &__text {
+        height: 73px;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        font-size: 30px;
+    }
+
+    &__desc {
+        font-size: 20px;
+    }
+
+}
+
+/* Ховер по карточке*/
+.portfolio-card:hover {
+    &__img::before {
+        transform: translateY(0);
+    }
+
+    &__title {
+        color: #ff543e;
+    }
+
+    &__img span {
+        z-index: 3;
+        opacity: 1;
+    }
 }
