@@ -129,6 +129,10 @@
     }
 
     /****** Timeline ******/
+    .timeline {
+        overflow-x: hidden;
+    }
+    
     .timeline-wrapper {
         width: 100%;
         margin-left: unset;
@@ -236,5 +240,10 @@
 
     .footer__text p + p {
         margin-top: 15px;
+    }
+
+    .backtop-btn {
+        bottom: 20px;
+        right: 10px;
     }
 }
