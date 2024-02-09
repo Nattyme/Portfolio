@@ -1,7 +1,7 @@
 .footer {
     padding-top: 40px;
     padding-bottom: 50px;
-    background-color: #333;
+    background-color: $footer-bg;
 }
 
 .footer__copyright {
@@ -15,11 +15,11 @@
     margin-bottom: 10px;
 
     line-height: 1.4; /* 22.4px */
-    color: #fff;
+    color: $footer-date;
 }
 
 .footer__text {
-    color: #b0b0b0;
+    color: $footer-text;
 }
 
 

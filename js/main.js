@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /**** Перемещение названия поля input наверх *****/
   for (let item of formInputs) {
-    const thisParent = item.closest(".form-item");
+    const thisParent = item.closest(".contact-form__item");
     const thisPlaceHolder = thisParent.querySelector(".fake-placeholder");
 
     // Когда input находится в фокусе
@@ -115,4 +115,16 @@ document.addEventListener("DOMContentLoaded", function () {
     // Чтобы по Submit больше ничего не выполнялось - делаем возврат false. Прерываем цепочку срабатывания остальных функций
     return false
    };
+
+      /**** Parallax движения за мышкой *****/
+      let prxScene = document.querySelector(".contacts");
+      let prxItem = document.querySelectorAll(".move-quot");
+      prxScene.addEventListener("mousemove", function(e){
+        let x = e.clientX / window.innerWidth;
+        let y = e.clientY / window.innerHeight;
+        for (let item of prxItem) {
+            item.style.transform = "translate(-" + x * 50 + "px, -" + y * 50 + "px)";
+        }
+      });
+
 });

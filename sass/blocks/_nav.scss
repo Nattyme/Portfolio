@@ -12,10 +12,10 @@
 
 .nav a {
     transition: color 0.2s ease-in;
-    color: #000;
+    color: $nav-link;
 
     &:hover {
-        color: #ff543e;
+        color: $nav-link-hover;
     }
 }
 

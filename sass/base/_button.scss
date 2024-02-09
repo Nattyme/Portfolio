@@ -2,32 +2,32 @@
     padding: 0 40px;
     height: 64px;
     border-radius: 50px;
-    background-color: #eff7fc;
+    background-color: $btn-bg;
     line-height: 64px;
     font-size: 20px;
     font-weight: 700;
-    color: #000;
+    color: $btn-text;
 
     transition: background-color 0.2s ease-in;
 
     &:hover, &:focus {
-        background-color: #d1edff;
+        background-color: $btn-bg-hover;
     }
 
     &:active {
-        background-color: #b0dcf8;
+        background-color: $btn-bg-active;
     }
 
     &--accent {
-        background-color: $accent-color;
+        background-color: $btn-accent-bg;
     }
 
     &--accent:hover, &--accent:focus  {
-        background-color: #ffeb8d;
+        background-color: $btn-accent-hover;
     }
     
     &--accent:active {
-        background-color: #f5d22d;
+        background-color: $btn-accent-active;
     }
 }
 

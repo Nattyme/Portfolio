@@ -3,7 +3,7 @@
     z-index: 1;
     padding-top: 70px;
     padding-bottom: 90px;
-    background: linear-gradient(0deg, #f5fbff 0%, #f5fbff 100%), #f4f8f9;
+    background: $contacts-bg;
     overflow: hidden;
 }
 
@@ -21,7 +21,7 @@
     margin-bottom: 34px;
     line-height: 1.6;
 
-    li+li {
+    li + li {
         margin-top: 22px;
     }
 
@@ -43,9 +43,8 @@
 
     font-size: 18px;
     line-height: 1.6;
-    /* 28.8px */
 
-    p+p {
+    p + p {
         margin-top: 8px;
     }
 }

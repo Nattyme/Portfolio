@@ -3,6 +3,9 @@ $circleHeight: $circleWidth;
 $circleBorder: 4px;
 $lineWidth: 4px;
 
+$timeline-bg: #e1eef4;
+$timeline-border: #fff;
+
 .timeline-wrapper {
     width: 890px;
     margin-left: auto;
@@ -14,6 +17,7 @@ $lineWidth: 4px;
     font-weight: 700;
 }
 
+/*Общие стили*/
 .timeline-item {
     width: 50%;
     position: relative;
@@ -35,7 +39,7 @@ $lineWidth: 4px;
         width: $lineWidth;
         top: 0;
         bottom: 0;
-        background-color: #e1eef4;
+        background-color: $timeline-bg;
     }
 
     &::after {
@@ -44,8 +48,8 @@ $lineWidth: 4px;
         height: $circleHeight;
         border-radius: 50%;
 
-        border: $circleBorder solid #e1eef4;
-        background-color: #fff;
+        border: $circleBorder solid $timeline-bg;
+        background-color: $timeline-border;
     }
 
     p {

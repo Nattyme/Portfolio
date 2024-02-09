@@ -1,0 +1,107 @@
+/* Кнопка наверх */
+.backtop-btn {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    bottom: 15px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $accent-color;
+    transition: transform 0.2s ease-in;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    &:hover {
+        transform: scale(1.4);
+    }
+}
+
+/* Блок соц иконок*/
+.socials {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+
+    a {
+        transition: opacity 0.2s ease-in;
+
+         &:hover, &:active, &:focus {
+            opacity: 0.75;
+        }
+    }
+}
+
+/* Ссылки */
+.link {
+    position: relative;
+    font-size: 22px;
+    color: $link-color;
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: $link-color-hover;
+    }
+}
+
+.link-muted {
+    text-decoration: underline;
+    color: $link-color-muted;
+}
+
+/* Градиент текста*/
+.grad-border {
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: center bottom 15px; // x y
+    background-size: 100% 12px;
+    background-image: $text-gradient;
+}
+
+h2.grad-border {
+    background-size: 100% 8px;
+    background-position: center bottom 10px;
+}
+
+.timeline-item__title.grad-border {
+    background-size: 100% 6px;
+    background-position: center bottom 4px;
+}
+
+/**** Форма ****/
+
+// Параллакс кавычек
+.move-quot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    max-width: 200px;
+}
+
+// Текст ошибки
+.error {
+    color: $error-text;
+    font-size: 14px;
+}
+
+// Удаляет фон input при автозаполнении
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    box-shadow: 0 0 0px 1000px #fff inset;
+}

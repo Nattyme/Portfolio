@@ -3,48 +3,26 @@
     position: relative;
     width: 540px;
 
-    box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
-    background-color: #fff;
+    box-shadow: $form-shadow;
+    background-color: $form-bg;
 }
 
 .contact-form__img {
     z-index: -1;
     position: absolute;
-    top: -108px;
-    right: 109px;
     max-width: 400px;
+    top: -61px;
+    right: -142px;
 
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.move-quot {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    // opacity: 0.3;
-    max-width: 200px;
-}
-
-// .contact-form::after {
-//     z-index: -1;
-//     position: absolute;
-//     top: -113px;
-//     right: 0;
-//     content: url("./../img/contacts/figure.svg");
-//     transform: translateX(40%);
-//     width: 280px;
-//     height: 243px;
-// }
-
-
-.form-item {
+.contact-form__item {
     position: relative;
 
-    &+& {
+    & + & {
         margin-top: 42px;
     }
 
@@ -65,7 +43,7 @@
 
     font-size: 22px;
     line-height: 1;
-    color: #9d9d9d;
+    color: $form-placeholder;
 
     transition: all 0.2s ease-in;
     pointer-events: none;
@@ -74,7 +52,7 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 1;
-        color: #eca73f;
+        color: $form-placeholder-active;
 
         transform: translateY(-100%);
     }
@@ -84,23 +62,26 @@
 .form-input {
     height: 39px;
     width: 100%;
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 2px solid $input-default-border;
 
-    &:active,
-    &:focus,
-    &:valid {
+    &:active, &:focus, &:valid {
         font-weight: 700;
         font-size: 18px;
         line-height: 1;
-        color: #000;
+        color: $input-text-color;
     }
 
-    &:active,
-    &:focus {
-        border-bottom-color: #ff543e;
+    &:active, &:focus {
+        border-bottom-color: $input-active-border;
     }
 
     &:valid {
-        border-bottom-color: #e5e5e5;
+        border-bottom-color: $input-muted-border;
     }
+}
+
+.contact-form__success {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.6;
 }

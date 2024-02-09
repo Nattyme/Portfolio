@@ -19,7 +19,6 @@
 
     .section-title-42px {
         font-size: 32px;
-
     }
 
     .link {
@@ -45,15 +44,7 @@
         height: 28px;
     }
 
-    .header-about .socials {
-        column-gap: 20px;
-
-        svg, object {
-            width: 48px;
-            height: 48px;
-        }
-    }
-
+    /**** Header-top ***/
     .header-top {
         padding-bottom: 60px;
     }
@@ -71,9 +62,10 @@
         font-size: 18px;
     }
 
+    /**** Header ***/
     .header {
-       padding-top: 0;
-       padding-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .header-intro__title {
@@ -84,7 +76,7 @@
         padding-top: 5px;
         max-width: 420px;
     }
-    
+
     .header-intro__desc {
         margin-bottom: 28px;
 
@@ -122,30 +114,39 @@
         z-index: 1;
         position: relative;
     }
-    
+
+    .header-about .socials {
+        column-gap: 20px;
+
+        svg, object {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
     .header-about__content {
         column-gap: 30px;
     }
-    
+
     .header-about__column {
-        
+
         &:first-child {
             width: 495px;
         }
-    
+
         &:last-child {
             margin-left: 0;
         }
     }
-    
+
     .header-about__subtitle {
         margin-bottom: 20px;
     }
-    
+
     .header-about__skills li {
         font-size: 18px;
     }
-    
+
     .header-about__socials {
         margin-bottom: 16px;
     }
@@ -155,17 +156,16 @@
         padding-top: 40px;
         padding-bottom: 61px;
     }
-    
+
     .portfolio__title {
         margin-bottom: 40px;
     }
-    
+
     .portfolio__cards {
         row-gap: 40px;
     }
 
     /**** Portfolio-card ****/
-    
     .portfolio-card {
         width: 270px;
         height: 224px;
@@ -173,22 +173,22 @@
 
     .portfolio-card__img {
         margin-bottom: 10px;
-    
+
         img {
             width: 270px;
             height: 169px;
         }
     }
-    
+
     .portfolio-card__text {
         height: 45px;
     }
-    
+
     .portfolio-card__title {
         margin-bottom: 4px;
         font-size: 18px;
     }
-    
+
     .portfolio-card__desc {
         font-size: 14px;
     }
@@ -197,7 +197,7 @@
     .portfolio-card:nth-child(2) {
         width: 420px;
         height: 366px;
-    
+
         .portfolio-card__img {
             margin-bottom: 20px;
         }
@@ -205,7 +205,7 @@
         .portfolio-card__img span {
             font-size: 18px;
         }
-    
+
         img {
             width: 420px;
             height: 288px;
@@ -230,7 +230,7 @@
         padding-top: 65px;
         padding-bottom: 65px;
     }
-    
+
     .timeline__header {
         margin-bottom: 50px;
     }
@@ -238,14 +238,15 @@
     .timeline-wrapper {
         width: 774px;
     }
-    
+
     .timeline-item__title {
         font-size: 20px;
     }
 
-    .timeline-item { 
+    .timeline-item {
 
-        &:first-child::before, &:first-child::after {
+        &:first-child::before,
+        &:first-child::after {
             top: 1px;
         }
 
@@ -255,12 +256,12 @@
             &:not(:last-child) {
                 margin-bottom: 10px;
             }
-        } 
+        }
 
         p, strong {
             font-size: 14px;
         }
-    
+
     }
 
     /***** Contacts *****/
@@ -268,39 +269,39 @@
         padding-top: 40px;
         padding-bottom: 66px;
     }
-    
+
     .contacts__header {
         margin-bottom: 40px;
     }
-    
+
     .contacts__list {
         margin-bottom: 25px;
-    
-        li + li {
+
+        li+li {
             margin-top: 16px;
         }
-    
+
         span {
             width: 85px;
             font-size: 18px;
         }
-    
+
         a {
             margin-left: 36px;
             font-size: 18px;
         }
     }
-    
+
     .contacts__text {
         width: 420px;
-    
+
         font-size: 16px;
 
-        p + p {
+        p+p {
             margin-top: 5px;
         }
     }
-    
+
     .contact-form::before {
         top: -95px;
     }
@@ -310,16 +311,20 @@
         width: 400px;
     }
 
+    .contact-form__success {
+        font-size: 16px;
+    }
+
     /***** Footer *****/
     .footer {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    
+
     .footer__copyright {
         font-size: 14px;
     }
-    
+
     .footer__date {
         margin-bottom: 10px;
         font-size: 16px;
