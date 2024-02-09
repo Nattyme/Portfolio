@@ -38,16 +38,6 @@
         }
     }
 
-    
-    .header-about .socials {
-        column-gap: 20px;
-
-        svg, object {
-            width: 38px;
-            height: 38px;
-        }
-    }
-
     .header-top {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -156,6 +146,15 @@
 
     .header-about__socials {
         margin-bottom: 15px;
+    }
+
+    .header-about .socials {
+        column-gap: 20px;
+
+        svg, object {
+            width: 38px;
+            height: 38px;
+        }
     }
     
     .header-about__column:first-child {

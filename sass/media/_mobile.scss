@@ -13,6 +13,7 @@
         background-position: center bottom 1px;
     }
 
+    /*** Header ****/
     .header-top .container {
         width: 100%;
     }
@@ -29,14 +30,12 @@
         flex-direction: column;
     }
 
-    .header-intro__desc {
-        &:nth-child(2) {
-            display: none;
-        }
+    .header-intro__desc:nth-child(2) {
+        display: none;
+    }
 
-        &:last-child {
-            display: block;
-        }
+    .header-intro__desc:last-child {
+        display: block;
     }
 
     .header-intro__img {
@@ -159,7 +158,6 @@
         p+p {
             margin-top: 7px;
         }
-
     }
 
     /***** Contacts *****/
@@ -236,9 +234,7 @@
         width: unset;
     }
 
-    .footer__text {
-        p+p {
-            margin-top: 15px;
-        }
+    .footer__text p + p {
+        margin-top: 15px;
     }
 }
