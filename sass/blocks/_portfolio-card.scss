@@ -3,6 +3,10 @@
     max-width: 350px;
     height: 296px;
     color: $card-text;
+
+    a {
+        color: $card-text;
+    }
 }
 
 .portfolio-card__img {
@@ -60,7 +64,7 @@
     height: 60px;
     overflow: hidden;
 
-    &__title, &__desc {
+    .portfolio-card__title, .portfolio-card__desc {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
@@ -112,15 +116,15 @@
 
 /* Ховер по карточке*/
 .portfolio-card:hover {
-    &__img::before {
+    .portfolio-card__img::before {
         transform: translateY(0);
     }
 
-    &__title {
+    .portfolio-card__title {
         color: #ff543e;
     }
 
-    &__img span {
+    .portfolio-card__img span {
         z-index: 3;
         opacity: 1;
     }

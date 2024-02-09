@@ -22,7 +22,6 @@
 
 /* Links */
 a, a:visited {
-  color: inherit;
   text-decoration: none;
   display: inline-block;
 }
@@ -508,6 +507,9 @@ select:-webkit-autofill:focus {
   height: 296px;
   color: #000;
 }
+.portfolio-card a {
+  color: #000;
+}
 
 .portfolio-card__img {
   margin-bottom: 16px;
@@ -558,7 +560,7 @@ select:-webkit-autofill:focus {
   height: 60px;
   overflow: hidden;
 }
-.portfolio-card__text__title, .portfolio-card__text__desc {
+.portfolio-card__text .portfolio-card__title, .portfolio-card__text .portfolio-card__desc {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -606,13 +608,13 @@ select:-webkit-autofill:focus {
 }
 
 /* Ховер по карточке*/
-.portfolio-card:hover__img::before {
+.portfolio-card:hover .portfolio-card__img::before {
   transform: translateY(0);
 }
-.portfolio-card:hover__title {
+.portfolio-card:hover .portfolio-card__title {
   color: #ff543e;
 }
-.portfolio-card:hover__img span {
+.portfolio-card:hover .portfolio-card__img span {
   z-index: 3;
   opacity: 1;
 }
@@ -1574,6 +1576,9 @@ select:-webkit-autofill:focus {
     font-size: 14px;
   }
   /****** Timeline ******/
+  .timeline {
+    overflow-x: hidden;
+  }
   .timeline-wrapper {
     width: 100%;
     margin-left: unset;
@@ -1653,5 +1658,9 @@ select:-webkit-autofill:focus {
   }
   .footer__text p + p {
     margin-top: 15px;
+  }
+  .backtop-btn {
+    bottom: 20px;
+    right: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
