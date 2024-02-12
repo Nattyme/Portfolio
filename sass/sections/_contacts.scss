@@ -15,10 +15,12 @@
 .contacts__row {
     display: flex;
     justify-content: space-between;
+    column-gap: 30px;
 }
 
 .contacts__column:last-child {
     position: relative;
+    flex-grow: 1;
 }
 
 .contacts__img {
