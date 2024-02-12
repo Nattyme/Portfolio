@@ -1,28 +1,14 @@
 .contact-form {
     padding: 50px 62px;
-    position: relative;
     width: 540px;
-
     box-shadow: $form-shadow;
     background-color: $form-bg;
-}
-
-.contact-form__img {
-    z-index: -1;
-    position: absolute;
-    max-width: 400px;
-    top: -61px;
-    right: -142px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact-form__item {
     position: relative;
 
-    & + & {
+    &+& {
         margin-top: 42px;
     }
 
@@ -64,20 +50,23 @@
     width: 100%;
     border-bottom: 2px solid $input-default-border;
 
-    &:active, &:focus, &:valid {
+    &:active,
+    &:focus,
+    &:valid {
         font-weight: 700;
         font-size: 18px;
         line-height: 1;
         color: $input-text-color;
     }
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
         border-bottom-color: $input-active-border;
     }
 
-    &:valid {
-        border-bottom-color: $input-muted-border;
-    }
+    // &:valid {
+    //     border-bottom-color: $input-muted-border;
+    // }
 }
 
 .contact-form__success {
