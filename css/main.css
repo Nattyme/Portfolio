@@ -267,7 +267,8 @@ h2.grad-border {
 
 .error {
   color: #ff543e;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 input:-webkit-autofill,
@@ -759,9 +760,6 @@ select:-webkit-autofill:focus {
 }
 .form-input:active, .form-input:focus {
   border-bottom-color: #ff543e;
-}
-.form-input:valid {
-  border-bottom-color: #e5e5e5;
 }
 
 .contact-form__success {
@@ -1630,6 +1628,8 @@ select:-webkit-autofill:focus {
     width: 100%;
   }
   textarea.form-input:valid {
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.3;
