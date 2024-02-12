@@ -17,11 +17,27 @@
     justify-content: space-between;
 }
 
+.contacts__column:last-child {
+    position: relative;
+}
+
+.contacts__img {
+    z-index: -1;
+    position: absolute;
+    max-width: 400px;
+    top: -61px;
+    right: -142px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contacts__list {
     margin-bottom: 34px;
     line-height: 1.6;
 
-    li + li {
+    li+li {
         margin-top: 22px;
     }
 
@@ -44,7 +60,7 @@
     font-size: 18px;
     line-height: 1.6;
 
-    p + p {
+    p+p {
         margin-top: 8px;
     }
 }

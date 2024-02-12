@@ -1,22 +1,8 @@
 .contact-form {
     padding: 50px 62px;
-    position: relative;
     width: 540px;
-
     box-shadow: $form-shadow;
     background-color: $form-bg;
-}
-
-.contact-form__img {
-    z-index: -1;
-    position: absolute;
-    max-width: 400px;
-    top: -61px;
-    right: -142px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .contact-form__item {

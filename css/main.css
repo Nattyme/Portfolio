@@ -709,21 +709,9 @@ select:-webkit-autofill:focus {
 
 .contact-form {
   padding: 50px 62px;
-  position: relative;
   width: 540px;
   box-shadow: 0 20px 100px -10px rgba(160, 206, 237, 0.75);
   background-color: #fff;
-}
-
-.contact-form__img {
-  z-index: -1;
-  position: absolute;
-  max-width: 400px;
-  top: -61px;
-  right: -142px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact-form__item {
@@ -850,6 +838,21 @@ select:-webkit-autofill:focus {
 .contacts__row {
   display: flex;
   justify-content: space-between;
+}
+
+.contacts__column:last-child {
+  position: relative;
+}
+
+.contacts__img {
+  z-index: -1;
+  position: absolute;
+  max-width: 400px;
+  top: -61px;
+  right: -142px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contacts__list {
