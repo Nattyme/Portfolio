@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.classList.toggle("nav-mobile--active");
     bodyEl.classList.toggle("lock");
   });
+
   navLinks.forEach(function (item) {
     // Для каждой ссылки добавляем прослушку по событию "Клик"
     item.addEventListener("click", function () {
@@ -27,6 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
       nav.classList.remove("nav-mobile--active"); // Убираем активный класс у блока моб. навигации
       bodyEl.classList.remove("lock");
     });
+  });
+
+  nav.addEventListener("click", function(event) {
+    if(event.target == event.currentTarget){
+        navIcon.classList.remove("nav-icon--active");
+        nav.classList.remove("nav-mobile--active");
+        bodyEl.classList.remove("lock");
+    }
   });
 
   /****** Переключение категорий карточек ******/
