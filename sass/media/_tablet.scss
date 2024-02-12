@@ -334,12 +334,12 @@
         padding: 35px 40px;
     }
 
-    .contact-form::before {
-        display: none;
-    }
-
     .contact-form__success {
         font-size: 14px;
+    }
+
+    .contacts__img {
+        display: none;
     }
 
     /***** Footer *****/
