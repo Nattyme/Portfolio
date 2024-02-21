@@ -8,7 +8,6 @@ This project is a **Portfolio** layout.
 - a svg sprite to organize all of svg icons;
 - a mobile adaptative;
 - some of AOS animations;
-<hr>
 
 **Stack:** 
 BEM naming, flex, SASS;
