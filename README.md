@@ -1,4 +1,4 @@
-This project is a **Portfolio** layout.
+This project is a **Portfolio** layout. Figma design.
 <hr>
 
 **It has:**
@@ -10,4 +10,7 @@ This project is a **Portfolio** layout.
 - some of AOS animations;
 
 **Stack:** 
-BEM naming, flex, SASS;
+HTML, CSS, SCSS, JS, base PHP, BEM naming, flex, pixel perfect;
+
+**Libs:** 
+Libs: jquery, aos, fancybox, mixitup;
