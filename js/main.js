@@ -39,12 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   /****** Переключение категорий карточек ******/
-  let containerEl = document.querySelector('#mix-cards');
-  let mixer = mixitup(containerEl, {
-    classNames: {
-        block: ""
-    }
-  });
+//   let containerEl = document.querySelector('#mix-cards');
+//   let mixer = mixitup(containerEl, {
+//     classNames: {
+//         block: ""
+//     }
+//   });
 
   /**** Перемещение названия поля input наверх *****/
   for (let item of formInputs) {

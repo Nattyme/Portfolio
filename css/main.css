@@ -836,10 +836,13 @@ select:-webkit-autofill:focus {
 .contacts__row {
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .contacts__column:last-child {
   position: relative;
+  flex-grow: 1;
 }
 
 .contacts__img {
