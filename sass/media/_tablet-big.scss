@@ -171,13 +171,13 @@
         height: 224px;
     }
 
-    .portfolio-card__img {
+    .portfolio-card__link {
         margin-bottom: 10px;
+    }
 
-        img {
-            width: 270px;
-            height: 169px;
-        }
+    .portfolio-card__img img {
+        width: 270px;
+        height: 169px;
     }
 
     .portfolio-card__text {
@@ -197,10 +197,6 @@
     .portfolio-card:nth-child(2) {
         width: 420px;
         height: 366px;
-
-        .portfolio-card__img {
-            margin-bottom: 20px;
-        }
 
         .portfolio-card__img span {
             font-size: 18px;
