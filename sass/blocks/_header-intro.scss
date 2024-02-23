@@ -46,13 +46,14 @@
 }
 
 .header-intro__img {
-    box-shadow: $img-shadow; 
+    box-shadow: $img-shadow;
+    overflow: hidden;
 
     img {
         width: 475px;
         height: 410px;
         object-fit: cover;
-        object-position: 50% 35%;
+        pointer-events: none;
     }
 }
 
