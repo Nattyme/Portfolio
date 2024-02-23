@@ -21,7 +21,8 @@
         font-size: 24px;
     }
 
-    .logo, .nav-icon {
+    .logo,
+    .nav-icon {
         display: flex;
     }
 
@@ -32,7 +33,8 @@
     .socials {
         column-gap: 20px;
 
-        svg, object {
+        svg,
+        object {
             width: 38px;
             height: 38px;
         }
@@ -70,7 +72,7 @@
 
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-    
+
 
         &.nav-mobile--active {
             transform: translateX(0);
@@ -118,7 +120,7 @@
             font-size: 16px;
         }
 
-        p + p {
+        p+p {
             margin-top: 5px;
         }
     }
@@ -151,16 +153,17 @@
     .header-about .socials {
         column-gap: 20px;
 
-        svg, object {
+        svg,
+        object {
             width: 38px;
             height: 38px;
         }
     }
-    
+
     .header-about__column:first-child {
         width: 354px;
     }
-    
+
     .header-about__skills li {
         font-size: 16px;
 
@@ -175,17 +178,16 @@
         padding-top: 30px;
         padding-bottom: 40px;
     }
-    
+
     .portfolio__title {
         margin-bottom: 30px;
     }
 
-    
     .portfolio__cards {
         row-gap: 20px;
     }
 
-     /**** Portfolio-card ****/
+    /**** Portfolio-card ****/
     .portfolio-card {
         width: 226px;
         height: 213px;
@@ -195,12 +197,12 @@
         width: 226px;
         height: 140px;
     }
-    
+
     .portfolio-card__text {
         height: 63px;
     }
 
-    .portfolio-card__text h3, .portfolio-card__text p {
+    .portfolio-card__desc {
         -webkit-line-clamp: 2;
     }
 
@@ -208,11 +210,11 @@
     .portfolio-card:nth-child(2) {
         width: 354px;
         height: 235px;
-    
-        .portfolio-card__img {
+
+        .portfolio-card__link {
             margin-bottom: 10px;
         }
-    
+
         img {
             width: 354px;
             height: 180px;
@@ -232,12 +234,12 @@
         }
     }
 
-     /****** Timeline ******/
-     .timeline__content {
+    /****** Timeline ******/
+    .timeline__content {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    
+
     .timeline__header {
         margin-bottom: 40px;
     }
@@ -266,13 +268,13 @@
         text-align: left;
     }
 
-    .timeline-item:nth-child(odd)::before  {
+    .timeline-item:nth-child(odd)::before {
         right: 0;
         left: calc($circleWidth / 2);
         transform: translateX(-50%);
     }
 
-    .timeline-item:nth-child(odd)::after  {
+    .timeline-item:nth-child(odd)::after {
         left: 0;
         transform: none;
     }
@@ -287,13 +289,13 @@
         left: calc($circleWidth / 2);
         transform: translateX(-50%);
     }
-    
-    .timeline-item:nth-child(even)::after  {
+
+    .timeline-item:nth-child(even)::after {
         transform: none;
     }
 
-     /***** Contacts *****/
-     .contacts {
+    /***** Contacts *****/
+    .contacts {
         padding-bottom: 35px;
     }
 
@@ -303,29 +305,29 @@
 
     .contacts__list {
         margin-bottom: 28px;
-    
-        li + li {
+
+        li+li {
             margin-top: 10px;
         }
-    
+
         span {
             display: block;
             width: unset;
             font-size: 16px;
         }
-    
+
         a {
             margin-left: 0;
             font-size: 16px;
         }
     }
-   
+
     .contacts__text {
         width: 290px;
-    
+
         font-size: 14px;
 
-        p + p {
+        p+p {
             margin-top: 5px;
         }
     }
@@ -350,7 +352,7 @@
     .footer__text {
         line-height: 1.5;
 
-        p + p {
+        p+p {
             margin-top: 15px;
         }
     }

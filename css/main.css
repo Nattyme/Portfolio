@@ -614,7 +614,6 @@ select:-webkit-autofill:focus {
 }
 .portfolio-card:first-child .portfolio-card__title,
 .portfolio-card:nth-child(2) .portfolio-card__title {
-  display: inline-block;
   position: relative;
   z-index: 10;
   margin-bottom: 8px;
@@ -1079,7 +1078,7 @@ select:-webkit-autofill:focus {
     width: 270px;
     height: 224px;
   }
-  .portfolio-card__img {
+  .portfolio-card__link {
     margin-bottom: 10px;
   }
   .portfolio-card__img img {
@@ -1100,10 +1099,6 @@ select:-webkit-autofill:focus {
   .portfolio-card:nth-child(2) {
     width: 420px;
     height: 366px;
-  }
-  .portfolio-card:first-child .portfolio-card__img,
-  .portfolio-card:nth-child(2) .portfolio-card__img {
-    margin-bottom: 20px;
   }
   .portfolio-card:first-child .portfolio-card__img span,
   .portfolio-card:nth-child(2) .portfolio-card__img span {
@@ -1223,7 +1218,8 @@ select:-webkit-autofill:focus {
   .section-title-42px {
     font-size: 24px;
   }
-  .logo, .nav-icon {
+  .logo,
+  .nav-icon {
     display: flex;
   }
   .button {
@@ -1233,7 +1229,8 @@ select:-webkit-autofill:focus {
     -moz-column-gap: 20px;
          column-gap: 20px;
   }
-  .socials svg, .socials object {
+  .socials svg,
+  .socials object {
     width: 38px;
     height: 38px;
   }
@@ -1326,7 +1323,8 @@ select:-webkit-autofill:focus {
     -moz-column-gap: 20px;
          column-gap: 20px;
   }
-  .header-about .socials svg, .header-about .socials object {
+  .header-about .socials svg,
+  .header-about .socials object {
     width: 38px;
     height: 38px;
   }
@@ -1363,7 +1361,7 @@ select:-webkit-autofill:focus {
   .portfolio-card__text {
     height: 63px;
   }
-  .portfolio-card__text h3, .portfolio-card__text p {
+  .portfolio-card__desc {
     -webkit-line-clamp: 2;
   }
   .portfolio-card:first-child,
@@ -1371,8 +1369,8 @@ select:-webkit-autofill:focus {
     width: 354px;
     height: 235px;
   }
-  .portfolio-card:first-child .portfolio-card__img,
-  .portfolio-card:nth-child(2) .portfolio-card__img {
+  .portfolio-card:first-child .portfolio-card__link,
+  .portfolio-card:nth-child(2) .portfolio-card__link {
     margin-bottom: 10px;
   }
   .portfolio-card:first-child img,
