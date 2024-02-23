@@ -204,7 +204,7 @@ body {
   height: 24px;
 }
 .backtop-btn:hover {
-  transform: scale(1.4);
+  transform: scale(1.1);
 }
 
 /* Блок соц иконок*/
@@ -445,14 +445,14 @@ select:-webkit-autofill:focus {
 
 .header-intro__img {
   box-shadow: 40px 40px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
 }
 .header-intro__img img {
   width: 475px;
   height: 410px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 35%;
-     object-position: 50% 35%;
+  pointer-events: none;
 }
 
 .header-banner {
@@ -465,6 +465,7 @@ select:-webkit-autofill:focus {
   -o-object-fit: cover;
      object-fit: cover;
   height: 759px;
+  pointer-events: none;
 }
 
 .header-about {
