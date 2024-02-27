@@ -148,6 +148,12 @@ body {
   font-weight: 700;
 }
 
+.svg-cv {
+  width: 42px;
+  height: 42px;
+  fill: #000;
+}
+
 .svg-ln {
   width: 32px;
   height: 32px;
@@ -469,8 +475,8 @@ select:-webkit-autofill:focus {
 }
 
 .header-about {
-  margin-top: -111px;
-  padding-top: 80px;
+  margin-top: -151px;
+  padding-top: 120px;
 }
 
 .header-about__content {
