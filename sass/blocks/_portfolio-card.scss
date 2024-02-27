@@ -87,6 +87,9 @@
 
 .portfolio-card__title {
     margin-bottom: 7px;
+    position: relative;
+    z-index: 10;
+    
     font-size: 24px;
     font-weight: 600;
 
