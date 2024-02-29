@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("#mobile-nav a");
   const formInputs = document.querySelectorAll(".form-input");
   const backTopBtn = document.querySelector("#backtop");
+  
 
   /* Вызов анимации AOS */
   AOS.init();
