@@ -1,4 +1,5 @@
-This project is a **Portfolio** layout. Figma design.
+# Layout **Portfolio**. Figma design.
+I has been developed base on [webcademy](https://webcademy.ru/) HTML course. 
 <hr>
 
 **It has:**
@@ -10,8 +11,24 @@ This project is a **Portfolio** layout. Figma design.
 - mobile menu with transfer to sections;
 - some of AOS animations;
 
-**Stack:** 
-HTML, CSS, SCSS, JS, base PHP, BEM naming, flex, pixel perfect;
+****Technology:** ** 
+- HTML,
+- CSS,
+- SCSS,
+- JS,
+- base PHP,
+- BEM naming,
+- flex,
+- pixel perfect;
 
 **Libs:** 
 Libs: jquery, aos, fancybox, mixitup;
+
+
+[Watch demo](https://nattyme.github.io/portfolio/#top)
+
+<hr>
+
+![readme-cover](https://github.com/user-attachments/assets/ad6c585c-a0a6-429b-8c68-1cd527a378bb)
+
+
